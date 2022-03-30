@@ -95,6 +95,7 @@ public class SMPMathCore
 
         return r;
     }
+
     public static double GetSeriesCommonRatio(int indexInterval, SequenceName seriesName)
     {
 
@@ -276,8 +277,6 @@ public class SMPMathCore
         return r;
     }
 
-
-
     public static SMPNum GetSeriesFirstTermByLevel(int level, SequenceName seriesName)
     {
         var interval = getSequenceIntervalInfoFor(level, seriesName);
@@ -287,6 +286,7 @@ public class SMPMathCore
 
         return r;
     }
+
     public static SMPNum GetSeriesFirstTerm(int indexInterval, SequenceName seriesName)
     {
 		if(isDebug)
@@ -453,22 +453,6 @@ public class SMPMathCore
         return firstTermOfSequence * rPowered;
     }
 
-    //public static int GetUnUsingSum(double sum, double firstTerm, double cmRatio, int current = 1)
-    //{
-    //    if (current <= 0)
-    //    {
-    //        throw new Exception("Current must be bigger than zero!");
-    //    }
-
-    //    double u1 = firstTerm;
-    //    double u = u1 * Math.Pow(cmRatio, (current - 1));
-    //    var result = Math.Log(sum * (cmRatio - 1) / u + 1, cmRatio);
-    //    //Debug.Log("Result: " + result.ToString("#.#######"));
-    //    int level = Mathf.FloorToInt((float)result);
-    //    return level;
-    //}
-
-
     public static int GetUnUsingSum(SMPNum sum, SMPNum firstTerm, double cmRatio, int current = 1)
     {
         if (current <= 0)
@@ -498,24 +482,6 @@ public class SMPMathCore
 
         return level;
     }
-
-
-
-    //public static double GeometrySum(int n, double firstTerm, double cmRatio, int current = 1)
-    //{
-    //    if (current <= 0)
-    //    {
-    //        throw new Exception("Current must be bigger than zero!");
-    //    }
-
-    //    double u1 = firstTerm;
-    //    Debug.Log("U1 : " + u1);
-    //    double u = u1 * System.Math.Pow(cmRatio, (current - 1));
-    //    Debug.Log("Un : " + u);
-    //    var sum = u * ((1 - System.Math.Pow(cmRatio, n)) / (1 - cmRatio));
-    //    Debug.Log("Geometry sum : " + sum);
-    //    return sum;
-    //}
 
     public static SMPNum GeometrySum(int n, SMPNum firstTerm, double cmRatio, int current = 1)
     {
