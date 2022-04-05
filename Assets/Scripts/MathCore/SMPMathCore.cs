@@ -35,7 +35,7 @@ public class SMPMathCore
     const int K_GAME_TUNNEL_2 = 2;
     const int K_GAME_TUNNEL_3 = 3;
 
-	private static bool isDebug = true;
+	private static bool isDebug = false;
 
     public static List<SequenceInterval> getSequences(SequenceName sequenceName) {
 

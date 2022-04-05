@@ -75,7 +75,7 @@ public class SMPNum : IComparable {
 				_power = value;
 				if(double.IsInfinity(_power))
 				{
-					throw new OverflowException("_power is infinity number!");
+					throw new OverflowException($"_power is infinity number! {_power}");
 				}
 				else
 				{
