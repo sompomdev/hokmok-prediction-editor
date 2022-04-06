@@ -7,6 +7,8 @@ public class EditorController : MonoBehaviour
 {
     [SerializeField] private UIController uiController;
 
+	public static EditorController instance;
+
     public int GameLv
     {
         get
@@ -46,13 +48,49 @@ public class EditorController : MonoBehaviour
             return num;
         }
     }
-    
-    
-    void Start()
+
+	public SMPNum currentGold
+	{
+		get
+		{
+			SMPNum num = new SMPNum(1);
+			num.ValidateFromSave(uiController.inpCurrentGold.text);
+
+			return num;
+		}
+	}
+
+	public SMPNum goldPerUpdateLv
+	{
+		get
+		{
+			SMPNum num = new SMPNum(1);
+			num.ValidateFromSave(uiController.inpGoldPerLv.text);
+
+			return num;
+		}
+	}
+
+	public SMPNum goldDrop
+	{
+		get
+		{
+			return GetGoldToDrop(GameLv);
+		}
+	}
+
+	private void Awake()
+	{
+		instance = this;
+	}
+
+	void Start()
     {
         uiController.inpGameLevelNum.text = "1";
         uiController.inpHeroLevelNum.text = "1";
         uiController.inpTapPerSeNum.text = "5";
+		uiController.inpCurrentGold.text = "50";
+		uiController.inpGoldPerLv.text = "100";
     }
 
     public void OnLevelNumChanged(string value)
@@ -73,6 +111,7 @@ public class EditorController : MonoBehaviour
         uiController.textBossHp.text = GetBossHp(GameLv).ToReadableV2();
         uiController.textGhostHp.text = GetGhostHp(GameLv).ToReadableV2();
         uiController.textHeroDmg.text = GetHeroDmg(HeroLv).ToReadableV2();
+		uiController.textGoldDrop.text = goldDrop.ToReadableV2();
         CalculateWhenToDie();
     }
 
@@ -80,7 +119,7 @@ public class EditorController : MonoBehaviour
     {
         var heroDmg = GetHeroDmg(HeroLv);
         var dps = heroDmg * TapPerSec;
-        Debug.Log($"Hero DPS : {dps}");
+        //Debug.Log($"Hero DPS : {dps}");
 
         var ghostHp = GetGhostHp(GameLv);
         var secToKillGhost = ghostHp / dps;
@@ -88,30 +127,96 @@ public class EditorController : MonoBehaviour
         var bossHp = GetBossHp(GameLv);
         var secToKillBoss = bossHp / dps;
         
-        Debug.Log($"Ghost die in : {secToKillGhost}");
-        Debug.Log($"Boss die in : {secToKillBoss}");
+        //Debug.Log($"Ghost die in : {secToKillGhost}");
+        //Debug.Log($"Boss die in : {secToKillBoss}");
 
         uiController.textBossDieIn.text = $"{secToKillBoss} s";
         uiController.textGhosDieIn.text = $"{secToKillGhost} s";
     }
     
+	public SMPNum GetTimeToKillBoss()
+	{
+		var heroDmg = GetHeroDmg(HeroLv);
+		var dps = heroDmg * TapPerSec;
+		var bossHp = GetBossHp(GameLv);
+		var secToKillBoss = bossHp / dps;
+		return secToKillBoss;
+	}
     
-    SMPNum GetHeroDmg(int lv)
+	public SMPNum GetTimeToKillGhost()
+	{
+		var heroDmg = GetHeroDmg(HeroLv);
+		var dps = heroDmg * TapPerSec;
+		var ghostHp = GetGhostHp(GameLv);
+		var secToKillGhost = ghostHp / dps;
+		return secToKillGhost;
+	}
+
+	public SMPNum GetCurrentHeroDMG()
+	{
+		return GetHeroDmg(HeroLv);
+	}
+
+    public SMPNum GetHeroDmg(int lv)
     {
         var commonRatio = new SMPNum(SMPMathCore.GetSeriesCommonRatioByLevel(lv, SequenceName.DMGHero));
         var firstTerm = SMPMathCore.GetSeriesFirstTermByLevel(lv, SequenceName.DMGHero);
         return firstTerm * commonRatio.Pow(lv - 1);
     }
-    SMPNum GetBossHp(int lv)
+
+    public SMPNum GetBossHp(int lv)
     {
         var commonRatio = new SMPNum(SMPMathCore.GetSeriesCommonRatioByLevel(lv, SequenceName.HPBoss));
         var firstTerm = SMPMathCore.GetSeriesFirstTermByLevel(lv, SequenceName.HPBoss);
         return firstTerm * commonRatio.Pow(lv - 1);
     }
-    SMPNum GetGhostHp(int lv)
+
+    public SMPNum GetGhostHp(int lv)
     {
         var commonRatio = new SMPNum(SMPMathCore.GetSeriesCommonRatioByLevel(lv, SequenceName.HPGhost));
         var firstTerm = SMPMathCore.GetSeriesFirstTermByLevel(lv, SequenceName.HPGhost);
         return firstTerm * commonRatio.Pow(lv - 1);
     }
+
+
+	private const float PERIOD_OF_TIME_CONVERT = 60;
+
+	public SMPNum GetConvertGoldFromDMGToKillBoss(SMPNum dmg)
+	{
+		var dps = dmg * TapPerSec;
+		var bossHp = GetBossHp(GameLv);
+		var secToKillBoss = bossHp / dps;
+		return (PERIOD_OF_TIME_CONVERT / secToKillBoss) * goldDrop;
+	}
+
+	public SMPNum GetConvertScoreFromDMGToKillGhost(SMPNum dmg)
+	{
+		var dps = dmg * TapPerSec;
+		var ghostHp = GetGhostHp(GameLv);
+		var secToKillGhost = ghostHp / dps;
+		return (PERIOD_OF_TIME_CONVERT / secToKillGhost) * goldDrop;
+	}
+
+	public SMPNum GetCovertScoreFromTime(float time)
+	{
+		var goldKillGhost = GetConvertScoreFromDMGToKillGhost(GetCurrentHeroDMG());
+		return goldKillGhost / time;
+	}
+
+	public SMPNum GetCovertScoreFromTime(SMPNum time)
+	{
+		var goldKillGhost = GetConvertScoreFromDMGToKillGhost(GetCurrentHeroDMG());
+		return goldKillGhost / time;
+	}
+
+	public SMPNum GetBattleScoreDefault()
+	{
+		return GetCovertScoreFromTime(PERIOD_OF_TIME_CONVERT);
+	}
+
+	public SMPNum GetGoldToDrop(int gameLv)
+	{
+		var coins = SMPMathGamePlay.GetUnBaseOnLevel(gameLv, SequenceName.DropCoins);
+		return coins;
+	}
 }

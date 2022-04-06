@@ -14,4 +14,7 @@ public class UIController : MonoBehaviour
     public TMP_InputField inpGameLevelNum;
     public TMP_InputField inpHeroLevelNum;
     public TMP_InputField inpTapPerSeNum;
+	public TMP_InputField inpCurrentGold;
+	public TMP_InputField inpGoldPerLv;
+	public TextMeshProUGUI textGoldDrop;
 }
