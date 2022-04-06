@@ -10,14 +10,8 @@ public class QuestRatioUpdateHeroLvDefine : QuestRatioBaseDefine
 	{
 		int lvTarget = EditorController.instance.HeroLv + lvAdd;
 		var dmgTarget = EditorController.instance.GetHeroDmg(lvTarget);
-		return EditorController.instance.GetConvertScoreFromDMGToKillGhost(dmgTarget);
-	}
-
-	public override SMPNum RatioPassRequire()
-	{
-		var goldSpent = EditorController.instance.goldPerUpdateLv * lvAdd;
-		var scoreInBattle = EditorController.instance.GetConvertScoreFromDMGToKillGhost(EditorController.instance.GetCurrentHeroDMG());
 		var goldHave = EditorController.instance.currentGold;
-		return scoreInBattle + goldSpent - goldHave;
+		var goldSpent = EditorController.instance.goldPerUpdateLv * lvAdd;
+		return EditorController.instance.GetConvertScoreFromDMGToKillGhost(dmgTarget) + goldHave - goldSpent;
 	}
 }

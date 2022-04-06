@@ -53,10 +53,12 @@ public class EditorController : MonoBehaviour
 	{
 		get
 		{
-			SMPNum num = new SMPNum(1);
-			num.ValidateFromSave(uiController.inpCurrentGold.text);
-
-			return num;
+			int num;
+			if (!int.TryParse(uiController.inpCurrentGold.text, out num))
+			{
+				num = 0;
+			}
+			return new SMPNum(num);
 		}
 	}
 
@@ -64,10 +66,12 @@ public class EditorController : MonoBehaviour
 	{
 		get
 		{
-			SMPNum num = new SMPNum(1);
-			num.ValidateFromSave(uiController.inpGoldPerLv.text);
-
-			return num;
+			int num;
+			if (!int.TryParse(uiController.inpGoldPerLv.text, out num))
+			{
+				num = 0;
+			}
+			return new SMPNum(num);
 		}
 	}
 
