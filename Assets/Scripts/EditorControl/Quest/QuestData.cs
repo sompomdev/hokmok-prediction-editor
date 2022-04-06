@@ -8,7 +8,7 @@ public class QuestData
 	public int questId;
 	public string questName;
 	[HideInInspector]
-	public SMPNum ratio;
+	public SMPNum score;
 	public QuestTypeForPriority questType;
 	public string questRatioClass;
 	public int priority;
@@ -16,10 +16,10 @@ public class QuestData
 
 public enum QuestTypeForPriority
 {
-	COIN_FARMING,
+	GOLD_FARMING,
 	DMG_FARMING,
 	TUTORIAL,
-	USER_SELF_CHALANGE,
+	USER_SELF_CHALLANGE,
 	STAGE_REACH,
 	DECORATION
 }

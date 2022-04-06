@@ -58,7 +58,7 @@ public class QuestGrid : MonoBehaviour
 		var item = p.GetComponent<QuestItem>();
 		item.tmpId.text = q.questId.ToString();
 		item.tmpName.text = q.questName;
-		item.tmpValue.text = q.ratio.ToString();
+		item.tmpValue.text = q.score.ToString();
 		questItems.Add(item);
 	}
 
