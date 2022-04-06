@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class QuestRatioCoinVideoAdsDefine : QuestRatioBaseDefine
+public class QuestScoreCoinVideoAdsDefine : QuestScoreBaseDefine
 {
-	public override SMPNum RatioNeeded()
+	public override SMPNum ScoreExspectAfterFinish()
 	{
 		var goldDrop = EditorController.instance.goldDrop;
 

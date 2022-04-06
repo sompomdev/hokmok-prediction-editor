@@ -4,7 +4,7 @@ using UnityEngine;
 using System;
 using System.Linq;
 
-public class QuestRatioDefineService : MonoBehaviour
+public class QuestScoreDefineService : MonoBehaviour
 {
 	public List<QuestData> QuestRatioDefine(List<QuestData> questDatas)
 	{
@@ -12,7 +12,7 @@ public class QuestRatioDefineService : MonoBehaviour
 		foreach (var q in qsd)
 		{
 			Type t = Type.GetType(q.questRatioClass);
-			QuestRatioBaseDefine qDefine =(QuestRatioBaseDefine)Activator.CreateInstance(t);
+			QuestScoreBaseDefine qDefine =(QuestScoreBaseDefine)Activator.CreateInstance(t);
 			q.score = qDefine.ScoreProfit();
 		}
 		

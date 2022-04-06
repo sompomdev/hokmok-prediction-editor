@@ -21,7 +21,7 @@ public class QuestGrid : MonoBehaviour
 
 	public void DoRefreshRatio()
 	{
-		var questWithRatio = gameObject.GetComponent<QuestRatioDefineService>().QuestRatioDefine(questDatas);
+		var questWithRatio = gameObject.GetComponent<QuestScoreDefineService>().QuestRatioDefine(questDatas);
 		ShowQuest(questWithRatio);
 	}
 

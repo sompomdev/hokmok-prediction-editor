@@ -1357,17 +1357,17 @@ MonoBehaviour:
   - questId: 1
     questName: Update Hero Lv
     questType: 1
-    questRatioClass: QuestRatioUpdateHeroLvDefine
+    questRatioClass: QuestScoreUpdateHeroLvDefine
     priority: 1
   - questId: 2
     questName: Ghost Farming
     questType: 0
-    questRatioClass: QuestRatioGhostFarmingDefine
+    questRatioClass: QuestScoreGhostFarmingDefine
     priority: 3
   - questId: 3
     questName: Coin Video Ads
     questType: 0
-    questRatioClass: QuestRatioCoinVideoAdsDefine
+    questRatioClass: QuestScoreCoinVideoAdsDefine
     priority: 5
   prefab: {fileID: 457620820}
   content: {fileID: 481969369}

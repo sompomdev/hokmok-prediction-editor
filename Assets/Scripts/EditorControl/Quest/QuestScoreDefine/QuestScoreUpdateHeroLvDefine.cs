@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class QuestRatioUpdateHeroLvDefine : QuestRatioBaseDefine
+public class QuestScoreUpdateHeroLvDefine : QuestScoreBaseDefine
 {
 	private int lvAdd = 5;
 
-	public override SMPNum RatioNeeded()
+	public override SMPNum ScoreExspectAfterFinish()
 	{
 		int lvTarget = EditorController.instance.HeroLv + lvAdd;
 		var dmgTarget = EditorController.instance.GetHeroDmg(lvTarget);
