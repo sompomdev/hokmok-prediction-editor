@@ -1,27 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using TMPro;
 
-public class GamePlayDifficultyScore : MonoBehaviour
+public class DifficultyScoreReachStageDefine : DifficultyScoreBaseDefine
 {
-	[SerializeField]
-	private TextMeshProUGUI lblGameScore;
-	[SerializeField]
-	private float scoreRatio = 100;
-	
-    // Update is called once per frame
-    void Update()
-    {
-		lblGameScore.text = GetFinalGameScore().ToString();
-    }
-
-	public SMPNum GetFinalGameScore()
+	public SMPNum GetScoreOnDMG(SMPNum dmg)
 	{
-		var dmg = EditorController.instance.GetCurrentHeroDMG();
 		return (GetScoreOnDMGKillGhost(dmg) + GetScoreOnDMGKillBoss(dmg)) / 2;
 	}
-	
+
 	public SMPNum GetScoreOnDMGKillGhost(SMPNum dmg)
 	{
 		var scoreDMG = EditorController.instance.GetConvertScoreFromDMGToKillGhost(dmg);
@@ -31,8 +15,8 @@ public class GamePlayDifficultyScore : MonoBehaviour
 		var tap = EditorController.instance.TapPerSec;
 		var dmgBalance = hp / (4 * tap);//4 is the ballance second to kill ghost and 100 is the ballance score
 		var scoreBallance = EditorController.instance.GetConvertScoreFromDMGToKillGhost(dmgBalance);
-		
-		return (scoreDMG / scoreBallance) * scoreRatio;
+
+		return (scoreDMG / scoreBallance) * GamePlayDifficultyScore.SCORE_RATIO;
 	}
 
 	public SMPNum GetScoreOnDMGKillBoss(SMPNum dmg)
@@ -45,6 +29,6 @@ public class GamePlayDifficultyScore : MonoBehaviour
 		var dmgBalance = hp / (4 * tap);//4 is the ballance second to kill ghost and 100 is the ballance score
 		var scoreBallance = EditorController.instance.GetConvertScoreFromDMGToKillBoss(dmgBalance);
 
-		return (scoreDMG / scoreBallance) * scoreRatio;
+		return (scoreDMG / scoreBallance) * GamePlayDifficultyScore.SCORE_RATIO;
 	}
 }
