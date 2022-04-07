@@ -140,18 +140,28 @@ public class EditorController : MonoBehaviour
     
 	public SMPNum GetTimeToKillBoss()
 	{
-		var heroDmg = GetHeroDmg(HeroLv);
-		var dps = heroDmg * TapPerSec;
-		var bossHp = GetBossHp(GameLv);
-		var secToKillBoss = bossHp / dps;
-		return secToKillBoss;
+		return GetTimeToKillBoss(GameLv);
 	}
-    
-	public SMPNum GetTimeToKillGhost()
+
+	public SMPNum GetTimeToKillBoss(int gameLv)
 	{
 		var heroDmg = GetHeroDmg(HeroLv);
 		var dps = heroDmg * TapPerSec;
-		var ghostHp = GetGhostHp(GameLv);
+		var bossHp = GetBossHp(gameLv);
+		var secToKillBoss = bossHp / dps;
+		return secToKillBoss;
+	}
+
+	public SMPNum GetTimeToKillGhost()
+	{
+		return GetTimeToKillGhost(GameLv);
+	}
+
+	public SMPNum GetTimeToKillGhost(int gameLv)
+	{
+		var heroDmg = GetHeroDmg(HeroLv);
+		var dps = heroDmg * TapPerSec;
+		var ghostHp = GetGhostHp(gameLv);
 		var secToKillGhost = ghostHp / dps;
 		return secToKillGhost;
 	}
@@ -185,7 +195,17 @@ public class EditorController : MonoBehaviour
 
 	private const float PERIOD_OF_TIME_CONVERT = 60;
 
-	public SMPNum GetConvertGoldFromDMGToKillBoss(SMPNum dmg)
+	public SMPNum GetConvertScoreFromDMGToKillBoss(SMPNum dmg)
+	{
+		return GetConvertScoreFromDMGToKillBoss(dmg, GameLv);
+	}
+
+	public SMPNum GetConvertScoreFromDMGToKillGhost(SMPNum dmg)
+	{
+		return GetConvertScoreFromDMGToKillGhost(dmg, GameLv);
+	}
+
+	public SMPNum GetConvertScoreFromDMGToKillBoss(SMPNum dmg, int gameLv)
 	{
 		var dps = dmg * TapPerSec;
 		var bossHp = GetBossHp(GameLv);
@@ -193,7 +213,7 @@ public class EditorController : MonoBehaviour
 		return (PERIOD_OF_TIME_CONVERT / secToKillBoss) * goldDrop;
 	}
 
-	public SMPNum GetConvertScoreFromDMGToKillGhost(SMPNum dmg)
+	public SMPNum GetConvertScoreFromDMGToKillGhost(SMPNum dmg, int gameLv)
 	{
 		var dps = dmg * TapPerSec;
 		var ghostHp = GetGhostHp(GameLv);
@@ -207,9 +227,21 @@ public class EditorController : MonoBehaviour
 		return goldKillGhost / time;
 	}
 
+	public SMPNum GetCovertScoreFromTime(float time, int gameLv)
+	{
+		var goldKillGhost = GetConvertScoreFromDMGToKillGhost(GetCurrentHeroDMG(), gameLv);
+		return goldKillGhost / time;
+	}
+
 	public SMPNum GetCovertScoreFromTime(SMPNum time)
 	{
 		var goldKillGhost = GetConvertScoreFromDMGToKillGhost(GetCurrentHeroDMG());
+		return goldKillGhost / time;
+	}
+
+	public SMPNum GetCovertScoreFromTime(SMPNum time, int gameLv)
+	{
+		var goldKillGhost = GetConvertScoreFromDMGToKillGhost(GetCurrentHeroDMG(), gameLv);
 		return goldKillGhost / time;
 	}
 

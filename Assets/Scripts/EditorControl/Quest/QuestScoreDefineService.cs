@@ -13,7 +13,8 @@ public class QuestScoreDefineService : MonoBehaviour
 		{
 			Type t = Type.GetType(q.questRatioClass);
 			QuestScoreBaseDefine qDefine =(QuestScoreBaseDefine)Activator.CreateInstance(t);
-			q.score = qDefine.ScoreProfit();
+			if(q.questType == QuestTypeForPriority.STAGE_REACH)
+			q.score = qDefine.ScoreProfit();//add bonus of game level
 		}
 		
 		return qsd.OrderByDescending(q => q.score).ToList();

@@ -1355,7 +1355,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questDatas:
   - questId: 1
-    questName: Update Hero Lv
+    questName: Update Hero 5 Lv
     questType: 1
     questRatioClass: QuestScoreUpdateHeroLvDefine
     priority: 1
@@ -1369,6 +1369,11 @@ MonoBehaviour:
     questType: 0
     questRatioClass: QuestScoreCoinVideoAdsDefine
     priority: 5
+  - questId: 4
+    questName: Reach more 5 stages
+    questType: 4
+    questRatioClass: QuestScoreReachStageDefine
+    priority: 1
   prefab: {fileID: 457620820}
   content: {fileID: 481969369}
 --- !u!114 &931926373

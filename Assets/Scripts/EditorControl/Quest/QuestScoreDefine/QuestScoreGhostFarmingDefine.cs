@@ -8,7 +8,7 @@ public class QuestScoreGhostFarmingDefine : QuestScoreBaseDefine
 
 	public override SMPNum ScoreExspectAfterFinish()
 	{
-		var scoreToKillGhost = EditorController.instance.GetConvertScoreFromDMGToKillGhost(EditorController.instance.GetCurrentHeroDMG());
-		return scoreToKillGhost;
+		var dmg = EditorController.instance.GetCurrentHeroDMG();
+		return EditorController.instance.GetConvertScoreFromDMGToKillGhost(dmg);
 	}
 }
