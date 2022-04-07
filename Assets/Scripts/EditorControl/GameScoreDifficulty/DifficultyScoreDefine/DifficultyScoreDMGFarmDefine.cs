@@ -1,5 +1,5 @@
 
-public class DifficultyScoreReachStageDefine : DifficultyScoreBaseDefine
+public class DifficultyScoreDMGFarmDefine : DifficultyScoreBaseDefine
 {
 	public override SMPNum GetScoreOnDMG(SMPNum dmg)
 	{
@@ -16,7 +16,7 @@ public class DifficultyScoreReachStageDefine : DifficultyScoreBaseDefine
 		var dmgBalance = hp / (4 * tap);//4 is the ballance second to kill ghost and 100 is the ballance score
 		var scoreBallance = EditorController.instance.GetConvertScoreFromDMGToKillGhost(dmgBalance);
 
-		return (scoreDMG / scoreBallance) * GamePlayDifficultyScore.SCORE_RATIO;
+		return (scoreBallance/ scoreDMG) * GamePlayDifficultyScore.SCORE_RATIO;
 	}
 
 	public override SMPNum GetScoreOnDMGKillBoss(SMPNum dmg)
@@ -29,6 +29,6 @@ public class DifficultyScoreReachStageDefine : DifficultyScoreBaseDefine
 		var dmgBalance = hp / (4 * tap);//4 is the ballance second to kill ghost and 100 is the ballance score
 		var scoreBallance = EditorController.instance.GetConvertScoreFromDMGToKillBoss(dmgBalance);
 
-		return (scoreDMG / scoreBallance) * GamePlayDifficultyScore.SCORE_RATIO;
+		return (scoreBallance / scoreDMG) * GamePlayDifficultyScore.SCORE_RATIO;
 	}
 }

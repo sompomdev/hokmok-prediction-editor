@@ -35,10 +35,12 @@ public class GamePlayDifficultyScore : MonoBehaviour
 		var dmg = EditorController.instance.GetCurrentHeroDMG();
 		
 		var scoreReachStage = new DifficultyScoreReachStageDefine().GetScoreOnDMG(dmg);
-		lblReachStageScore.text = GetFinalGameScore().ToString();
+		lblReachStageScore.text = scoreReachStage.ToString();
 
+		var scoreDMGFarm = new DifficultyScoreDMGFarmDefine().GetScoreOnDMG(dmg);
+		lblDMGFarmingScore.text = scoreDMGFarm.ToString();
 
-		lblGameScore.text = ((scoreReachStage) / 1).ToString();
+		lblGameScore.text = ((scoreReachStage + scoreDMGFarm) / 2).ToString();
 	}
 	
 }

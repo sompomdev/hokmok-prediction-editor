@@ -1,5 +1,15 @@
 
-public interface DifficultyScoreBaseDefine
+public abstract class DifficultyScoreBaseDefine
 {
-	SMPNum GetScoreOnDMG(SMPNum dmg);
+	public abstract SMPNum GetScoreOnDMG(SMPNum dmg);
+
+	public virtual SMPNum GetScoreOnDMGKillGhost(SMPNum dmg)
+	{
+		return null;
+	}
+
+	public virtual SMPNum GetScoreOnDMGKillBoss(SMPNum dmg)
+	{
+		return null;
+	}
 }
