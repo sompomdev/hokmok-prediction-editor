@@ -191,8 +191,7 @@ public class EditorController : MonoBehaviour
         var firstTerm = SMPMathCore.GetSeriesFirstTermByLevel(lv, SequenceName.HPGhost);
         return firstTerm * commonRatio.Pow(lv - 1);
     }
-
-
+	
 	private const float PERIOD_OF_TIME_CONVERT = 60;
 
 	public SMPNum GetConvertScoreFromDMGToKillBoss(SMPNum dmg)
