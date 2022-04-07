@@ -13,10 +13,37 @@ public class QuestScoreDefineService : MonoBehaviour
 		{
 			Type t = Type.GetType(q.questRatioClass);
 			QuestScoreBaseDefine qDefine =(QuestScoreBaseDefine)Activator.CreateInstance(t);
-			q.score = qDefine.ScoreProfit();//add bonus of game level
+			q.score = qDefine.ScoreProfit() + GetAddingBonusScoreDifficulty(q);
 		}
 		
 		return qsd.OrderByDescending(q => q.score).ToList();
 
+	}
+
+	private SMPNum GetAddingBonusScoreDifficulty(QuestData questData)
+	{
+		DifficultyScoreBaseDefine scoreBaseDefine = null;
+		switch (questData.questType)
+		{
+			case QuestTypeForPriority.STAGE_REACH:
+				scoreBaseDefine = new DifficultyScoreReachStageDefine();
+				break;
+
+			//case QuestTypeForPriority.GOLD_FARMING:
+			//	scoreBaseDefine = new DifficultyScoreGoldFarmDefine();
+			//	break;
+
+			case QuestTypeForPriority.DMG_FARMING:
+				scoreBaseDefine = new DifficultyScoreDMGFarmDefine();
+				break;
+		}
+
+		SMPNum bonus = new SMPNum(0);
+		if(scoreBaseDefine != null)
+		{
+			bonus = scoreBaseDefine.GetScoreOnDMG(EditorController.instance.GetCurrentHeroDMG());
+		}
+
+		return bonus;
 	}
 }
