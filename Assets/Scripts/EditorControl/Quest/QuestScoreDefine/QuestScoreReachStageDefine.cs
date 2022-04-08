@@ -8,7 +8,7 @@ public class QuestScoreReachStageDefine : QuestScoreBaseDefine
 
 	public override SMPNum ScoreExspectAfterFinish()
 	{
-		int lv = EditorController.instance.GameLv + stageReach;
+		//int lv = EditorController.instance.GameLv + stageReach;
 		//var totalTime = new SMPNum(0);
 		//var timeKillGhost = EditorController.instance.GetTimeToKillGhost(lv);
 		//var timeKillBoss = EditorController.instance.GetTimeToKillBoss(lv);
@@ -18,9 +18,10 @@ public class QuestScoreReachStageDefine : QuestScoreBaseDefine
 		//var bossGold = EditorController.instance.GetGoldToDrop(lv);
 
 		var dmg = EditorController.instance.GetCurrentHeroDMG();
-		return EditorController.instance.GetConvertScoreFromDMGToKillGhost(dmg, lv);
+		return EditorController.instance.GetConvertScoreFromDMGToKillBoss(dmg, stageReach);
 	}
 
+	
 	//public override SMPNum ScoreInBattleCurrently()
 	//{
 		//var totalTime = new SMPNum(0);
