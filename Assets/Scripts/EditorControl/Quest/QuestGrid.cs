@@ -35,6 +35,11 @@ public class QuestGrid : MonoBehaviour
 		ResizeContent(qds.Count);
 	}
 
+	public void DefineBestGameLevelOnQuest(List<QuestData> qds)
+	{
+
+	}
+
 	private void CheckAndClear()
 	{
 		if(questItems.Count > 0)
@@ -56,7 +61,8 @@ public class QuestGrid : MonoBehaviour
 		p.SetActive(true);
 
 		var item = p.GetComponent<QuestItem>();
-		item.tmpId.text = q.questId.ToString();
+		//item.tmpId.text = q.questId.ToString();
+		item.tmpId.text = "GL." + q.gameLvTarget;
 		item.tmpName.text = q.questName;
 		item.tmpValue.text = q.score.ToString();
 		questItems.Add(item);

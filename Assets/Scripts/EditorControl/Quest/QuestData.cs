@@ -7,11 +7,16 @@ public class QuestData
 {
 	public int questId;
 	public string questName;
+
 	[HideInInspector]
 	public SMPNum score;
+	[HideInInspector]
+	public int gameLvTarget;
+
 	public QuestTypeForPriority questType;
 	public string questRatioClass;
 	public int priority;
+	public int target;
 }
 
 public enum QuestTypeForPriority
