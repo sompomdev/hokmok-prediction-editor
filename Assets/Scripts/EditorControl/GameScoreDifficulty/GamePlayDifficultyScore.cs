@@ -33,7 +33,7 @@ public class GamePlayDifficultyScore : MonoBehaviour
 	public void UpdateScoreText()
 	{
 		var dmg = EditorController.instance.GetCurrentHeroDMG();
-		
+
 		var scoreReachStage = new DifficultyScoreReachStageDefine().GetScoreOnDMG(dmg);
 		lblReachStageScore.text = scoreReachStage.ToString();
 
@@ -43,7 +43,14 @@ public class GamePlayDifficultyScore : MonoBehaviour
 		var scoreGoldFarm = new DifficultyScoreGoldFarmDefine().GetScoreOnDMG(dmg);
 		lblGoldFarmingScore.text = scoreGoldFarm.ToString();
 
-		lblGameScore.text = ((scoreReachStage + scoreDMGFarm + scoreGoldFarm) / 3).ToString();
+		string txtDifficulty = "Easy";
+		if (scoreReachStage <= SCORE_RATIO / 4) txtDifficulty = "Very Hard";
+		else if (scoreReachStage <= SCORE_RATIO / 2) txtDifficulty = "Hard";
+		else if (scoreReachStage <= SCORE_RATIO * 1.2) txtDifficulty = "Normal";
+		else if (scoreReachStage <= SCORE_RATIO * 2) txtDifficulty = "Easy";
+		else txtDifficulty = "Very Easy";
+
+		lblGameScore.text = txtDifficulty;
 	}
 	
 }
