@@ -14,7 +14,7 @@ public class GamePlayDifficultyScore : MonoBehaviour
 	[SerializeField]
 	private TextMeshProUGUI lblGoldFarmingScore;
 
-	public const float SCORE_RATIO = 100;
+	public const float SCORE_RATIO = 1;
 	
     // Update is called once per frame
     void Update()
@@ -40,7 +40,10 @@ public class GamePlayDifficultyScore : MonoBehaviour
 		var scoreDMGFarm = new DifficultyScoreDMGFarmDefine().GetScoreOnDMG(dmg);
 		lblDMGFarmingScore.text = scoreDMGFarm.ToString();
 
-		lblGameScore.text = ((scoreReachStage + scoreDMGFarm) / 2).ToString();
+		var scoreGoldFarm = new DifficultyScoreGoldFarmDefine().GetScoreOnDMG(dmg);
+		lblGoldFarmingScore.text = scoreGoldFarm.ToString();
+
+		lblGameScore.text = ((scoreReachStage + scoreDMGFarm + scoreGoldFarm) / 3).ToString();
 	}
 	
 }

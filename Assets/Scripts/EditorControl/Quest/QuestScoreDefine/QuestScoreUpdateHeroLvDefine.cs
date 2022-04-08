@@ -8,10 +8,12 @@ public class QuestScoreUpdateHeroLvDefine : QuestScoreBaseDefine
 
 	public override SMPNum ScoreExspectAfterFinish()
 	{
-		int lvTarget = EditorController.instance.HeroLv + lvAdd;
+		int lv = EditorController.instance.HeroLv;
+		int lvTarget = lv + lvAdd;
 		var dmgTarget = EditorController.instance.GetHeroDmg(lvTarget);
-		var goldHave = EditorController.instance.currentGold;
-		var goldSpent = EditorController.instance.goldPerUpdateLv * lvAdd;
-		return EditorController.instance.GetConvertScoreFromDMGToKillGhost(dmgTarget) + goldHave - goldSpent;
+		//var goldHave = EditorController.instance.currentGold;
+		//var dmg = EditorController.instance.GetCurrentHeroDMG();
+		//var goldSpent = SMPHeroLevelConfiguration.GetCostOnLevel(5, lv, lvAdd);
+		return EditorController.instance.GetConvertScoreFromDMGToKillGhost(dmgTarget);// + goldHave - goldSpent;
 	}
 }

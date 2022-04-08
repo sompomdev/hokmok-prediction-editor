@@ -29,9 +29,9 @@ public class QuestScoreDefineService : MonoBehaviour
 				scoreBaseDefine = new DifficultyScoreReachStageDefine();
 				break;
 
-			//case QuestTypeForPriority.GOLD_FARMING:
-			//	scoreBaseDefine = new DifficultyScoreGoldFarmDefine();
-			//	break;
+			case QuestTypeForPriority.GOLD_FARMING:
+				scoreBaseDefine = new DifficultyScoreGoldFarmDefine();
+				break;
 
 			case QuestTypeForPriority.DMG_FARMING:
 				scoreBaseDefine = new DifficultyScoreDMGFarmDefine();
