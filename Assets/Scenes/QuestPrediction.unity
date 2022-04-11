@@ -1633,6 +1633,7 @@ MonoBehaviour:
     questRatioClass: QuestScoreUpdateHeroLvDefine
     priority: 1
     target: 5
+    questGameLevelDefineClass: QuestGameLevelUpdateHeroLvDefine
   - questId: 2
     questName: Kill 10 Ghost
     gameLvTarget: 0
@@ -1640,6 +1641,7 @@ MonoBehaviour:
     questRatioClass: QuestScoreGhostFarmingDefine
     priority: 3
     target: 10
+    questGameLevelDefineClass: QuestGameLevelGhostFarmingDefine
   - questId: 3
     questName: Coin Video Ads
     gameLvTarget: 0
@@ -1647,6 +1649,7 @@ MonoBehaviour:
     questRatioClass: QuestScoreCoinVideoAdsDefine
     priority: 5
     target: 1
+    questGameLevelDefineClass: QuestGameLevelVideoAdsDefine
   - questId: 4
     questName: Reach stage 5
     gameLvTarget: 0
@@ -1654,6 +1657,7 @@ MonoBehaviour:
     questRatioClass: QuestScoreReachStageDefine
     priority: 1
     target: 5
+    questGameLevelDefineClass: QuestGameLevelReachStageDefine
   prefab: {fileID: 457620820}
   content: {fileID: 481969369}
 --- !u!114 &931926373

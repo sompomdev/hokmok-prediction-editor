@@ -17,6 +17,8 @@ public class QuestData
 	public string questRatioClass;
 	public int priority;
 	public int target;
+
+	public string questGameLevelDefineClass;
 }
 
 public enum QuestTypeForPriority

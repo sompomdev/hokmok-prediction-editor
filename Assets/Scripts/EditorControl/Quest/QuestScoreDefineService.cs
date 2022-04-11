@@ -14,10 +14,19 @@ public class QuestScoreDefineService : MonoBehaviour
 			Type t = Type.GetType(q.questRatioClass);
 			QuestScoreBaseDefine qDefine =(QuestScoreBaseDefine)Activator.CreateInstance(t);
 			q.score = qDefine.ScoreProfit() + GetAddingBonusScoreDifficulty(q);
+
+			q.gameLvTarget = DefineGameLevel(q);
 		}
 		
 		return qsd.OrderByDescending(q => q.score).ToList();
 
+	}
+
+	public int DefineGameLevel(QuestData q)
+	{
+		Type t = Type.GetType(q.questGameLevelDefineClass);
+		QuestGameLevelBaseDefine qDefine = (QuestGameLevelBaseDefine)Activator.CreateInstance(t);
+		return qDefine.GameLevelDefine();
 	}
 
 	private SMPNum GetAddingBonusScoreDifficulty(QuestData questData)

@@ -35,11 +35,6 @@ public class QuestGrid : MonoBehaviour
 		ResizeContent(qds.Count);
 	}
 
-	public void DefineBestGameLevelOnQuest(List<QuestData> qds)
-	{
-
-	}
-
 	private void CheckAndClear()
 	{
 		if(questItems.Count > 0)

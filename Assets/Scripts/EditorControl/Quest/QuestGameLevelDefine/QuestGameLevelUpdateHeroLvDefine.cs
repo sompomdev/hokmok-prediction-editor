@@ -3,6 +3,6 @@ public class QuestGameLevelUpdateHeroLvDefine : QuestGameLevelBaseDefine
 {
 	public override int GameLevelDefine()
 	{
-		throw new System.NotImplementedException();
+		return 0;
 	}
 }
