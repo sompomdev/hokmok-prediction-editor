@@ -112,7 +112,6 @@ public class EditorController : MonoBehaviour
         uiController.textBossHp.text = GetBossHp(GameLv).ToReadableV2();
         uiController.textGhostHp.text = GetGhostHp(GameLv).ToReadableV2();
         uiController.textHeroDmg.text = GetHeroDmg(HeroLv).ToReadableV2();
-		goldDrop.DisplayDetails();
 		uiController.textGoldDrop.text = goldDrop.ToReadableV2();
         CalculateWhenToDie();
     }
@@ -205,7 +204,7 @@ public class EditorController : MonoBehaviour
 	public SMPNum GetConvertScoreFromDMGToKillBoss(SMPNum dmg, int gameLv)
 	{
 		var dps = dmg * TapPerSec;
-		var bossHp = GetBossHp(GameLv);
+		var bossHp = GetBossHp(gameLv);
 		var secToKillBoss = bossHp / dps;
 		return (PERIOD_OF_TIME_CONVERT / secToKillBoss) * goldDrop;
 	}
@@ -213,7 +212,7 @@ public class EditorController : MonoBehaviour
 	public SMPNum GetConvertScoreFromDMGToKillGhost(SMPNum dmg, int gameLv)
 	{
 		var dps = dmg * TapPerSec;
-		var ghostHp = GetGhostHp(GameLv);
+		var ghostHp = GetGhostHp(gameLv);
 		var secToKillGhost = ghostHp / dps;
 		return (PERIOD_OF_TIME_CONVERT / secToKillGhost) * goldDrop;
 	}

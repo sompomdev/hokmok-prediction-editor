@@ -1314,13 +1314,14 @@ public class SMPNum : IComparable {
 
 			if (!double.IsInfinity(valueInDouble) && valueInDouble < 1000)
 			{
-				double floorValue = Mathf.Floor((float)valueInDouble);
-
-				double howMany = valueInDouble - floorValue;
 				if(format != null)
 				{
 					return valueInDouble.ToString(format);
 				}
+				
+				double floorValue = Mathf.Floor((float)valueInDouble);
+				double howMany = valueInDouble - floorValue;
+				
 				if (howMany >= 0.01)
 				{
 					return valueInDouble.ToString("0.00");
@@ -1331,12 +1332,10 @@ public class SMPNum : IComparable {
 				}
 			}
 
-
-			if (SupportLetterFormat(valueInDouble.ToString("0")))
+			var supportedResult = IfSupportSimpleLetterFormat();
+			if (supportedResult != null)
 			{
-				//return valueInDouble.ToString("0.00");
-				string money = GetReadableAsLetterFormat(valueInDouble.ToString("0.00"));
-				return money;
+				return supportedResult;
 			}
 			else
 			{
@@ -1483,6 +1482,29 @@ public class SMPNum : IComparable {
 			return final;	
 		}
 
+		private string IfSupportSimpleLetterFormat()
+		{
+			double power = this.Power;
+			double myMain = 1; //because we will convert 2 to power of 10 => log10(2)
+			double myPower = power + Math.Log10(_main);
+			int result = (int)Math.Floor(myPower / 3);
+			double remaining = myPower % 3;
+			double remainingInRealValue = Math.Pow(10, remaining);
+			if (remainingInRealValue > 0)
+			{
+				myMain = myMain * remainingInRealValue;
+			}
+			if (result < 5)
+			{
+				int indexOfAlphabet = result ;
+				string alphabet = "";
+				alphabet = DefaultTypeOfMoney[indexOfAlphabet];
+				var final = myMain.ToString("0.00") + alphabet;
+				return final;
+			}
+
+			return null;
+		}
 		
 		public static SMPNum ParseThatCanLoseSmallValue (string strNum)
 		{
