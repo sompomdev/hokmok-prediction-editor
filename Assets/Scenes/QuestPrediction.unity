@@ -1667,6 +1667,16 @@ MonoBehaviour:
     bigTargetPower: 3
     duration: 20
     questGameLevelDefineClass: QuestGameLevelCollectNGoldInSecondDefine
+  - questId: 8
+    questName: Collect 5 boss crowns
+    gameLvTarget: 0
+    questType: 4
+    questRatioClass: 
+    priority: 1
+    target: 5
+    bigTargetPower: 
+    duration: 0
+    questGameLevelDefineClass: QuestGameLevelCollectCrownDefine
   prefab: {fileID: 457620820}
   content: {fileID: 481969369}
 --- !u!114 &931926373
