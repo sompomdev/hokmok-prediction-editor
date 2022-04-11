@@ -291,6 +291,7 @@ RectTransform:
   - {fileID: 1848580282935517089}
   - {fileID: 75992899}
   - {fileID: 931926370}
+  - {fileID: 1523291250}
   - {fileID: 8553033323775271358}
   - {fileID: 8683534784612422324}
   - {fileID: 9124467078322491332}
@@ -1626,36 +1627,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questDatas:
-  - questId: 1
-    questName: Update Hero 5 Lv
-    gameLvTarget: 0
-    questType: 1
-    questRatioClass: QuestScoreUpdateHeroLvDefine
-    priority: 1
-    target: 5
-    bigTargetPower: 
-    duration: 0
-    questGameLevelDefineClass: QuestGameLevelUpdateHeroLvDefine
-  - questId: 2
-    questName: Kill 10 Ghost
-    gameLvTarget: 0
-    questType: 0
-    questRatioClass: QuestScoreGhostFarmingDefine
-    priority: 3
-    target: 10
-    bigTargetPower: 
-    duration: 0
-    questGameLevelDefineClass: QuestGameLevelGhostFarmingDefine
-  - questId: 3
-    questName: Coin Video Ads
-    gameLvTarget: 0
-    questType: 0
-    questRatioClass: QuestScoreCoinVideoAdsDefine
-    priority: 5
-    target: 1
-    bigTargetPower: 
-    duration: 0
-    questGameLevelDefineClass: QuestGameLevelVideoAdsDefine
   - questId: 4
     questName: Reach stage 5
     gameLvTarget: 0
@@ -1744,7 +1715,7 @@ RectTransform:
   - {fileID: 526129804}
   - {fileID: 1497747179}
   m_Father: {fileID: 299470636}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -3153,6 +3124,123 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1497747178}
   m_CullTransparentMesh: 1
+--- !u!1 &1523291249
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1523291250}
+  - component: {fileID: 1523291251}
+  m_Layer: 0
+  m_Name: QuestBackup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1523291250
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523291249}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 299470636}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1523291251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523291249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19fe6fc11fa350245b21343b037681cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questDatas:
+  - questId: 1
+    questName: Update Hero 5 Lv
+    gameLvTarget: 0
+    questType: 1
+    questRatioClass: QuestScoreUpdateHeroLvDefine
+    priority: 1
+    target: 5
+    bigTargetPower: 
+    duration: 0
+    questGameLevelDefineClass: QuestGameLevelUpdateHeroLvDefine
+  - questId: 2
+    questName: Kill 10 Ghost
+    gameLvTarget: 0
+    questType: 0
+    questRatioClass: QuestScoreGhostFarmingDefine
+    priority: 3
+    target: 10
+    bigTargetPower: 
+    duration: 0
+    questGameLevelDefineClass: QuestGameLevelGhostFarmingDefine
+  - questId: 3
+    questName: Coin Video Ads
+    gameLvTarget: 0
+    questType: 0
+    questRatioClass: QuestScoreCoinVideoAdsDefine
+    priority: 5
+    target: 1
+    bigTargetPower: 
+    duration: 0
+    questGameLevelDefineClass: QuestGameLevelVideoAdsDefine
+  - questId: 4
+    questName: Reach stage 5
+    gameLvTarget: 0
+    questType: 4
+    questRatioClass: QuestScoreReachStageDefine
+    priority: 1
+    target: 5
+    bigTargetPower: 
+    duration: 0
+    questGameLevelDefineClass: QuestGameLevelReachStageDefine
+  - questId: 5
+    questName: Collect 2k Gold
+    gameLvTarget: 0
+    questType: 0
+    questRatioClass: 
+    priority: 1
+    target: 5
+    bigTargetPower: 3
+    duration: 0
+    questGameLevelDefineClass: QuestGameLevelCollectNGoldDefine
+  - questId: 6
+    questName: Collect 2 Pets
+    gameLvTarget: 0
+    questType: 4
+    questRatioClass: 
+    priority: 1
+    target: 2
+    bigTargetPower: 
+    duration: 0
+    questGameLevelDefineClass: QuestGameLevelCollectPetDefine
+  - questId: 7
+    questName: Collect Gold 2k In 20s
+    gameLvTarget: 0
+    questType: 0
+    questRatioClass: 
+    priority: 1
+    target: 0
+    bigTargetPower: 3
+    duration: 20
+    questGameLevelDefineClass: QuestGameLevelCollectNGoldInSecondDefine
+  prefab: {fileID: 457620820}
+  content: {fileID: 481969369}
 --- !u!1001 &1587855601
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5431,7 +5519,7 @@ RectTransform:
   m_Children:
   - {fileID: 8004307782391846853}
   m_Father: {fileID: 299470636}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5452,7 +5540,7 @@ RectTransform:
   m_Children:
   - {fileID: 7000112350015136975}
   m_Father: {fileID: 299470636}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5473,7 +5561,7 @@ RectTransform:
   m_Children:
   - {fileID: 6264167295964721302}
   m_Father: {fileID: 299470636}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
