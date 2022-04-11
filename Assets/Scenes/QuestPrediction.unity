@@ -1633,6 +1633,7 @@ MonoBehaviour:
     questRatioClass: QuestScoreUpdateHeroLvDefine
     priority: 1
     target: 5
+    bigTargetPower: 
     questGameLevelDefineClass: QuestGameLevelUpdateHeroLvDefine
   - questId: 2
     questName: Kill 10 Ghost
@@ -1641,6 +1642,7 @@ MonoBehaviour:
     questRatioClass: QuestScoreGhostFarmingDefine
     priority: 3
     target: 10
+    bigTargetPower: 
     questGameLevelDefineClass: QuestGameLevelGhostFarmingDefine
   - questId: 3
     questName: Coin Video Ads
@@ -1649,6 +1651,7 @@ MonoBehaviour:
     questRatioClass: QuestScoreCoinVideoAdsDefine
     priority: 5
     target: 1
+    bigTargetPower: 
     questGameLevelDefineClass: QuestGameLevelVideoAdsDefine
   - questId: 4
     questName: Reach stage 5
@@ -1657,7 +1660,17 @@ MonoBehaviour:
     questRatioClass: QuestScoreReachStageDefine
     priority: 1
     target: 5
+    bigTargetPower: 
     questGameLevelDefineClass: QuestGameLevelReachStageDefine
+  - questId: 5
+    questName: Collect 2k Gold
+    gameLvTarget: 0
+    questType: 0
+    questRatioClass: 
+    priority: 1
+    target: 5
+    bigTargetPower: 3
+    questGameLevelDefineClass: QuestGameLevelCollectNGoldDefine
   prefab: {fileID: 457620820}
   content: {fileID: 481969369}
 --- !u!114 &931926373

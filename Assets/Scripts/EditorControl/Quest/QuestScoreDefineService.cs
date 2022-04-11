@@ -11,14 +11,16 @@ public class QuestScoreDefineService : MonoBehaviour
 		List<QuestData> qsd = questDatas.ToList();
 		foreach (var q in qsd)
 		{
-			Type t = Type.GetType(q.questRatioClass);
-			QuestScoreBaseDefine qDefine =(QuestScoreBaseDefine)Activator.CreateInstance(t);
-			q.score = qDefine.ScoreProfit() + GetAddingBonusScoreDifficulty(q);
+			//Type t = Type.GetType(q.questRatioClass);
+			//QuestScoreBaseDefine qDefine =(QuestScoreBaseDefine)Activator.CreateInstance(t);
+			//q.score = qDefine.ScoreProfit() + GetAddingBonusScoreDifficulty(q);
 
 			q.gameLvTarget = DefineGameLevel(q);
 		}
-		
-		return qsd.OrderByDescending(q => q.score).ToList();
+
+		//return qsd.OrderByDescending(q => q.score).ToList();
+
+		return qsd.OrderBy(q => q.gameLvTarget).ToList();
 
 	}
 
@@ -26,6 +28,7 @@ public class QuestScoreDefineService : MonoBehaviour
 	{
 		Type t = Type.GetType(q.questGameLevelDefineClass);
 		QuestGameLevelBaseDefine qDefine = (QuestGameLevelBaseDefine)Activator.CreateInstance(t);
+		qDefine.questData = q;
 		return qDefine.GameLevelDefine();
 	}
 

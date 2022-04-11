@@ -9,7 +9,7 @@ public class QuestData
 	public string questName;
 
 	[HideInInspector]
-	public SMPNum score;
+	public SMPNum score = new SMPNum(0);
 	[HideInInspector]
 	public int gameLvTarget;
 
@@ -17,6 +17,15 @@ public class QuestData
 	public string questRatioClass;
 	public int priority;
 	public int target;
+
+	public string bigTargetPower;
+	public SMPNum bigTarget_GS {
+		get
+		{
+			return SMPNum.FromPower(bigTargetPower);
+		}
+	}
+
 
 	public string questGameLevelDefineClass;
 }

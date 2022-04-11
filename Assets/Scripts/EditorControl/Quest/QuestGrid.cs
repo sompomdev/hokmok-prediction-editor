@@ -60,6 +60,13 @@ public class QuestGrid : MonoBehaviour
 		item.tmpId.text = "GL." + q.gameLvTarget;
 		item.tmpName.text = q.questName;
 		item.tmpValue.text = q.score.ToString();
+
+		//test
+		//if(q.bigTargetPower != "")
+		//{
+		//	item.tmpValue.text = q.bigTarget_GS.ToString();
+		//}
+
 		questItems.Add(item);
 	}
 

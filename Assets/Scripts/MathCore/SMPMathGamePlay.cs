@@ -72,7 +72,6 @@ public class SMPMathGamePlay
         return level;
     }
 
-
     public static SMPNum GetUnBaseOnLevelAndFirstTerm(int level, SMPNum firstTerm, SequenceName sequenceName)
     {
         var firstTermOfSequence = firstTerm;//new SMPNum(firstTerm);
