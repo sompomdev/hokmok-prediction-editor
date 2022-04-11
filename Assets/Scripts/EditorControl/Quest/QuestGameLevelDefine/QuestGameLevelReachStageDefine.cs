@@ -1,8 +1,10 @@
 
 public class QuestGameLevelReachStageDefine : QuestGameLevelBaseDefine
 {
+	private int preStageCounter = 1;
+
 	public override int GameLevelDefine()
 	{
-		return 0;
+		return questData.target - preStageCounter;
 	}
 }
