@@ -1,16 +1,11 @@
 
-public class QuestGameLevelCombinePowerupDefine : QuestGameLevelBaseDefine
+public class QuestGameLevelObtainFirstPowerUpDefine : QuestGameLevelBaseDefine
 {
 	public override int GameLevelDefine()
 	{
-		var targetCombine = questData.target;
-		var costSkill = new SMPNum(0);
-		var heroLvTarget = QuestConstance.HeroLevelSkillUnlock(targetCombine);
-		for(int i=0;i<targetCombine;i++)
-		{
-			costSkill += QuestConstance.HeroSkillCostUnlock(i);
-		}
-		
+		var costSkill = QuestConstance.HeroSkillCostUnlock(0);
+		var heroLvTarget = QuestConstance.HeroLevelSkillUnlock(0);
+
 		return GetGameLevelHeroCanReachLevel(heroLvTarget, costSkill);
 	}
 
