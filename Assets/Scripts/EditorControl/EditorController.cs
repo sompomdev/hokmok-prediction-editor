@@ -109,10 +109,11 @@ public class EditorController : MonoBehaviour
 
     void RefreshStat()
     {
-        uiController.textBossHp.text = GetBossHp(GameLv).ToString();
-        uiController.textGhostHp.text = GetGhostHp(GameLv).ToString();
-        uiController.textHeroDmg.text = GetHeroDmg(HeroLv).ToString();
-		uiController.textGoldDrop.text = goldDrop.ToString();
+        uiController.textBossHp.text = GetBossHp(GameLv).ToReadableV2();
+        uiController.textGhostHp.text = GetGhostHp(GameLv).ToReadableV2();
+        uiController.textHeroDmg.text = GetHeroDmg(HeroLv).ToReadableV2();
+		goldDrop.DisplayDetails();
+		uiController.textGoldDrop.text = goldDrop.ToReadableV2();
         CalculateWhenToDie();
     }
 

@@ -1671,6 +1671,15 @@ MonoBehaviour:
     target: 5
     bigTargetPower: 3
     questGameLevelDefineClass: QuestGameLevelCollectNGoldDefine
+  - questId: 6
+    questName: Collect 2 Pets
+    gameLvTarget: 0
+    questType: 4
+    questRatioClass: 
+    priority: 1
+    target: 2
+    bigTargetPower: 
+    questGameLevelDefineClass: QuestGameLevelCollectPetDefine
   prefab: {fileID: 457620820}
   content: {fileID: 481969369}
 --- !u!114 &931926373
@@ -1723,7 +1732,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -15.599976, y: -100}
+  m_AnchoredPosition: {x: -15.600098, y: -100}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &933344287
