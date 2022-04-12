@@ -7,9 +7,8 @@ public abstract class QuestGameLevelBaseDefine
 
 	public abstract int GameLevelDefine();
 
-	protected int DefineForGoldEarningBallance(int heroCount)
+	protected int GetGameLevelFromGoldEarningBallance(int heroCount, int levelTarget)
 	{
-		var levelTarget = questData.target;
 		var gameLv = 0;
 		var goldEarning = new SMPNum(0);
 		var goldNeed = SMPHeroLevelConfiguration.GetCostOnLevel(5, 0, levelTarget) * heroCount;
@@ -23,9 +22,8 @@ public abstract class QuestGameLevelBaseDefine
 		return gameLv;
 	}
 
-	protected int DefineForDMGBallance()
+	protected int GetGameLevelFromDMGBallance(int levelTarget)
 	{
-		var levelTarget = questData.target;
 		var gameLv = 0;
 		var dmgBalance = new SMPNum();
 		var dmgTarget = EditorController.instance.GetHeroDmg(levelTarget);
