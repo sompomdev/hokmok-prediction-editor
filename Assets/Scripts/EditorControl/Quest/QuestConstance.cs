@@ -10,6 +10,9 @@ public static class QuestConstance
 
 	public const int UNLOCK_HERO_STAGE_COUNT = 10;
 	public const int MAX_HERO = 8;
+	public const int MAX_SUPPORT = 20;
+	public const int MAX_ACTIVE_SUPPORT = 4;
+	public const int MAX_FLYING_SUPPORT = 4;
 
 	public const float TIME_PER_BOSS = 4;
 	public const float TIME_PER_GHOST = 1;

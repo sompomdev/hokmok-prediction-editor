@@ -60,4 +60,18 @@ public abstract class QuestGameLevelBaseDefine
 		var timeOnOneLevel = (QuestConstance.GHOST_PER_WAVE * QuestConstance.TIME_PER_GHOST) + QuestConstance.TIME_PER_BOSS;
 		return (int)(time / timeOnOneLevel);
 	}
+
+	protected int GetGameLevelCanFarmForCost(SMPNum skillCosts)
+	{
+		var gameLv = 0;
+		var goldEarning = new SMPNum(0);
+		do
+		{
+			gameLv++;
+			goldEarning += EditorController.instance.GetGoldToDrop(gameLv) * QuestConstance.GHOST_PER_WAVE + 1;//ghost and boss gold drop
+		}
+		while (goldEarning < skillCosts);
+
+		return gameLv;
+	}
 }

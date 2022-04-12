@@ -1748,6 +1748,17 @@ MonoBehaviour:
     bigTargetPower: 
     duration: 0
     questGameLevelDefineClass: QuestGameLevelHireFullHeroDefine
+  - questId: 13
+    questName: Full support
+    gameLvTarget: 0
+    questType: 1
+    questRatioClass: 
+    priority: 1
+    target: 0
+    target2: 0
+    bigTargetPower: 
+    duration: 0
+    questGameLevelDefineClass: QuestGameLevelFullSupportDefine
   prefab: {fileID: 457620820}
   content: {fileID: 481969369}
 --- !u!114 &931926373

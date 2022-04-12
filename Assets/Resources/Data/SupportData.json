@@ -1,0 +1,1809 @@
+ [{
+ 		"m_iID": 1,
+ 		"m_sName": "Sena",
+ 		"m_bHired": false,
+ 		"m_evolved": false,
+ 		"m_bUnlocked": false,
+ 		"m_iFruitType": 4,
+ 		"m_fAttackSpeed": 3,
+ 		"m_iCurrentLevel": 0,
+ 		"m_sAttackDamagesBase": 1,
+ 		"m_SupportsAbilityList": [{
+ 				"m_iID": 1,
+ 				"m_sName": "Sphinx Presence",
+ 				"m_iIconId": "orange_029",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 1,
+ 				"m_skillPercent": 2,
+ 				"m_iCurrentLevel": 10
+ 			},
+ 			{
+ 				"m_iID": 2,
+ 				"m_sName": "Panther's Touch",
+ 				"m_iIconId": "orange_030",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 4,
+ 				"m_skillPercent": 0.05,
+ 				"m_iCurrentLevel": 25
+ 			},
+ 			{
+ 				"m_iID": 3,
+ 				"m_sName": "Copper Skin",
+ 				"m_iIconId": "orange_035",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 4,
+ 				"m_skillPercent": 0.07,
+ 				"m_iCurrentLevel": 50
+ 			},
+ 			{
+ 				"m_iID": 9,
+ 				"m_sName": "Mana Bonus",
+ 				"m_iIconId": "Support-skill-mana",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 11,
+ 				"m_skillPercent": 1,
+ 				"m_iCurrentLevel": 60
+ 			},
+ 			{
+ 				"m_iID": 4,
+ 				"m_sName": "Special Fighter",
+ 				"m_iIconId": "orange_036",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 1,
+ 				"m_skillPercent": 6,
+ 				"m_iCurrentLevel": 100
+ 			},
+ 			{
+ 				"m_iID": 5,
+ 				"m_sName": "Skull Cap",
+ 				"m_iIconId": "orange_044",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 2,
+ 				"m_skillPercent": 0.05,
+ 				"m_iCurrentLevel": 200
+ 			},
+ 			{
+ 				"m_iID": 6,
+ 				"m_sName": "Master Manipulator",
+ 				"m_iIconId": "orange_088",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 9,
+ 				"m_skillPercent": 0.2,
+ 				"m_iCurrentLevel": 400
+ 			},
+ 			{
+ 				"m_iID": 7,
+ 				"m_sName": "Perpetual Impulsivity",
+ 				"m_iIconId": "orange_070",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 4,
+ 				"m_skillPercent": 0.3,
+ 				"m_iCurrentLevel": 800
+ 			},
+ 			{
+ 				"m_iID": 8,
+ 				"m_sName": "Evolve",
+ 				"m_iIconId": "orange_041",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 10,
+ 				"m_skillPercent": 0,
+ 				"m_iCurrentLevel": 1000
+ 			}
+ 		]
+ 	},
+ 	{
+ 		"m_iID": 2,
+ 		"m_sName": "Vorana",
+ 		"m_bHired": false,
+ 		"m_evolved": false,
+ 		"m_bUnlocked": false,
+ 		"m_iFruitType": 0,
+ 		"m_fAttackSpeed": 4,
+ 		"m_iCurrentLevel": 0,
+ 		"m_sAttackDamagesBase": 1,
+ 		"m_SupportsAbilityList": [{
+ 				"m_iID": 1,
+ 				"m_sName": "Superstition",
+ 				"m_iIconId": "red_001",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 2,
+ 				"m_skillPercent": 0.05,
+ 				"m_iCurrentLevel": 10
+ 			},
+ 			{
+ 				"m_iID": 2,
+ 				"m_sName": "Ghost Breath",
+ 				"m_iIconId": "red_002",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 1,
+ 				"m_skillPercent": 1,
+ 				"m_iCurrentLevel": 25
+ 			},
+ 			{
+ 				"m_iID": 3,
+ 				"m_sName": "Spectral Nova",
+ 				"m_iIconId": "red_005",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 1,
+ 				"m_skillPercent": 10,
+ 				"m_iCurrentLevel": 50
+ 			},
+ 			{
+ 				"m_iID": 4,
+ 				"m_sName": "Brooding Thrill",
+ 				"m_iIconId": "red_007",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 3,
+ 				"m_skillPercent": 0.0004,
+ 				"m_iCurrentLevel": 100
+ 			},
+ 			{
+ 				"m_iID": 5,
+ 				"m_sName": "Guardian's Chant",
+ 				"m_iIconId": "red_006",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 4,
+ 				"m_skillPercent": 0.1,
+ 				"m_iCurrentLevel": 200
+ 			},
+ 			{
+ 				"m_iID": 6,
+ 				"m_sName": "Soul Initiative",
+ 				"m_iIconId": "red_029",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 8,
+ 				"m_skillPercent": 0.1,
+ 				"m_iCurrentLevel": 400
+ 			},
+ 			{
+ 				"m_iID": 10,
+ 				"m_sName": "Wave Reduce",
+ 				"m_iIconId": "Support-skill-wave",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 5,
+ 				"m_skillPercent": 1,
+ 				"m_iCurrentLevel": 600
+ 			},
+ 			{
+ 				"m_iID": 7,
+ 				"m_sName": "Medusa's Strife",
+ 				"m_iIconId": "red_073",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 1,
+ 				"m_skillPercent": 100,
+ 				"m_iCurrentLevel": 800
+ 			},
+ 			{
+ 				"m_iID": 8,
+ 				"m_sName": "Evolve",
+ 				"m_iIconId": "red_039",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 10,
+ 				"m_skillPercent": 0,
+ 				"m_iCurrentLevel": 1000
+ 			}
+ 		]
+ 	},
+ 	{
+ 		"m_iID": 3,
+ 		"m_sName": "Chao Cheum",
+ 		"m_bHired": false,
+ 		"m_evolved": false,
+ 		"m_iIconId": 3,
+ 		"m_bUnlocked": false,
+ 		"m_iFruitType": 5,
+ 		"m_fAttackSpeed": 5,
+ 		"m_iCurrentLevel": 0,
+ 		"m_sAttackDamagesBase": 1,
+ 		"m_SupportsAbilityList": [{
+ 				"m_iID": 1,
+ 				"m_sName": "Blunt Strength",
+ 				"m_iIconId": "violet_121",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 1,
+ 				"m_skillPercent": 1.5,
+ 				"m_iCurrentLevel": 10
+ 			},
+ 			{
+ 				"m_iID": 2,
+ 				"m_sName": "Viking Slash Force",
+ 				"m_iIconId": "violet_118",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 4,
+ 				"m_skillPercent": 0.05,
+ 				"m_iCurrentLevel": 25
+ 			},
+ 			{
+ 				"m_iID": 3,
+ 				"m_sName": "Rune Enabler",
+ 				"m_iIconId": "violet_132",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 4,
+ 				"m_skillPercent": 0.3,
+ 				"m_iCurrentLevel": 50
+ 			},
+ 			{
+ 				"m_iID": 4,
+ 				"m_sName": "Bearded Fortitude",
+ 				"m_iIconId": "violet_083",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 7,
+ 				"m_skillPercent": 0.05,
+ 				"m_iCurrentLevel": 100
+ 			},
+ 			{
+ 				"m_iID": 9,
+ 				"m_sName": "Mana Bonus",
+ 				"m_iIconId": "Support-skill-mana",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 11,
+ 				"m_skillPercent": 1,
+ 				"m_iCurrentLevel": 150
+ 			},
+ 			{
+ 				"m_iID": 5,
+ 				"m_sName": "Spirit Vessel",
+ 				"m_iIconId": "violet_092",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 1,
+ 				"m_skillPercent": 50,
+ 				"m_iCurrentLevel": 200
+ 			},
+ 			{
+ 				"m_iID": 6,
+ 				"m_sName": "Essence of Valhalla",
+ 				"m_iIconId": "violet_086",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 4,
+ 				"m_skillPercent": 0.25,
+ 				"m_iCurrentLevel": 400
+ 			},
+ 			{
+ 				"m_iID": 7,
+ 				"m_sName": "Warrior Loyalty",
+ 				"m_iIconId": "violet_084",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 1,
+ 				"m_skillPercent": 100,
+ 				"m_iCurrentLevel": 800
+ 			},
+ 			{
+ 				"m_iID": 8,
+ 				"m_sName": "Evolve",
+ 				"m_iIconId": "violet_090",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 10,
+ 				"m_skillPercent": 0,
+ 				"m_iCurrentLevel": 1000
+ 			}
+ 		]
+ 	},
+ 	{
+ 		"m_iID": 4,
+ 		"m_sName": "Kakei",
+ 		"m_bHired": false,
+ 		"m_evolved": false,
+ 		"m_bUnlocked": false,
+ 		"m_iFruitType": 3,
+ 		"m_fAttackSpeed": 3,
+ 		"m_iCurrentLevel": 0,
+ 		"m_sAttackDamagesBase": 1,
+ 		"m_SupportsAbilityList": [{
+ 				"m_iID": 1,
+ 				"m_sName": "Stomping Presence",
+ 				"m_iIconId": "blue_135",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 1,
+ 				"m_skillPercent": 1,
+ 				"m_iCurrentLevel": 10
+ 			},
+ 			{
+ 				"m_iID": 2,
+ 				"m_sName": "Hammer Pulse",
+ 				"m_iIconId": "blue_163",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 1,
+ 				"m_skillPercent": 8,
+ 				"m_iCurrentLevel": 25
+ 			},
+ 			{
+ 				"m_iID": 3,
+ 				"m_sName": "Psychosis",
+ 				"m_iIconId": "blue_104",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 8,
+ 				"m_skillPercent": 0.06,
+ 				"m_iCurrentLevel": 50
+ 			},
+ 			{
+ 				"m_iID": 4,
+ 				"m_sName": "War Beacon",
+ 				"m_iIconId": "blue_160",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 1,
+ 				"m_skillPercent": 5,
+ 				"m_iCurrentLevel": 100
+ 			},
+ 			{
+ 				"m_iID": 9,
+ 				"m_sName": "Mana Bonus",
+ 				"m_iIconId": "Support-skill-mana",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 11,
+ 				"m_skillPercent": 1,
+ 				"m_iCurrentLevel": 150
+ 			},
+ 			{
+ 				"m_iID": 5,
+ 				"m_sName": "Hammer Circle",
+ 				"m_iIconId": "blue_113",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 7,
+ 				"m_skillPercent": 0.05,
+ 				"m_iCurrentLevel": 200
+ 			},
+ 			{
+ 				"m_iID": 6,
+ 				"m_sName": "Battle Fortitude",
+ 				"m_iIconId": "blue_120",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 4,
+ 				"m_skillPercent": 0.2,
+ 				"m_iCurrentLevel": 400
+ 			},
+ 			{
+ 				"m_iID": 7,
+ 				"m_sName": "Steel Nerves",
+ 				"m_iIconId": "blue_106",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 9,
+ 				"m_skillPercent": 0.2,
+ 				"m_iCurrentLevel": 800
+ 			},
+ 			{
+ 				"m_iID": 8,
+ 				"m_sName": "Evolve",
+ 				"m_iIconId": "blue_087",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 10,
+ 				"m_skillPercent": 0,
+ 				"m_iCurrentLevel": 1000
+ 			}
+ 		]
+ 	},
+ 	{
+ 		"m_iID": 5,
+ 		"m_sName": "Reachboth",
+ 		"m_bHired": false,
+ 		"m_bUnlocked": false,
+ 		"m_iFruitType": 0,
+ 		"m_fAttackSpeed": 4,
+ 		"m_iCurrentLevel": 0,
+ 		"m_sAttackDamagesBase": 1,
+ 		"m_SupportsAbilityList": [{
+ 				"m_iID": 1,
+ 				"m_sName": "Blunt Strength",
+ 				"m_iIconId": "red_062",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 1,
+ 				"m_skillPercent": 1.5,
+ 				"m_iCurrentLevel": 10
+ 			},
+ 			{
+ 				"m_iID": 2,
+ 				"m_sName": "Viking Slash Force",
+ 				"m_iIconId": "red_063",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 6,
+ 				"m_iFruitType": 0,
+ 				"m_skillPercent": 0.01,
+ 				"m_iCurrentLevel": 25
+ 			},
+ 			{
+ 				"m_iID": 3,
+ 				"m_sName": "Rune Enabler",
+ 				"m_iIconId": "red_064",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 4,
+ 				"m_skillPercent": 0.05,
+ 				"m_iCurrentLevel": 50
+ 			},
+ 			{
+ 				"m_iID": 4,
+ 				"m_sName": "Bearded Fortitude",
+ 				"m_iIconId": "red_020",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 8,
+ 				"m_skillPercent": 0.15,
+ 				"m_iCurrentLevel": 100
+ 			},
+ 			{
+ 				"m_iID": 5,
+ 				"m_sName": "Spirit Vessel",
+ 				"m_iIconId": "red_008",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 9,
+ 				"m_skillPercent": 0.2,
+ 				"m_iCurrentLevel": 200
+ 			},
+ 			{
+ 				"m_iID": 9,
+ 				"m_sName": "Mana Bonus",
+ 				"m_iIconId": "Support-skill-mana",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 11,
+ 				"m_skillPercent": 1,
+ 				"m_iCurrentLevel": 300
+ 			},
+ 			{
+ 				"m_iID": 6,
+ 				"m_sName": "Essence of Valhalla",
+ 				"m_iIconId": "red_071",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 9,
+ 				"m_skillPercent": 0.25,
+ 				"m_iCurrentLevel": 400
+ 			},
+ 			{
+ 				"m_iID": 7,
+ 				"m_sName": "Warrior Loyalty",
+ 				"m_iIconId": "red_075",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 4,
+ 				"m_skillPercent": 0.15,
+ 				"m_iCurrentLevel": 800
+ 			},
+ 			{
+ 				"m_iID": 8,
+ 				"m_sName": "Evolve",
+ 				"m_iIconId": "red_051",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 10,
+ 				"m_skillPercent": 0,
+ 				"m_iCurrentLevel": 1000
+ 			}
+ 		]
+ 	},
+ 	{
+ 		"m_iID": 6,
+ 		"m_sName": "Kola",
+ 		"m_bHired": false,
+ 		"m_bUnlocked": false,
+ 		"m_iFruitType": 5,
+ 		"m_fAttackSpeed": 5,
+ 		"m_iCurrentLevel": 0,
+ 		"m_sAttackDamagesBase": 1,
+ 		"m_SupportsAbilityList": [{
+ 				"m_iID": 1,
+ 				"m_sName": "Nature's Presence",
+ 				"m_iIconId": "violet_109",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 1,
+ 				"m_skillPercent": 0.5,
+ 				"m_iCurrentLevel": 10
+ 			},
+ 			{
+ 				"m_iID": 2,
+ 				"m_sName": "Lightning Rage",
+ 				"m_iIconId": "violet_111",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 1,
+ 				"m_skillPercent": 1,
+ 				"m_iCurrentLevel": 25
+ 			},
+ 			{
+ 				"m_iID": 3,
+ 				"m_sName": "Executioner's Breath",
+ 				"m_iIconId": "violet_114",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 4,
+ 				"m_skillPercent": 0.1,
+ 				"m_iCurrentLevel": 50
+ 			},
+ 			{
+ 				"m_iID": 4,
+ 				"m_sName": "Poison Touch",
+ 				"m_iIconId": "violet_074",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 7,
+ 				"m_skillPercent": 0.1,
+ 				"m_iCurrentLevel": 100
+ 			},
+ 			{
+ 				"m_iID": 5,
+ 				"m_sName": "Hidden Veil",
+ 				"m_iIconId": "violet_094",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 1,
+ 				"m_skillPercent": 10,
+ 				"m_iCurrentLevel": 200
+ 			},
+ 			{
+ 				"m_iID": 9,
+ 				"m_sName": "Mana Bonus",
+ 				"m_iIconId": "Support-skill-mana",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 11,
+ 				"m_skillPercent": 1,
+ 				"m_iCurrentLevel": 300
+ 			},
+ 			{
+ 				"m_iID": 6,
+ 				"m_sName": "Paralysis",
+ 				"m_iIconId": "violet_067",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 4,
+ 				"m_skillPercent": 0.25,
+ 				"m_iCurrentLevel": 400
+ 			},
+ 			{
+ 				"m_iID": 7,
+ 				"m_sName": "Dynamic Force",
+ 				"m_iIconId": "violet_053",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 1,
+ 				"m_skillPercent": 100,
+ 				"m_iCurrentLevel": 800
+ 			},
+ 			{
+ 				"m_iID": 8,
+ 				"m_sName": "Evolve",
+ 				"m_iIconId": "violet_101",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 10,
+ 				"m_skillPercent": 0,
+ 				"m_iCurrentLevel": 1000
+ 			}
+ 		]
+ 	},
+ 	{
+ 		"m_iID": 7,
+ 		"m_sName": "Chhorda",
+ 		"m_bHired": false,
+ 		"m_bUnlocked": false,
+ 		"m_iFruitType": 3,
+ 		"m_fAttackSpeed": 6,
+ 		"m_iCurrentLevel": 0,
+ 		"m_sAttackDamagesBase": 1,
+ 		"m_SupportsAbilityList": [{
+ 				"m_iID": 1,
+ 				"m_sName": "Silver Rider",
+ 				"m_iIconId": "blue_072",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 1,
+ 				"m_skillPercent": 1.5,
+ 				"m_iCurrentLevel": 10
+ 			},
+ 			{
+ 				"m_iID": 2,
+ 				"m_sName": "Guiding Chant",
+ 				"m_iIconId": "blue_094",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 1,
+ 				"m_skillPercent": 8.5,
+ 				"m_iCurrentLevel": 25
+ 			},
+ 			{
+ 				"m_iID": 3,
+ 				"m_sName": "Cloacked Rebel",
+ 				"m_iIconId": "blue_110",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 2,
+ 				"m_skillPercent": 0.05,
+ 				"m_iCurrentLevel": 50
+ 			},
+ 			{
+ 				"m_iID": 4,
+ 				"m_sName": "Activism",
+ 				"m_iIconId": "blue_119",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 4,
+ 				"m_skillPercent": 0.2,
+ 				"m_iCurrentLevel": 100
+ 			},
+ 			{
+ 				"m_iID": 5,
+ 				"m_sName": "Beacon of Hope",
+ 				"m_iIconId": "blue_122",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 4,
+ 				"m_skillPercent": 0.3,
+ 				"m_iCurrentLevel": 200
+ 			},
+ 			{
+ 				"m_iID": 6,
+ 				"m_sName": "Haunting Barrage",
+ 				"m_iIconId": "blue_123",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 7,
+ 				"m_skillPercent": 0.05,
+ 				"m_iCurrentLevel": 400
+ 			},
+ 			{
+ 				"m_iID": 9,
+ 				"m_sName": "Mana Bonus",
+ 				"m_iIconId": "Support-skill-mana",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 11,
+ 				"m_skillPercent": 1,
+ 				"m_iCurrentLevel": 600
+ 			},
+ 			{
+ 				"m_iID": 7,
+ 				"m_sName": "Spirit Harvest",
+ 				"m_iIconId": "blue_126",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 1,
+ 				"m_skillPercent": 120,
+ 				"m_iCurrentLevel": 800
+ 			},
+ 			{
+ 				"m_iID": 8,
+ 				"m_sName": "Evolve",
+ 				"m_iIconId": "blue_127",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 10,
+ 				"m_skillPercent": 0,
+ 				"m_iCurrentLevel": 1000
+ 			}
+ 		]
+ 	},
+ 	{
+ 		"m_iID": 8,
+ 		"m_sName": "Mala",
+ 		"m_bHired": false,
+ 		"m_bUnlocked": false,
+ 		"m_iFruitType": 4,
+ 		"m_fAttackSpeed": 7,
+ 		"m_iCurrentLevel": 0,
+ 		"m_sAttackDamagesBase": 1,
+ 		"m_SupportsAbilityList": [{
+ 				"m_iID": 1,
+ 				"m_sName": "Ruthless Pursuit",
+ 				"m_iIconId": "orange_026",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 1,
+ 				"m_skillPercent": 2,
+ 				"m_iCurrentLevel": 10
+ 			},
+ 			{
+ 				"m_iID": 2,
+ 				"m_sName": "Cloud of Justice",
+ 				"m_iIconId": "orange_020",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 1,
+ 				"m_skillPercent": 7,
+ 				"m_iCurrentLevel": 25
+ 			},
+ 			{
+ 				"m_iID": 3,
+ 				"m_sName": "Merciless",
+ 				"m_iIconId": "orange_017",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 4,
+ 				"m_skillPercent": 0.1,
+ 				"m_iCurrentLevel": 50
+ 			},
+ 			{
+ 				"m_iID": 4,
+ 				"m_sName": "Devilish Charmer",
+ 				"m_iIconId": "orange_028",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 4,
+ 				"m_skillPercent": 0.2,
+ 				"m_iCurrentLevel": 100
+ 			},
+ 			{
+ 				"m_iID": 5,
+ 				"m_sName": "Dungeon Trapper",
+ 				"m_iIconId": "orange_067",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 7,
+ 				"m_skillPercent": 0.05,
+ 				"m_iCurrentLevel": 200
+ 			},
+ 			{
+ 				"m_iID": 6,
+ 				"m_sName": "Custom Machinery",
+ 				"m_iIconId": "orange_066",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 6,
+ 				"m_skillPercent": 0.02,
+ 				"m_iCurrentLevel": 400
+ 			},
+ 			{
+ 				"m_iID": 7,
+ 				"m_sName": "Methodically Manic",
+ 				"m_iIconId": "orange_064",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 1,
+ 				"m_skillPercent": 100,
+ 				"m_iCurrentLevel": 800
+ 			},
+ 			{
+ 				"m_iID": 8,
+ 				"m_sName": "Evolve",
+ 				"m_iIconId": "orange_072",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 10,
+ 				"m_skillPercent": 0,
+ 				"m_iCurrentLevel": 1000
+ 			}
+ 		]
+ 	},
+ 	{
+ 		"m_iID": 9,
+ 		"m_sName": "Botom",
+ 		"m_bHired": false,
+ 		"m_bUnlocked": false,
+ 		"m_iFruitType": 5,
+ 		"m_fAttackSpeed": 5,
+ 		"m_iCurrentLevel": 0,
+ 		"m_sAttackDamagesBase": 1,
+ 		"m_SupportsAbilityList": [{
+ 				"m_iID": 1,
+ 				"m_sName": "Land Warrior",
+ 				"m_iIconId": "violet_059",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 1,
+ 				"m_skillPercent": 3,
+ 				"m_iCurrentLevel": 10
+ 			},
+ 			{
+ 				"m_iID": 2,
+ 				"m_sName": "Scythe Master",
+ 				"m_iIconId": "violet_091",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 8,
+ 				"m_skillPercent": 0.1,
+ 				"m_iCurrentLevel": 25
+ 			},
+ 			{
+ 				"m_iID": 3,
+ 				"m_sName": "Scorched Essence",
+ 				"m_iIconId": "violet_087",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 3,
+ 				"m_skillPercent": 0.004,
+ 				"m_iCurrentLevel": 50
+ 			},
+ 			{
+ 				"m_iID": 4,
+ 				"m_sName": "Winds of Clarity",
+ 				"m_iIconId": "violet_007",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 8,
+ 				"m_skillPercent": 0.15,
+ 				"m_iCurrentLevel": 100
+ 			},
+ 			{
+ 				"m_iID": 5,
+ 				"m_sName": "Death March",
+ 				"m_iIconId": "violet_129",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 9,
+ 				"m_skillPercent": 0.2,
+ 				"m_iCurrentLevel": 200
+ 			},
+ 			{
+ 				"m_iID": 6,
+ 				"m_sName": "Battle Brawler",
+ 				"m_iIconId": "violet_122",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 2,
+ 				"m_skillPercent": 0.05,
+ 				"m_iCurrentLevel": 400
+ 			},
+ 			{
+ 				"m_iID": 10,
+ 				"m_sName": "Wave Reduce",
+ 				"m_iIconId": "Support-skill-wave",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 5,
+ 				"m_skillPercent": 1,
+ 				"m_iCurrentLevel": 600
+ 			},
+ 			{
+ 				"m_iID": 7,
+ 				"m_sName": "Winds of Calm",
+ 				"m_iIconId": "violet_048",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 1,
+ 				"m_skillPercent": 100,
+ 				"m_iCurrentLevel": 800
+ 			},
+ 			{
+ 				"m_iID": 8,
+ 				"m_sName": "Evolve",
+ 				"m_iIconId": "violet_125",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 10,
+ 				"m_skillPercent": 0,
+ 				"m_iCurrentLevel": 1000
+ 			}
+ 		]
+ 	},
+ 	{
+ 		"m_iID": 10,
+ 		"m_sName": "Neang Romsai Sork",
+ 		"m_bHired": false,
+ 		"m_bUnlocked": false,
+ 		"m_iFruitType": 3,
+ 		"m_fAttackSpeed": 6,
+ 		"m_iCurrentLevel": 0,
+ 		"m_sAttackDamagesBase": 1,
+ 		"m_SupportsAbilityList": [{
+ 				"m_iID": 1,
+ 				"m_sName": "Nature's Revenge",
+ 				"m_iIconId": "blue_153",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 1,
+ 				"m_skillPercent": 2.5,
+ 				"m_iCurrentLevel": 10
+ 			},
+ 			{
+ 				"m_iID": 2,
+ 				"m_sName": "Hydra Force",
+ 				"m_iIconId": "blue_114",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 1,
+ 				"m_skillPercent": 13,
+ 				"m_iCurrentLevel": 25
+ 			},
+ 			{
+ 				"m_iID": 3,
+ 				"m_sName": "Death Flight",
+ 				"m_iIconId": "blue_159",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 4,
+ 				"m_skillPercent": 0.05,
+ 				"m_iCurrentLevel": 50
+ 			},
+ 			{
+ 				"m_iID": 4,
+ 				"m_sName": "Animal Advantage",
+ 				"m_iIconId": "blue_121",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 7,
+ 				"m_skillPercent": 0.05,
+ 				"m_iCurrentLevel": 100
+ 			},
+ 			{
+ 				"m_iID": 5,
+ 				"m_sName": "Viality",
+ 				"m_iIconId": "blue_136",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 3,
+ 				"m_skillPercent": 0.004,
+ 				"m_iCurrentLevel": 200
+ 			},
+ 			{
+ 				"m_iID": 6,
+ 				"m_sName": "Charcoal Screen",
+ 				"m_iIconId": "blue_128",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 2,
+ 				"m_skillPercent": 0.05,
+ 				"m_iCurrentLevel": 400
+ 			},
+ 			{
+ 				"m_iID": 7,
+ 				"m_sName": "Dark Veil",
+ 				"m_iIconId": "blue_179",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 8,
+ 				"m_skillPercent": 0.2,
+ 				"m_iCurrentLevel": 800
+ 			},
+ 			{
+ 				"m_iID": 8,
+ 				"m_sName": "Evolve",
+ 				"m_iIconId": "blue_166",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 10,
+ 				"m_skillPercent": 0,
+ 				"m_iCurrentLevel": 1000
+ 			}
+ 		]
+ 	},
+ 	{
+ 		"m_iID": 11,
+ 		"m_sName": "Kamov",
+ 		"m_bHired": false,
+ 		"m_bUnlocked": false,
+ 		"m_iFruitType": 4,
+ 		"m_fAttackSpeed": 8,
+ 		"m_iCurrentLevel": 0,
+ 		"m_sAttackDamagesBase": 1,
+ 		"m_SupportsAbilityList": [{
+ 				"m_iID": 1,
+ 				"m_sName": "Essence of Horn",
+ 				"m_iIconId": "orange_085",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 1,
+ 				"m_skillPercent": 1.5,
+ 				"m_iCurrentLevel": 10
+ 			},
+ 			{
+ 				"m_iID": 2,
+ 				"m_sName": "Command Ritual",
+ 				"m_iIconId": "orange_039",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 8,
+ 				"m_skillPercent": 0.1,
+ 				"m_iCurrentLevel": 25
+ 			},
+ 			{
+ 				"m_iID": 3,
+ 				"m_sName": "Tribal Vision",
+ 				"m_iIconId": "orange_038",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 4,
+ 				"m_skillPercent": 0.1,
+ 				"m_iCurrentLevel": 50
+ 			},
+ 			{
+ 				"m_iID": 4,
+ 				"m_sName": "Battle Thirst",
+ 				"m_iIconId": "orange_034",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 3,
+ 				"m_skillPercent": 0.004,
+ 				"m_iCurrentLevel": 100
+ 			},
+ 			{
+ 				"m_iID": 5,
+ 				"m_sName": "Royal Presence",
+ 				"m_iIconId": "orange_084",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 9,
+ 				"m_skillPercent": 0.2,
+ 				"m_iCurrentLevel": 200
+ 			},
+ 			{
+ 				"m_iID": 6,
+ 				"m_sName": "Relentless Force",
+ 				"m_iIconId": "orange_131",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 6,
+ 				"m_skillPercent": 0.01,
+ 				"m_iCurrentLevel": 400
+ 			},
+ 			{
+ 				"m_iID": 7,
+ 				"m_sName": "Unforgiving",
+ 				"m_iIconId": "orange_129",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 4,
+ 				"m_skillPercent": 0.3,
+ 				"m_iCurrentLevel": 800
+ 			},
+ 			{
+ 				"m_iID": 8,
+ 				"m_sName": "Evolve",
+ 				"m_iIconId": "orange_033",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 10,
+ 				"m_skillPercent": 0,
+ 				"m_iCurrentLevel": 1000
+ 			}
+ 		]
+ 	},
+ 	{
+ 		"m_iID": 12,
+ 		"m_sName": "Angulimear",
+ 		"m_bHired": false,
+ 		"m_bUnlocked": false,
+ 		"m_iFruitType": 0,
+ 		"m_fAttackSpeed": 7,
+ 		"m_iCurrentLevel": 0,
+ 		"m_sAttackDamagesBase": 1,
+ 		"m_SupportsAbilityList": [{
+ 				"m_iID": 1,
+ 				"m_sName": "Arthur's Revenge",
+ 				"m_iIconId": "red_036",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 1,
+ 				"m_skillPercent": 2,
+ 				"m_iCurrentLevel": 10
+ 			},
+ 			{
+ 				"m_iID": 2,
+ 				"m_sName": "Call of the Relic",
+ 				"m_iIconId": "red_038",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 4,
+ 				"m_skillPercent": 0.1,
+ 				"m_iCurrentLevel": 25
+ 			},
+ 			{
+ 				"m_iID": 3,
+ 				"m_sName": "Circle of Atonement",
+ 				"m_iIconId": "red_048",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 3,
+ 				"m_skillPercent": 0.004,
+ 				"m_iCurrentLevel": 50
+ 			},
+ 			{
+ 				"m_iID": 4,
+ 				"m_sName": "Enchanted Veil",
+ 				"m_iIconId": "red_009",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 8,
+ 				"m_skillPercent": 0.15,
+ 				"m_iCurrentLevel": 100
+ 			},
+ 			{
+ 				"m_iID": 5,
+ 				"m_sName": "Traveller",
+ 				"m_iIconId": "red_044",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 9,
+ 				"m_skillPercent": 0.2,
+ 				"m_iCurrentLevel": 200
+ 			},
+ 			{
+ 				"m_iID": 6,
+ 				"m_sName": "Relentless",
+ 				"m_iIconId": "red_035",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 1,
+ 				"m_skillPercent": 19,
+ 				"m_iCurrentLevel": 400
+ 			},
+ 			{
+ 				"m_iID": 7,
+ 				"m_sName": "The Sword's Path",
+ 				"m_iIconId": "red_054",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 4,
+ 				"m_skillPercent": 0.2,
+ 				"m_iCurrentLevel": 800
+ 			},
+ 			{
+ 				"m_iID": 8,
+ 				"m_sName": "Evolve",
+ 				"m_iIconId": "red_072",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 10,
+ 				"m_skillPercent": 0,
+ 				"m_iCurrentLevel": 1000
+ 			}
+ 		]
+ 	},
+ 	{
+ 		"m_iID": 13,
+ 		"m_sName": "Machar",
+ 		"m_bHired": false,
+ 		"m_bUnlocked": false,
+ 		"m_iFruitType": 3,
+ 		"m_fAttackSpeed": 5,
+ 		"m_iCurrentLevel": 0,
+ 		"m_sAttackDamagesBase": 1,
+ 		"m_SupportsAbilityList": [{
+ 				"m_iID": 1,
+ 				"m_sName": "Sphinx Presence",
+ 				"m_iIconId": "blue_165",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 1,
+ 				"m_skillPercent": 2,
+ 				"m_iCurrentLevel": 10
+ 			},
+ 			{
+ 				"m_iID": 2,
+ 				"m_sName": "Panther's Touch",
+ 				"m_iIconId": "blue_164",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 4,
+ 				"m_skillPercent": 0.05,
+ 				"m_iCurrentLevel": 25
+ 			},
+ 			{
+ 				"m_iID": 3,
+ 				"m_sName": "Copper Skin",
+ 				"m_iIconId": "blue_156",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 4,
+ 				"m_skillPercent": 0.07,
+ 				"m_iCurrentLevel": 50
+ 			},
+ 			{
+ 				"m_iID": 9,
+ 				"m_sName": "Mana Bonus",
+ 				"m_iIconId": "Support-skill-mana",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 11,
+ 				"m_skillPercent": 1,
+ 				"m_iCurrentLevel": 60
+ 			},
+ 			{
+ 				"m_iID": 4,
+ 				"m_sName": "Special Fighter",
+ 				"m_iIconId": "blue_101",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 1,
+ 				"m_skillPercent": 6,
+ 				"m_iCurrentLevel": 100
+ 			},
+ 			{
+ 				"m_iID": 5,
+ 				"m_sName": "Skull Cap",
+ 				"m_iIconId": "blue_105",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 2,
+ 				"m_skillPercent": 0.05,
+ 				"m_iCurrentLevel": 200
+ 			},
+ 			{
+ 				"m_iID": 6,
+ 				"m_sName": "Master Manipulator",
+ 				"m_iIconId": "blue_098",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 9,
+ 				"m_skillPercent": 0.2,
+ 				"m_iCurrentLevel": 400
+ 			},
+ 			{
+ 				"m_iID": 7,
+ 				"m_sName": "Perpetual Impulsivity",
+ 				"m_iIconId": "blue_161",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 4,
+ 				"m_skillPercent": 0.3,
+ 				"m_iCurrentLevel": 800
+ 			},
+ 			{
+ 				"m_iID": 8,
+ 				"m_sName": "Evolve",
+ 				"m_iIconId": "blue_097",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 10,
+ 				"m_skillPercent": 0,
+ 				"m_iCurrentLevel": 1000
+ 			}
+ 		]
+ 	},
+ 	{
+ 		"m_iID": 14,
+ 		"m_sName": "Neang Phan",
+ 		"m_bHired": false,
+ 		"m_bUnlocked": false,
+ 		"m_iFruitType": 4,
+ 		"m_fAttackSpeed": 6,
+ 		"m_iCurrentLevel": 0,
+ 		"m_sAttackDamagesBase": 1,
+ 		"m_SupportsAbilityList": [{
+ 				"m_iID": 1,
+ 				"m_sName": "Blunt Strength",
+ 				"m_iIconId": "orange_071",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 1,
+ 				"m_skillPercent": 1.5,
+ 				"m_iCurrentLevel": 10
+ 			},
+ 			{
+ 				"m_iID": 2,
+ 				"m_sName": "Viking Slash Force",
+ 				"m_iIconId": "orange_069",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 4,
+ 				"m_skillPercent": 0.05,
+ 				"m_iCurrentLevel": 25
+ 			},
+ 			{
+ 				"m_iID": 3,
+ 				"m_sName": "Rune Enabler",
+ 				"m_iIconId": "orange_068",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 4,
+ 				"m_skillPercent": 0.3,
+ 				"m_iCurrentLevel": 50
+ 			},
+ 			{
+ 				"m_iID": 4,
+ 				"m_sName": "Bearded Fortitude",
+ 				"m_iIconId": "orange_055",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 7,
+ 				"m_skillPercent": 0.05,
+ 				"m_iCurrentLevel": 100
+ 			},
+ 			{
+ 				"m_iID": 9,
+ 				"m_sName": "Mana Bonus",
+ 				"m_iIconId": "Support-skill-mana",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 11,
+ 				"m_skillPercent": 1,
+ 				"m_iCurrentLevel": 150
+ 			},
+ 			{
+ 				"m_iID": 5,
+ 				"m_sName": "Spirit Vessel",
+ 				"m_iIconId": "orange_042",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 1,
+ 				"m_skillPercent": 50,
+ 				"m_iCurrentLevel": 200
+ 			},
+ 			{
+ 				"m_iID": 6,
+ 				"m_sName": "Essence of Valhalla",
+ 				"m_iIconId": "orange_037",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 4,
+ 				"m_skillPercent": 0.25,
+ 				"m_iCurrentLevel": 400
+ 			},
+ 			{
+ 				"m_iID": 7,
+ 				"m_sName": "Warrior Loyalty",
+ 				"m_iIconId": "orange_024",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 1,
+ 				"m_skillPercent": 100,
+ 				"m_iCurrentLevel": 800
+ 			},
+ 			{
+ 				"m_iID": 8,
+ 				"m_sName": "Evolve",
+ 				"m_iIconId": "orange_116",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 10,
+ 				"m_skillPercent": 0,
+ 				"m_iCurrentLevel": 1000
+ 			}
+ 		]
+ 	},
+ 	{
+ 		"m_iID": 15,
+ 		"m_sName": "Tida",
+ 		"m_bHired": false,
+ 		"m_bUnlocked": false,
+ 		"m_iFruitType": 0,
+ 		"m_fAttackSpeed": 8,
+ 		"m_iCurrentLevel": 0,
+ 		"m_sAttackDamagesBase": 1,
+ 		"m_SupportsAbilityList": [{
+ 				"m_iID": 1,
+ 				"m_sName": "Blunt Strength",
+ 				"m_iIconId": "red_046",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 1,
+ 				"m_skillPercent": 1.5,
+ 				"m_iCurrentLevel": 10
+ 			},
+ 			{
+ 				"m_iID": 2,
+ 				"m_sName": "Viking Slash Force",
+ 				"m_iIconId": "red_047",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 6,
+ 				"m_iFruitType": 0,
+ 				"m_skillPercent": 0.01,
+ 				"m_iCurrentLevel": 25
+ 			},
+ 			{
+ 				"m_iID": 3,
+ 				"m_sName": "Rune Enabler",
+ 				"m_iIconId": "red_049",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 4,
+ 				"m_skillPercent": 0.05,
+ 				"m_iCurrentLevel": 50
+ 			},
+ 			{
+ 				"m_iID": 4,
+ 				"m_sName": "Bearded Fortitude",
+ 				"m_iIconId": "red_060",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 8,
+ 				"m_skillPercent": 0.15,
+ 				"m_iCurrentLevel": 100
+ 			},
+ 			{
+ 				"m_iID": 5,
+ 				"m_sName": "Spirit Vessel",
+ 				"m_iIconId": "red_043",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 9,
+ 				"m_skillPercent": 0.2,
+ 				"m_iCurrentLevel": 200
+ 			},
+ 			{
+ 				"m_iID": 9,
+ 				"m_sName": "Mana Bonus",
+ 				"m_iIconId": "Support-skill-mana",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 11,
+ 				"m_skillPercent": 1,
+ 				"m_iCurrentLevel": 300
+ 			},
+ 			{
+ 				"m_iID": 6,
+ 				"m_sName": "Essence of Valhalla",
+ 				"m_iIconId": "red_042",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 9,
+ 				"m_skillPercent": 0.25,
+ 				"m_iCurrentLevel": 400
+ 			},
+ 			{
+ 				"m_iID": 7,
+ 				"m_sName": "Warrior Loyalty",
+ 				"m_iIconId": "red_076",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 4,
+ 				"m_skillPercent": 0.15,
+ 				"m_iCurrentLevel": 800
+ 			},
+ 			{
+ 				"m_iID": 8,
+ 				"m_sName": "Evolve",
+ 				"m_iIconId": "red_050",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 10,
+ 				"m_skillPercent": 0,
+ 				"m_iCurrentLevel": 1000
+ 			}
+ 		]
+ 	},
+ 	{
+ 		"m_iID": 16,
+ 		"m_sName": "Chey",
+ 		"m_bHired": false,
+ 		"m_bUnlocked": false,
+ 		"m_iFruitType": 5,
+ 		"m_fAttackSpeed": 7,
+ 		"m_iCurrentLevel": 0,
+ 		"m_sAttackDamagesBase": 1,
+ 		"m_SupportsAbilityList": [{
+ 				"m_iID": 1,
+ 				"m_sName": "Silver Rider",
+ 				"m_iIconId": "violet_082",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 1,
+ 				"m_skillPercent": 1.5,
+ 				"m_iCurrentLevel": 10
+ 			},
+ 			{
+ 				"m_iID": 2,
+ 				"m_sName": "Guiding Chant",
+ 				"m_iIconId": "violet_095",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 1,
+ 				"m_skillPercent": 8.5,
+ 				"m_iCurrentLevel": 25
+ 			},
+ 			{
+ 				"m_iID": 3,
+ 				"m_sName": "Cloacked Rebel",
+ 				"m_iIconId": "violet_110",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 2,
+ 				"m_skillPercent": 0.05,
+ 				"m_iCurrentLevel": 50
+ 			},
+ 			{
+ 				"m_iID": 4,
+ 				"m_sName": "Activism",
+ 				"m_iIconId": "violet_123",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 4,
+ 				"m_skillPercent": 0.2,
+ 				"m_iCurrentLevel": 100
+ 			},
+ 			{
+ 				"m_iID": 5,
+ 				"m_sName": "Beacon of Hope",
+ 				"m_iIconId": "violet_070",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 4,
+ 				"m_skillPercent": 0.3,
+ 				"m_iCurrentLevel": 200
+ 			},
+ 			{
+ 				"m_iID": 6,
+ 				"m_sName": "Haunting Barrage",
+ 				"m_iIconId": "violet_120",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 7,
+ 				"m_skillPercent": 0.05,
+ 				"m_iCurrentLevel": 400
+ 			},
+ 			{
+ 				"m_iID": 9,
+ 				"m_sName": "Mana Bonus",
+ 				"m_iIconId": "Support-skill-mana",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 11,
+ 				"m_skillPercent": 1,
+ 				"m_iCurrentLevel": 600
+ 			},
+ 			{
+ 				"m_iID": 7,
+ 				"m_sName": "Spirit Harvest",
+ 				"m_iIconId": "violet_097",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 1,
+ 				"m_skillPercent": 120,
+ 				"m_iCurrentLevel": 800
+ 			},
+ 			{
+ 				"m_iID": 8,
+ 				"m_sName": "Evolve",
+ 				"m_iIconId": "violet_076",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 10,
+ 				"m_skillPercent": 0,
+ 				"m_iCurrentLevel": 1000
+ 			}
+ 		]
+ 	},
+ 	{
+ 		"m_iID": 17,
+ 		"m_sName": "Angk Tep",
+ 		"m_bHired": false,
+ 		"m_evolved": false,
+ 		"m_bUnlocked": false,
+ 		"m_iFruitType": 4,
+ 		"m_fAttackSpeed": 4,
+ 		"m_iCurrentLevel": 0,
+ 		"m_SupportStandType": 2,
+ 		"m_sAttackDamagesBase": 1,
+ 		"m_SupportsAbilityList": [{
+ 				"m_iID": 1,
+ 				"m_sName": "Superstition",
+ 				"m_iIconId": "orange_124",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 2,
+ 				"m_skillPercent": 0.05,
+ 				"m_iCurrentLevel": 10
+ 			},
+ 			{
+ 				"m_iID": 2,
+ 				"m_sName": "Ghost Breath",
+ 				"m_iIconId": "orange_009",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 1,
+ 				"m_skillPercent": 1,
+ 				"m_iCurrentLevel": 25
+ 			},
+ 			{
+ 				"m_iID": 3,
+ 				"m_sName": "Spectral Nova",
+ 				"m_iIconId": "orange_010",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 1,
+ 				"m_skillPercent": 10,
+ 				"m_iCurrentLevel": 50
+ 			},
+ 			{
+ 				"m_iID": 4,
+ 				"m_sName": "Brooding Thrill",
+ 				"m_iIconId": "orange_018",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 3,
+ 				"m_skillPercent": 0.0004,
+ 				"m_iCurrentLevel": 100
+ 			},
+ 			{
+ 				"m_iID": 5,
+ 				"m_sName": "Guardian's Chant",
+ 				"m_iIconId": "orange_012",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 4,
+ 				"m_skillPercent": 0.1,
+ 				"m_iCurrentLevel": 200
+ 			},
+ 			{
+ 				"m_iID": 6,
+ 				"m_sName": "Soul Initiative",
+ 				"m_iIconId": "orange_011",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 8,
+ 				"m_skillPercent": 0.1,
+ 				"m_iCurrentLevel": 400
+ 			},
+ 			{
+ 				"m_iID": 10,
+ 				"m_sName": "Wave Reduce",
+ 				"m_iIconId": "Support-skill-wave",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 5,
+ 				"m_skillPercent": 1,
+ 				"m_iCurrentLevel": 600
+ 			},
+ 			{
+ 				"m_iID": 7,
+ 				"m_sName": "Medusa's Strife",
+ 				"m_iIconId": "orange_062",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 1,
+ 				"m_skillPercent": 100,
+ 				"m_iCurrentLevel": 800
+ 			},
+ 			{
+ 				"m_iID": 8,
+ 				"m_sName": "Evolve",
+ 				"m_iIconId": "orange_061",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 10,
+ 				"m_skillPercent": 0,
+ 				"m_iCurrentLevel": 1000
+ 			}
+ 		]
+ 	},
+ 	{
+ 		"m_iID": 18,
+ 		"m_sName": "Terah Mara",
+ 		"m_bHired": false,
+ 		"m_evolved": false,
+ 		"m_bUnlocked": false,
+ 		"m_iFruitType": 0,
+ 		"m_fAttackSpeed": 3,
+ 		"m_iCurrentLevel": 0,
+ 		"m_SupportStandType": 2,
+ 		"m_sAttackDamagesBase": 1,
+ 		"m_SupportsAbilityList": [{
+ 				"m_iID": 1,
+ 				"m_sName": "Stomping Presence",
+ 				"m_iIconId": "red_069",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 1,
+ 				"m_skillPercent": 1,
+ 				"m_iCurrentLevel": 10
+ 			},
+ 			{
+ 				"m_iID": 2,
+ 				"m_sName": "Hammer Pulse",
+ 				"m_iIconId": "red_068",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 1,
+ 				"m_skillPercent": 8,
+ 				"m_iCurrentLevel": 25
+ 			},
+ 			{
+ 				"m_iID": 3,
+ 				"m_sName": "Psychosis",
+ 				"m_iIconId": "red_067",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 8,
+ 				"m_skillPercent": 0.06,
+ 				"m_iCurrentLevel": 50
+ 			},
+ 			{
+ 				"m_iID": 4,
+ 				"m_sName": "War Beacon",
+ 				"m_iIconId": "red_066",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 1,
+ 				"m_skillPercent": 5,
+ 				"m_iCurrentLevel": 100
+ 			},
+ 			{
+ 				"m_iID": 9,
+ 				"m_sName": "Mana Bonus",
+ 				"m_iIconId": "Support-skill-mana",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 11,
+ 				"m_skillPercent": 1,
+ 				"m_iCurrentLevel": 150
+ 			},
+ 			{
+ 				"m_iID": 5,
+ 				"m_sName": "Hammer Circle",
+ 				"m_iIconId": "red_058",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 7,
+ 				"m_skillPercent": 0.05,
+ 				"m_iCurrentLevel": 200
+ 			},
+ 			{
+ 				"m_iID": 6,
+ 				"m_sName": "Battle Fortitude",
+ 				"m_iIconId": "red_065",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 4,
+ 				"m_skillPercent": 0.2,
+ 				"m_iCurrentLevel": 400
+ 			},
+ 			{
+ 				"m_iID": 7,
+ 				"m_sName": "Steel Nerves",
+ 				"m_iIconId": "red_053",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 9,
+ 				"m_skillPercent": 0.2,
+ 				"m_iCurrentLevel": 800
+ 			},
+ 			{
+ 				"m_iID": 8,
+ 				"m_sName": "Evolve",
+ 				"m_iIconId": "red_070",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 10,
+ 				"m_skillPercent": 0,
+ 				"m_iCurrentLevel": 1000
+ 			}
+ 		]
+ 	},
+ 	{
+ 		"m_iID": 19,
+ 		"m_sName": "Terah Meura",
+ 		"m_bHired": false,
+ 		"m_bUnlocked": false,
+ 		"m_iFruitType": 5,
+ 		"m_fAttackSpeed": 5,
+ 		"m_iCurrentLevel": 0,
+ 		"m_SupportStandType": 2,
+ 		"m_sAttackDamagesBase": 1,
+ 		"m_SupportsAbilityList": [{
+ 				"m_iID": 1,
+ 				"m_sName": "Nature's Presence",
+ 				"m_iIconId": "violet_060",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 1,
+ 				"m_skillPercent": 0.5,
+ 				"m_iCurrentLevel": 10
+ 			},
+ 			{
+ 				"m_iID": 2,
+ 				"m_sName": "Lightning Rage",
+ 				"m_iIconId": "violet_062",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 1,
+ 				"m_skillPercent": 1,
+ 				"m_iCurrentLevel": 25
+ 			},
+ 			{
+ 				"m_iID": 3,
+ 				"m_sName": "Executioner's Breath",
+ 				"m_iIconId": "violet_064",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 4,
+ 				"m_skillPercent": 0.1,
+ 				"m_iCurrentLevel": 50
+ 			},
+ 			{
+ 				"m_iID": 4,
+ 				"m_sName": "Poison Touch",
+ 				"m_iIconId": "violet_057",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 7,
+ 				"m_skillPercent": 0.1,
+ 				"m_iCurrentLevel": 100
+ 			},
+ 			{
+ 				"m_iID": 5,
+ 				"m_sName": "Hidden Veil",
+ 				"m_iIconId": "violet_073",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 1,
+ 				"m_skillPercent": 10,
+ 				"m_iCurrentLevel": 200
+ 			},
+ 			{
+ 				"m_iID": 9,
+ 				"m_sName": "Mana Bonus",
+ 				"m_iIconId": "Support-skill-mana",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 11,
+ 				"m_skillPercent": 1,
+ 				"m_iCurrentLevel": 300
+ 			},
+ 			{
+ 				"m_iID": 6,
+ 				"m_sName": "Paralysis",
+ 				"m_iIconId": "violet_085",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 4,
+ 				"m_skillPercent": 0.25,
+ 				"m_iCurrentLevel": 400
+ 			},
+ 			{
+ 				"m_iID": 7,
+ 				"m_sName": "Dynamic Force",
+ 				"m_iIconId": "violet_126",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 1,
+ 				"m_skillPercent": 100,
+ 				"m_iCurrentLevel": 800
+ 			},
+ 			{
+ 				"m_iID": 8,
+ 				"m_sName": "Evolve",
+ 				"m_iIconId": "violet_056",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 10,
+ 				"m_skillPercent": 0,
+ 				"m_iCurrentLevel": 1000
+ 			}
+ 		]
+ 	},
+ 	{
+ 		"m_iID": 20,
+ 		"m_sName": "Angk Piseth",
+ 		"m_bHired": false,
+ 		"m_bUnlocked": false,
+ 		"m_iFruitType": 3,
+ 		"m_fAttackSpeed": 7,
+ 		"m_iCurrentLevel": 0,
+ 		"m_SupportStandType": 2,
+ 		"m_sAttackDamagesBase": 1,
+ 		"m_SupportsAbilityList": [{
+ 				"m_iID": 1,
+ 				"m_sName": "Ruthless Pursuit",
+ 				"m_iIconId": "blue_045",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 1,
+ 				"m_skillPercent": 2,
+ 				"m_iCurrentLevel": 10
+ 			},
+ 			{
+ 				"m_iID": 2,
+ 				"m_sName": "Cloud of Justice",
+ 				"m_iIconId": "blue_051",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 1,
+ 				"m_skillPercent": 7,
+ 				"m_iCurrentLevel": 25
+ 			},
+ 			{
+ 				"m_iID": 3,
+ 				"m_sName": "Merciless",
+ 				"m_iIconId": "blue_071",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 4,
+ 				"m_skillPercent": 0.1,
+ 				"m_iCurrentLevel": 50
+ 			},
+ 			{
+ 				"m_iID": 4,
+ 				"m_sName": "Devilish Charmer",
+ 				"m_iIconId": "blue_090",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 4,
+ 				"m_skillPercent": 0.2,
+ 				"m_iCurrentLevel": 100
+ 			},
+ 			{
+ 				"m_iID": 5,
+ 				"m_sName": "Dungeon Trapper",
+ 				"m_iIconId": "blue_092",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 7,
+ 				"m_skillPercent": 0.05,
+ 				"m_iCurrentLevel": 200
+ 			},
+ 			{
+ 				"m_iID": 6,
+ 				"m_sName": "Custom Machinery",
+ 				"m_iIconId": "blue_176",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 6,
+ 				"m_skillPercent": 0.02,
+ 				"m_iCurrentLevel": 400
+ 			},
+ 			{
+ 				"m_iID": 7,
+ 				"m_sName": "Methodically Manic",
+ 				"m_iIconId": "blue_173",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 1,
+ 				"m_skillPercent": 100,
+ 				"m_iCurrentLevel": 800
+ 			},
+ 			{
+ 				"m_iID": 8,
+ 				"m_sName": "Evolve",
+ 				"m_iIconId": "blue_169",
+ 				"m_bUnlocked": false,
+ 				"m_skillType": 10,
+ 				"m_skillPercent": 0,
+ 				"m_iCurrentLevel": 1000
+ 			}
+ 		]
+ 	}
+ ]
