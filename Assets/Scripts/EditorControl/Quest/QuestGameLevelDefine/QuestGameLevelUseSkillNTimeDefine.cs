@@ -1,15 +1,14 @@
 
 public class QuestGameLevelUseSkillNTimeDefine : QuestGameLevelBaseDefine
 {
-	private int skillId = 7;
-
 	public override int GameLevelDefine()
 	{
-		var skillData = EditorDatas.instance.GetSkillData(skillId);
+		var skillTargetId = questData.target;
+		var skillData = EditorDatas.instance.GetSkillData(skillTargetId);
 		var skillCost = SMPActiveSkillLevelConfiguration.GetNextCostConfiguration(skillData, 1);
 		var gameLevelUnlockSkill = GetGameLevelHeroCanReachLevel(skillData.Level_Unlock, skillCost);
 
-		var useTime = questData.target;
+		var useTime = questData.target2;
 		var manaConsume = SMPActiveSkillLevelConfiguration.GetNextManaConsumtion(skillData, 1);
 		var manaFarmingPerminute = SMPManaLevelConfiguration.GetManaPerMinutes();
 		var manaNeed = manaConsume * useTime;

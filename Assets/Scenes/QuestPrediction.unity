@@ -1634,6 +1634,7 @@ MonoBehaviour:
     questRatioClass: QuestScoreReachStageDefine
     priority: 1
     target: 5
+    target2: 0
     bigTargetPower: 
     duration: 0
     questGameLevelDefineClass: QuestGameLevelReachStageDefine
@@ -1644,6 +1645,7 @@ MonoBehaviour:
     questRatioClass: 
     priority: 1
     target: 5
+    target2: 0
     bigTargetPower: 3
     duration: 0
     questGameLevelDefineClass: QuestGameLevelCollectNGoldDefine
@@ -1654,6 +1656,7 @@ MonoBehaviour:
     questRatioClass: 
     priority: 1
     target: 2
+    target2: 0
     bigTargetPower: 
     duration: 0
     questGameLevelDefineClass: QuestGameLevelCollectPetDefine
@@ -1664,6 +1667,7 @@ MonoBehaviour:
     questRatioClass: 
     priority: 1
     target: 0
+    target2: 0
     bigTargetPower: 3
     duration: 20
     questGameLevelDefineClass: QuestGameLevelCollectNGoldInSecondDefine
@@ -1674,6 +1678,7 @@ MonoBehaviour:
     questRatioClass: 
     priority: 1
     target: 5
+    target2: 0
     bigTargetPower: 
     duration: 0
     questGameLevelDefineClass: QuestGameLevelCollectCrownDefine
@@ -1684,6 +1689,7 @@ MonoBehaviour:
     questRatioClass: 
     priority: 1
     target: 500
+    target2: 0
     bigTargetPower: 
     duration: 0
     questGameLevelDefineClass: QuestGameLevelUpdateHeroLvDefine
@@ -1694,6 +1700,7 @@ MonoBehaviour:
     questRatioClass: 
     priority: 1
     target: 3
+    target2: 0
     bigTargetPower: 
     duration: 0
     questGameLevelDefineClass: QuestGameLevelCombinePowerupDefine
@@ -1704,6 +1711,7 @@ MonoBehaviour:
     questRatioClass: 
     priority: 1
     target: 0
+    target2: 0
     bigTargetPower: 
     duration: 0
     questGameLevelDefineClass: QuestGameLevelObtainFirstPowerUpDefine
@@ -1713,7 +1721,8 @@ MonoBehaviour:
     questType: 1
     questRatioClass: 
     priority: 1
-    target: 2
+    target: 7
+    target2: 2
     bigTargetPower: 
     duration: 0
     questGameLevelDefineClass: QuestGameLevelUseSkillNTimeDefine
@@ -3239,6 +3248,7 @@ MonoBehaviour:
     questRatioClass: QuestScoreUpdateHeroLvDefine
     priority: 1
     target: 5
+    target2: 0
     bigTargetPower: 
     duration: 0
     questGameLevelDefineClass: QuestGameLevelUpdateHeroLvDefine
@@ -3249,6 +3259,7 @@ MonoBehaviour:
     questRatioClass: QuestScoreGhostFarmingDefine
     priority: 3
     target: 10
+    target2: 0
     bigTargetPower: 
     duration: 0
     questGameLevelDefineClass: QuestGameLevelGhostFarmingDefine
@@ -3259,6 +3270,7 @@ MonoBehaviour:
     questRatioClass: QuestScoreCoinVideoAdsDefine
     priority: 5
     target: 1
+    target2: 0
     bigTargetPower: 
     duration: 0
     questGameLevelDefineClass: QuestGameLevelVideoAdsDefine
@@ -3269,6 +3281,7 @@ MonoBehaviour:
     questRatioClass: QuestScoreReachStageDefine
     priority: 1
     target: 5
+    target2: 0
     bigTargetPower: 
     duration: 0
     questGameLevelDefineClass: QuestGameLevelReachStageDefine
@@ -3279,6 +3292,7 @@ MonoBehaviour:
     questRatioClass: 
     priority: 1
     target: 5
+    target2: 0
     bigTargetPower: 3
     duration: 0
     questGameLevelDefineClass: QuestGameLevelCollectNGoldDefine
@@ -3289,6 +3303,7 @@ MonoBehaviour:
     questRatioClass: 
     priority: 1
     target: 2
+    target2: 0
     bigTargetPower: 
     duration: 0
     questGameLevelDefineClass: QuestGameLevelCollectPetDefine
@@ -3299,6 +3314,7 @@ MonoBehaviour:
     questRatioClass: 
     priority: 1
     target: 0
+    target2: 0
     bigTargetPower: 3
     duration: 20
     questGameLevelDefineClass: QuestGameLevelCollectNGoldInSecondDefine

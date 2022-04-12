@@ -17,6 +17,7 @@ public class QuestData
 	public string questRatioClass;
 	public int priority;
 	public int target;
+	public int target2;
 
 	public string bigTargetPower;
 	public SMPNum bigTarget_GS {
