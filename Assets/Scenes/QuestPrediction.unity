@@ -1707,6 +1707,16 @@ MonoBehaviour:
     bigTargetPower: 
     duration: 0
     questGameLevelDefineClass: QuestGameLevelObtainFirstPowerUpDefine
+  - questId: 12
+    questName: Use the shield 2 times
+    gameLvTarget: 0
+    questType: 1
+    questRatioClass: 
+    priority: 1
+    target: 2
+    bigTargetPower: 
+    duration: 0
+    questGameLevelDefineClass: QuestGameLevelUseSkillNTimeDefine
   prefab: {fileID: 457620820}
   content: {fileID: 481969369}
 --- !u!114 &931926373

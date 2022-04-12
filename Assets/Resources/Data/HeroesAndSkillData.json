@@ -1,0 +1,496 @@
+[{
+		"m_iHeroID": 1,
+	"m_SkillList": [
+		{
+			"m_iSkillID": 0,
+			"m_bUnlocked": false,
+			"m_iLevel": 0
+		},
+		{
+			"m_iSkillID": 1,
+			"m_bUnlocked": false,
+			"m_iLevel": 0
+		},
+		{
+			"m_iSkillID": 2,
+			"m_bUnlocked": false,
+			"m_iLevel": 0
+		},
+		{
+			"m_iSkillID": 3,
+			"m_bUnlocked": false,
+			"m_iLevel": 0
+		},
+		{
+			"m_iSkillID": 4,
+			"m_bUnlocked": false,
+			"m_iLevel": 0
+		},
+		{
+			"m_iSkillID": 5,
+			"m_bUnlocked": false,
+			"m_iLevel": 0
+		},
+		{
+			"m_iSkillID": 10,
+			"m_bUnlocked": false,
+			"m_iLevel": 0
+		},
+		{
+			"m_iSkillID": 6,
+			"m_bUnlocked": false,
+			"m_iLevel": 0
+		},
+		{
+			"m_iSkillID": 7,
+			"m_bUnlocked": false,
+			"m_iLevel": 0
+		},
+		{
+			"m_iSkillID": 8,
+			"m_bUnlocked": false,
+			"m_iLevel": 0
+		}
+	]
+	},
+	{
+		"m_iHeroID": 2,
+		"m_SkillList": [
+			{
+				"m_iSkillID": 0,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 1,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 2,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 3,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 4,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 5,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 10,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 6,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 7,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 8,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			}
+		]
+	},
+	{
+		"m_iHeroID": 3,
+		"m_SkillList": [
+			{
+				"m_iSkillID": 0,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 1,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 2,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 3,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 4,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 5,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 10,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 6,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 7,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 8,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			}
+		]
+	},
+	{
+		"m_iHeroID": 4,
+		"m_SkillList": [
+			{
+				"m_iSkillID": 0,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 1,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 2,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 3,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 4,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 5,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 10,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 6,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 7,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 8,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			}
+		]
+	},
+	{
+		"m_iHeroID": 5,
+		"m_SkillList": [
+			{
+				"m_iSkillID": 0,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 1,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 2,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 3,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 4,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 5,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 10,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 6,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 7,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 8,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			}
+		]
+	},
+	{
+		"m_iHeroID": 6,
+		"m_SkillList": [
+			{
+				"m_iSkillID": 0,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 1,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 2,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 3,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 4,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 5,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 10,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 6,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 7,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 8,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			}
+		]
+	},
+	{
+		"m_iHeroID": 7,
+		"m_SkillList": [
+			{
+				"m_iSkillID": 0,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 1,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 2,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 3,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 4,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 5,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 10,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 6,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 7,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 8,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			}
+		]
+	},
+	{
+		"m_iHeroID": 8,
+		"m_SkillList": [
+			{
+				"m_iSkillID": 0,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 1,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 2,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 3,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 4,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 5,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 10,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 6,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 7,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 8,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			}
+		]
+	},
+	{
+		"m_iHeroID": 9,
+		"m_SkillList": [
+			{
+				"m_iSkillID": 0,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 1,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 2,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 3,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 4,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 5,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 10,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 6,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 7,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			},
+			{
+				"m_iSkillID": 8,
+				"m_bUnlocked": false,
+				"m_iLevel": 0
+			}
+		]
+	}
+]

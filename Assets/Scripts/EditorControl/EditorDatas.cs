@@ -9,6 +9,7 @@ public class EditorDatas : MonoBehaviour
 	public static EditorDatas instance;
 
 	public List<SMPUserSkillData> userSkillDatas;
+	public List<SMPHeroAndSkillData> listHeroAndSkillData;
 
 	private void Awake()
 	{
@@ -32,6 +33,17 @@ public class EditorDatas : MonoBehaviour
 			foreach (var node in nodeArray)
 			{
 				userSkillDatas.Add(new SMPUserSkillData(node.ToString()));
+			}
+		}
+
+		listHeroAndSkillData = new List<SMPHeroAndSkillData>();
+		jsonData = SMPLocalDataProvider.GetHeroAndSkillData();
+		if (!string.IsNullOrEmpty(jsonData))
+		{
+			var nodeArray = JSON.Parse(jsonData).AsArray;
+			foreach (var node in nodeArray)
+			{
+				listHeroAndSkillData.Add(new SMPHeroAndSkillData(node.ToString()));
 			}
 		}
 	}
