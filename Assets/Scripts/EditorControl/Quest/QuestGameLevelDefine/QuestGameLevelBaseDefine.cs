@@ -85,4 +85,27 @@ public abstract class QuestGameLevelBaseDefine
 		}
 		return cost;
 	}
+
+	protected SMPNum GetGoldToDrop(int gameLv)
+	{
+		var coins = SMPMathGamePlay.GetUnBaseOnLevel(gameLv, SequenceName.DropCoins);
+		return coins;
+	}
+
+	protected int GetGameLevelPetUnlock(int petUnlockTarget)
+	{
+		int lvUnlock = 0;
+		if (petUnlockTarget < 10)
+		{
+			//under 100 gamelevel => unlock 1 pet per 10 level
+			lvUnlock = petUnlockTarget * 10;
+		}
+		else
+		{
+			//upper 100 gamelevel => unlock 1 pet per 100 level
+			//minus 9 pecause we got 9 pet will unlock before 100 game level ready
+			lvUnlock = (petUnlockTarget - 9) * 100;
+		}
+		return lvUnlock;
+	}
 }
