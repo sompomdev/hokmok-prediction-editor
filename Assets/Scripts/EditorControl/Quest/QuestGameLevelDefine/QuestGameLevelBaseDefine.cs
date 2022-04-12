@@ -15,7 +15,7 @@ public abstract class QuestGameLevelBaseDefine
 		do
 		{
 			gameLv++;
-			goldEarning += EditorController.instance.GetGoldToDrop(gameLv) * QuestConstance.GHOST_PER_WAVE + 1;//ghost and boss gold drop
+			goldEarning += GetGoldToDrop(gameLv) * QuestConstance.GHOST_PER_WAVE + 1;//ghost and boss gold drop
 		}
 		while (goldEarning < goldNeed);
 
@@ -48,7 +48,7 @@ public abstract class QuestGameLevelBaseDefine
 		do
 		{
 			gameLv++;
-			goldEarning += EditorController.instance.GetGoldToDrop(gameLv) * QuestConstance.GHOST_PER_WAVE + 1;//ghost and boss gold drop
+			goldEarning += GetGoldToDrop(gameLv) * QuestConstance.GHOST_PER_WAVE + 1;//ghost and boss gold drop
 		}
 		while (goldEarning < goldNeed);
 
@@ -68,7 +68,7 @@ public abstract class QuestGameLevelBaseDefine
 		do
 		{
 			gameLv++;
-			goldEarning += EditorController.instance.GetGoldToDrop(gameLv) * QuestConstance.GHOST_PER_WAVE + 1;//ghost and boss gold drop
+			goldEarning += GetGoldToDrop(gameLv) * QuestConstance.GHOST_PER_WAVE + 1;//ghost and boss gold drop
 		}
 		while (goldEarning < cost);
 

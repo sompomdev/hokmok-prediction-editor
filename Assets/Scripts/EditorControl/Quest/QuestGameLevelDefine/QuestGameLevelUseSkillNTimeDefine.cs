@@ -14,9 +14,9 @@ public class QuestGameLevelUseSkillNTimeDefine : QuestGameLevelBaseDefine
 		var manaNeed = manaConsume * useTime;
 		var totalTimeMana = manaNeed / (manaFarmingPerminute / 60);
 		var gameLevelOnFarmingMana = GetGameLevelCanReachBaseOnTime(totalTimeMana);
-		
+
 		//UnityEngine.Debug.Log($"manaConsume {manaConsume.ToString()} manaNeed {manaNeed} manaPerMinute {manaFarmingPerminute} totalTimeMana {totalTimeMana} gameLevelFarm {gameLevelOnFarmingMana}");
 
-		return gameLevelUnlockSkill + gameLevelOnFarmingMana;
+		return gameLevelUnlockSkill;// + gameLevelOnFarmingMana;
 	}
 }

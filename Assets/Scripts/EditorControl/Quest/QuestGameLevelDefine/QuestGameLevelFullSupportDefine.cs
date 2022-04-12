@@ -11,6 +11,7 @@ public class QuestGameLevelFullSupportDefine : QuestGameLevelBaseDefine
 		var costHeroUnlockFlySupportSkill = SMPHeroLevelConfiguration.GetCostOnLevel(5, 1,flySupportSkillData.Level_Unlock);
 		var flyUnlockCount = QuestConstance.MAX_FLYING_SUPPORT;
 		var costFlySupportSkill = SMPActiveSkillLevelConfiguration.GetNextCostConfiguration(flySupportSkillData, flyUnlockCount);
+		UnityEngine.Debug.Log($"full=> unlock16Support {costUnlockSupport}+ updateHero {costHeroUnlockFlySupportSkill}+ costFlySkill {costFlySupportSkill}" );
 		var totalCost = costUnlockSupport + costHeroUnlockFlySupportSkill + costFlySupportSkill;
 		return GetGameLevelCanFarmForCost(totalCost);
 	}
