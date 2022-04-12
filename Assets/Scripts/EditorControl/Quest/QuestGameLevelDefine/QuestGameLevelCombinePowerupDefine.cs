@@ -1,3 +1,4 @@
+using UnityEngine;
 
 public class QuestGameLevelCombinePowerupDefine : QuestGameLevelBaseDefine
 {
@@ -5,10 +6,12 @@ public class QuestGameLevelCombinePowerupDefine : QuestGameLevelBaseDefine
 	{
 		var targetCombine = questData.target;
 		var costSkill = new SMPNum(0);
-		var heroLvTarget = QuestConstance.HeroLevelSkillUnlock(targetCombine);
+		var heroLvTarget = 0;//EditorDatas.instance.GetSkillData(targetCombine).Level_Unlock;
 		for(int i=0;i<targetCombine;i++)
 		{
-			costSkill += QuestConstance.HeroSkillCostUnlock(i);
+			var skillData = EditorDatas.instance.GetSkillData(i);
+			heroLvTarget = Mathf.Max(heroLvTarget, skillData.Level_Unlock);
+			costSkill += SMPActiveSkillLevelConfiguration.GetNextCostConfiguration(skillData, 1);
 		}
 		
 		return GetGameLevelHeroCanReachLevel(heroLvTarget, costSkill);
@@ -18,7 +21,7 @@ public class QuestGameLevelCombinePowerupDefine : QuestGameLevelBaseDefine
 	{
 		var gameLv = 0;
 		var goldEarning = new SMPNum(0);
-		var goldNeed = SMPHeroLevelConfiguration.GetCostOnLevel(5, heroLv) + skillCosts;
+		var goldNeed = SMPHeroLevelConfiguration.GetCostOnLevel(5, 0, heroLv) + skillCosts;
 		do
 		{
 			gameLv++;

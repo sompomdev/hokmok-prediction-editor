@@ -3,9 +3,9 @@ public class QuestGameLevelObtainFirstPowerUpDefine : QuestGameLevelBaseDefine
 {
 	public override int GameLevelDefine()
 	{
-		var costSkill = QuestConstance.HeroSkillCostUnlock(0);
-		var heroLvTarget = QuestConstance.HeroLevelSkillUnlock(0);
-
+		var dataSkill = EditorDatas.instance.GetSkillData(0);
+		var costSkill = SMPActiveSkillLevelConfiguration.GetNextCostConfiguration(dataSkill, 1);
+		var heroLvTarget = dataSkill.Level_Unlock;
 		return GetGameLevelHeroCanReachLevel(heroLvTarget, costSkill);
 	}
 
@@ -13,7 +13,7 @@ public class QuestGameLevelObtainFirstPowerUpDefine : QuestGameLevelBaseDefine
 	{
 		var gameLv = 0;
 		var goldEarning = new SMPNum(0);
-		var goldNeed = SMPHeroLevelConfiguration.GetCostOnLevel(5, heroLv) + skillCosts;
+		var goldNeed = SMPHeroLevelConfiguration.GetCostOnLevel(5, 0, heroLv) + skillCosts;
 		do
 		{
 			gameLv++;

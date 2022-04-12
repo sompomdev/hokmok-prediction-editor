@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using SimpleJSON;
+using System.Linq;
 
 public class EditorDatas : MonoBehaviour
 {
@@ -14,6 +15,11 @@ public class EditorDatas : MonoBehaviour
 		instance = this;
 
 		LoadPlayerSkill();
+	}
+
+	public SMPUserSkillData GetSkillData(int id)
+	{
+		return userSkillDatas.FirstOrDefault(s => s.m_iID == id);
 	}
 
 	public void LoadPlayerSkill()
