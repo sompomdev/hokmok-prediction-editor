@@ -61,7 +61,7 @@ public abstract class QuestGameLevelBaseDefine
 		return (int)(time / timeOnOneLevel);
 	}
 
-	protected int GetGameLevelCanFarmForCost(SMPNum skillCosts)
+	protected int GetGameLevelCanFarmForCost(SMPNum cost)
 	{
 		var gameLv = 0;
 		var goldEarning = new SMPNum(0);
@@ -70,8 +70,19 @@ public abstract class QuestGameLevelBaseDefine
 			gameLv++;
 			goldEarning += EditorController.instance.GetGoldToDrop(gameLv) * QuestConstance.GHOST_PER_WAVE + 1;//ghost and boss gold drop
 		}
-		while (goldEarning < skillCosts);
+		while (goldEarning < cost);
 
 		return gameLv;
+	}
+
+	protected SMPNum GetCostAllSupportUnlock(int supportNeedUnlock)
+	{
+		var cost = new SMPNum(0);
+		for (int i = 1; i <= supportNeedUnlock; i++)
+		{
+			var supportData = EditorDatas.instance.GetSupportData(i);
+			cost += SMPSupportLevelConfiguration.GetLevelConfiguration(supportData, 1).cost;
+		}
+		return cost;
 	}
 }

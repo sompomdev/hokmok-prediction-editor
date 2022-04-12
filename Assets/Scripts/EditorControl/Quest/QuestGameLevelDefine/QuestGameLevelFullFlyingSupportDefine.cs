@@ -1,0 +1,15 @@
+using System;
+using Sompom.Inventory;
+
+public class QuestGameLevelFullFlyingSupportDefine : QuestGameLevelBaseDefine
+{
+	public override int GameLevelDefine()
+	{
+		var flySupportSkillData = EditorDatas.instance.GetSkillData(8);
+		var costHeroUnlockFlySupportSkill = SMPHeroLevelConfiguration.GetCostOnLevel(5, 1,flySupportSkillData.Level_Unlock);
+		var flyUnlockCount = QuestConstance.MAX_FLYING_SUPPORT;
+		var costFlySupportSkillUpdate = SMPActiveSkillLevelConfiguration.GetNextCostConfiguration(flySupportSkillData, flyUnlockCount);
+		var totalCost = costHeroUnlockFlySupportSkill;// + costFlySupportSkillUpdate;
+		return GetGameLevelCanFarmForCost(totalCost);
+	}
+}
