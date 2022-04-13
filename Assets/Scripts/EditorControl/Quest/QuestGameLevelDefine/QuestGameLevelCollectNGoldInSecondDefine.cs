@@ -7,7 +7,15 @@ public class QuestGameLevelCollectNGoldInSecondDefine : QuestGameLevelBaseDefine
 
 		var goldTarget = questData.bigTarget_GS;
 		var countGhostFarm = questData.duration / QuestConstance.TAP_PER_SECOND;
-		
-		return GetGameLevelCanFarmForCost(goldTarget);
+
+		var gameLv = 0;
+		var goldCollect = new SMPNum(0);
+		do
+		{
+			gameLv++;
+			goldCollect = EditorController.instance.GetGoldToDrop(gameLv) * countGhostFarm;
+		}
+		while (goldCollect < goldTarget);
+		return gameLv;
 	}
 }
