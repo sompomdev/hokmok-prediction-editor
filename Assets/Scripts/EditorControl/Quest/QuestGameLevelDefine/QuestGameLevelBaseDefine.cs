@@ -33,7 +33,7 @@ public abstract class QuestGameLevelBaseDefine
 			var hp = EditorController.instance.GetBossHp(gameLv);
 			//var hp = EditorController.instance.GetGhostHp(gameLv);
 			var tap = EditorController.instance.TapPerSec;
-			dmgBalance = hp / (QuestConstance.TAP_PER_SECOND * tap);
+			dmgBalance = hp / (QuestConstance.KILL_PER_SECOND * tap);
 		}
 		while (dmgBalance < dmgTarget);
 
