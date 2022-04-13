@@ -11,7 +11,8 @@ public class EditorDatas : MonoBehaviour
 
 	public List<SMPUserSkillData> userSkillDatas;
 	public List<SMPHeroAndSkillData> listHeroAndSkillData;
-	public List<SMPSupportsCharacters> m_SupportsCharactersList;
+	public List<SMPSupportsCharacters> supportsCharactersList;
+	public List<SMPPetsData> petDatas;
 
 	private void Awake()
 	{
@@ -19,6 +20,7 @@ public class EditorDatas : MonoBehaviour
 
 		LoadPlayerSkill();
 		LoadSupportsControl();
+		LoadPetsData();
 	}
 
 	public SMPUserSkillData GetSkillData(int id)
@@ -28,7 +30,12 @@ public class EditorDatas : MonoBehaviour
 
 	public SMPSupportsCharacters GetSupportData(int id)
 	{
-		return m_SupportsCharactersList.FirstOrDefault(s => s.m_iID == id);
+		return supportsCharactersList.FirstOrDefault(s => s.m_iID == id);
+	}
+
+	public SMPPetsData GetPetData(int id)
+	{
+		return petDatas.FirstOrDefault(p => p.petID == id);
 	}
 
 	public void LoadPlayerSkill()
@@ -61,10 +68,24 @@ public class EditorDatas : MonoBehaviour
 		string jsonData = "";
 		jsonData = SMPLocalDataProvider.GetSupportData();
 		var nodeArray = JSON.Parse(jsonData).AsArray;
-		m_SupportsCharactersList = new List<SMPSupportsCharacters>();
+		supportsCharactersList = new List<SMPSupportsCharacters>();
 		foreach (var node in nodeArray)
 		{
-			m_SupportsCharactersList.Add(new SMPSupportsCharacters(node.ToString()));
+			supportsCharactersList.Add(new SMPSupportsCharacters(node.ToString()));
+		}
+	}
+
+	public void LoadPetsData()
+	{
+		string jsonData = SMPLocalDataProvider.GetPetData();
+		if (!string.IsNullOrEmpty(jsonData))
+		{
+			petDatas = new List<SMPPetsData>();
+			var nodeArray = JSON.Parse(jsonData).AsArray;
+			foreach (var node in nodeArray)
+			{
+				petDatas.Add(new SMPPetsData(node.ToString()));
+			}
 		}
 	}
 }

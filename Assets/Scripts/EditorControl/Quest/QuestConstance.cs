@@ -16,4 +16,7 @@ public static class QuestConstance
 
 	public const float TIME_PER_BOSS = 4;
 	public const float TIME_PER_GHOST = 1;
+
+	public const int STAGE_TO_DROP_ONE_DIAMON = 10;
+	public const int DIAMON_GAME_STARTUP = 90;
 }
