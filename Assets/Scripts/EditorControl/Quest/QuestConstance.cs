@@ -19,4 +19,8 @@ public static class QuestConstance
 
 	public const int STAGE_TO_DROP_ONE_DIAMOND = 10;
 	public const int DIAMOND_GAME_STARTUP = 90;
+
+	public const int MAX_ZONE = 102;
+	public const int MAX_LEVEL_ON_STAGE = 10;
+	public const int STAGE_COUNTER_PRE_WORLD_REACH = 2;
 }
