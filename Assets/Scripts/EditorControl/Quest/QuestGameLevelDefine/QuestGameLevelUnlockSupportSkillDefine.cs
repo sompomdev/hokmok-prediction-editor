@@ -20,17 +20,16 @@ public class QuestGameLevelUnlockSupportSkillDefine : QuestGameLevelBaseDefine
 	/// <returns></returns>
 	protected SMPNum GetCostToUnlockSupportAndSkill(int supportId, int unlockTarget)
 	{
-		var supportData = EditorDatas.instance.GetSupportData(supportId);
-		if (supportData == null)
+		var support = EditorDatas.instance.GetSupportData(supportId);
+		if (support == null)
 		{
 			UnityEngine.Debug.Log("Out of support on id " + supportId);
 			return new SMPNum(0);
 		}
 
-		var costUnlockSupport = SMPSupportLevelConfiguration.GetLevelConfiguration(supportData, 1).cost;
+		var costUnlockSupport = SMPSupportLevelConfiguration.GetLevelConfiguration(support, 1).cost;
 		
 		var costSkillSupport = new SMPNum(0);
-		var support = EditorDatas.instance.GetSupportData(supportId);
 		int totalUnlockSkills = 0;
 		do
 		{
