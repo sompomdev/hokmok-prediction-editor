@@ -21,7 +21,7 @@ public class QuestGameLevelUpgradeNPetLevelDefine : QuestGameLevelBaseDefine
 		}
 		while (petData.petCurrentLevel < petLevelTarget);
 
-		var gameLvToGetDiamon = GetGameLevelByDiamonBossDrop(cost);
-		return Math.Max(gameLvDropEgg, gameLvToGetDiamon);
+		var gameLvToGetDiamond = GetGameLevelByDiamondBossDrop(cost);
+		return Math.Max(gameLvDropEgg, gameLvToGetDiamond);
 	}
 }

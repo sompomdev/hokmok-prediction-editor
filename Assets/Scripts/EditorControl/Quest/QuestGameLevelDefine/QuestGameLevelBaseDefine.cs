@@ -109,17 +109,17 @@ public abstract class QuestGameLevelBaseDefine
 		return lvUnlock;
 	}
 
-	protected int GetGameLevelByDiamonBossDrop(int diamon)
+	protected int GetGameLevelByDiamondBossDrop(int diamond)
 	{
-		if(diamon <= QuestConstance.DIAMON_GAME_STARTUP)
+		if(diamond <= QuestConstance.DIAMOND_GAME_STARTUP)
 		{
 			return 1;
 		}
 
-		diamon -= QuestConstance.DIAMON_GAME_STARTUP;
+		diamond -= QuestConstance.DIAMOND_GAME_STARTUP;
 
 		//10 game level will drop 1 diamon
-		var gameLevel = diamon * QuestConstance.STAGE_TO_DROP_ONE_DIAMON;
+		var gameLevel = diamond * QuestConstance.STAGE_TO_DROP_ONE_DIAMOND;
 		return gameLevel;
 	}
 }
