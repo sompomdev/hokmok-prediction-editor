@@ -1,6 +1,8 @@
 
 public class QuestGameLevelVideoAdsDefine : QuestGameLevelBaseDefine
 {
+	//collect video from bird
+
 	public override int GameLevelDefine()
 	{
 		var videoCount = questData.target;
