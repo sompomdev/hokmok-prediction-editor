@@ -1952,7 +1952,7 @@ MonoBehaviour:
     questType: 1
     questRatioClass: 
     priority: 1
-    target: 0
+    target: 3
     target2: 0
     bigTargetPower: 
     duration: 0
@@ -1964,6 +1964,28 @@ MonoBehaviour:
     questRatioClass: 
     priority: 1
     target: 2
+    target2: 0
+    bigTargetPower: 
+    duration: 0
+    questGameLevelDefineClass: QuestGameLevelUsePerkDefine
+  - questId: 30
+    questName: Use perk Give me cash once!
+    gameLvTarget: 0
+    questType: 1
+    questRatioClass: 
+    priority: 1
+    target: 0
+    target2: 0
+    bigTargetPower: 
+    duration: 0
+    questGameLevelDefineClass: QuestGameLevelUsePerkDefine
+  - questId: 31
+    questName: Use perk Doom once!
+    gameLvTarget: 0
+    questType: 1
+    questRatioClass: 
+    priority: 1
+    target: 1
     target2: 0
     bigTargetPower: 
     duration: 0
