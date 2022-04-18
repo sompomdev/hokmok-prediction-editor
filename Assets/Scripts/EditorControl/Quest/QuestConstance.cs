@@ -29,4 +29,6 @@ public static class QuestConstance
 	public const float TIME_PER_BIRD_APPEAR = 70; //from [40,100]
 	public const float PERCENT_NOT_VIDEO_BIRD = 0.5f;
 	public const float PERCENT_NOT_DIAMOND_BIRD = 0.9f;
+
+	public const float AVERAGE_SECOND_PER_LUNCH_GAME = 1800;// 30 minutes
 }
