@@ -2023,6 +2023,17 @@ MonoBehaviour:
     bigTargetPower: 
     duration: 0
     questGameLevelDefineClass: QuestGameLevelOpenChestNTimeDefine
+  - questId: 35
+    questName: Watch the video 50 times!
+    gameLvTarget: 0
+    questType: 0
+    questRatioClass: 
+    priority: 1
+    target: 50
+    target2: 0
+    bigTargetPower: 
+    duration: 0
+    questGameLevelDefineClass: QuestGameLevelVideoAdsDefine
   prefab: {fileID: 457620820}
   content: {fileID: 481969369}
 --- !u!114 &931926373
