@@ -1913,6 +1913,17 @@ MonoBehaviour:
     bigTargetPower: 
     duration: 0
     questGameLevelDefineClass: QuestGameLevelUnlockNHeroPowerUpDefine
+  - questId: 28
+    questName: Use perk Mana Potion once
+    gameLvTarget: 0
+    questType: 1
+    questRatioClass: 
+    priority: 1
+    target: 0
+    target2: 0
+    bigTargetPower: 
+    duration: 0
+    questGameLevelDefineClass: QuestGameLevelUsePerkManaPotionDefine
   prefab: {fileID: 457620820}
   content: {fileID: 481969369}
 --- !u!114 &931926373
@@ -2594,6 +2605,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 412bbd18ea76b8d4190958d96085423b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shopSkillDatas: []
 --- !u!1 &1273220728
 GameObject:
   m_ObjectHideFlags: 0
