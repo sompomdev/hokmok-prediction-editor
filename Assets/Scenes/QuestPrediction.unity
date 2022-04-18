@@ -2045,6 +2045,17 @@ MonoBehaviour:
     bigTargetPower: 
     duration: 0
     questGameLevelDefineClass: QuestGameLevelHireNHeroDefine
+  - questId: 37
+    questName: Upgrade all heroes to level 250
+    gameLvTarget: 0
+    questType: 0
+    questRatioClass: 
+    priority: 1
+    target: 8
+    target2: 250
+    bigTargetPower: 
+    duration: 0
+    questGameLevelDefineClass: QuestGameLevelUpgradeNHeroToLvDefine
   prefab: {fileID: 457620820}
   content: {fileID: 481969369}
 --- !u!114 &931926373
