@@ -41,3 +41,12 @@ public enum QuestTypeForPriority
 	STAGE_REACH,
 	DECORATION
 }
+
+public enum RankType
+{
+	NONE,
+	BRONZE,
+	SILVER,
+	GOLD,
+	PLATINIUM
+}
