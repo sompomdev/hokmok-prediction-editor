@@ -27,5 +27,5 @@ public static class QuestConstance
 	public const int STAGE_COUNTER_PRE_WORLD_REACH = 2;
 
 	public const float TIME_PER_BIRD_APPEAR = 70; //from [40,100]
-	public const float PERCENT_VIDEO_BIRD = 0.5f;
+	public const float PERCENT_NOT_VIDEO_BIRD = 0.5f;
 }
