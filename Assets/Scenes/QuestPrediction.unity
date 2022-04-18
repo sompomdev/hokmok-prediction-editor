@@ -1891,6 +1891,17 @@ MonoBehaviour:
     bigTargetPower: 
     duration: 0
     questGameLevelDefineClass: QuestGameLevelNHeroReachRankDefine
+  - questId: 26
+    questName: Train 3 hero power-up!
+    gameLvTarget: 0
+    questType: 1
+    questRatioClass: 
+    priority: 1
+    target: 3
+    target2: 0
+    bigTargetPower: 
+    duration: 0
+    questGameLevelDefineClass: QuestGameLevelTrainNHeroPowerUpDefine
   prefab: {fileID: 457620820}
   content: {fileID: 481969369}
 --- !u!114 &931926373
