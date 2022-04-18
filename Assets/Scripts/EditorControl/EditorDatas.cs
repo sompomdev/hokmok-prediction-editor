@@ -13,6 +13,7 @@ public class EditorDatas : MonoBehaviour
 	public List<SMPHeroAndSkillData> listHeroAndSkillData;
 	public List<SMPSupportsCharacters> supportsCharactersList;
 	public List<SMPPetsData> petDatas;
+	public List<ShopSkillData> shopSkillDatas;
 
 	private void Awake()
 	{
@@ -21,6 +22,7 @@ public class EditorDatas : MonoBehaviour
 		LoadPlayerSkill();
 		LoadSupportsControl();
 		LoadPetsData();
+		LoadShopSkillDatas();
 	}
 
 	public SMPUserSkillData GetSkillData(int id)
@@ -36,6 +38,11 @@ public class EditorDatas : MonoBehaviour
 	public SMPPetsData GetPetData(int id)
 	{
 		return petDatas.FirstOrDefault(p => p.petID == id);
+	}
+
+	public ShopSkillData GetShopSkillData(int id)
+	{
+		return shopSkillDatas.FirstOrDefault(s => s.ID == id);
 	}
 
 	public void LoadPlayerSkill()
@@ -86,6 +93,21 @@ public class EditorDatas : MonoBehaviour
 			{
 				petDatas.Add(new SMPPetsData(node.ToString()));
 			}
+		}
+	}
+
+	public void LoadShopSkillDatas()
+	{
+		string jsonData = SMPLocalDataProvider.GetShopSkillData();
+		if (!string.IsNullOrEmpty(jsonData))
+		{
+			List<ShopSkillData> datas = new List<ShopSkillData>();
+			var nodeArray = JSON.Parse(jsonData).AsArray;
+			foreach (var node in nodeArray)
+			{
+				datas.Add(new ShopSkillData(node.ToString()));
+			}
+			shopSkillDatas = datas.ToList();
 		}
 	}
 }

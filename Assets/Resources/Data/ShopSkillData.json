@@ -1,0 +1,126 @@
+[
+  {
+	"ID" : 0,
+	"m_skillName" : "Give me cash!!",
+	"m_descrition1" : "Receive 1.84B Gold",
+	"m_iconId":"rpg_store_gold",
+	"m_type_item" : 0,
+
+	"m_Gems_Count" : 100,
+	"m_ClassSkillName" : "SMPMakeItRainShopSkill"
+  },
+  {
+	"ID" : 1,
+	"m_skillName" : "Doom of God",
+	"m_descrition1" : "Summon Grim Reaper. Instantly kills",
+	"m_iconId":"icon_doom_god",
+	"m_type_item" : 0,
+
+	"m_Gems_Count" : 100,
+	"m_ClassSkillName" : "SMPDoomShopSkill"
+  },
+  {
+	"ID" : 2,
+	"m_skillName" : "Power of Holding",
+	"m_descrition1" : "Hits 30 taps per second for 120\nseconds",
+	"m_iconId":"icon_power_holding",
+	"m_type_item" : 0,
+
+	"m_Gems_Count" : 50,
+	"m_ClassSkillName" : "SMPPowerOfHoldingShopSkill"
+  },
+  {
+	"ID" : 3,
+	"m_skillName" : "Mana Portion",
+	"m_descrition1" : "Refill your entire mana pool, then",
+	"m_iconId":"icon_reset_skill",
+	"m_type_item" : 0,
+
+	"m_Gems_Count" : 100,
+	"m_ClassSkillName" : "SMPManaPortionShopSkill"
+  },
+  {
+	"ID" : 5,
+	"m_skillName" : "180 Diamonds",
+	"m_descrition1" : "No ads (Fairy ads optional)",
+	"m_iconId":"rpg_store_diamond_00",
+	"m_type_item" : 2,
+	"m_packName" : "Pack1",
+
+	"m_Gems_Count" : 180,
+	"m_ClassSkillName" : "SMPBuyItemShop"
+  },
+  {
+	"ID" : 6,
+	"m_skillName" : "500 Diamonds",
+	"m_descrition1" : "11%",
+	"m_iconId":"rpg_store_diamond_01",
+	"m_type_item" : 2,
+	"m_packName" : "Pack2",
+
+	"m_Gems_Count" : 500,
+	"m_ClassSkillName" : "SMPBuyItemShop"
+  },
+	{
+	"ID" : 7,
+	"m_skillName" : "1200 Diamonds",
+	"m_descrition1" : "33%",
+	"m_iconId":"rpg_store_diamond_02",
+	"m_type_item" : 2,
+	"m_packName" : "Pack3",
+
+	"m_Gems_Count" : 1200,
+	"m_ClassSkillName" : "SMPBuyItemShop"
+  },
+  {
+	"ID" : 8,
+	"m_skillName" : "3100 Diamonds",
+	"m_descrition1" : "38%",
+	"m_iconId":"rpg_store_diamond_03",
+	"m_type_item" : 2,
+	"m_packName" : "Pack4",
+
+	"m_Gems_Count" : 3100,
+	"m_ClassSkillName" : "SMPBuyItemShop"
+  },
+  {
+	"ID" : 9,
+	"m_skillName" : "6500 Diamonds",
+	"m_descrition1" : "44%",
+	"m_iconId":"rpg_store_diamond_04",
+	"m_type_item" : 2,
+	"m_packName" : "Pack5",
+
+	"m_Gems_Count" : 6500,
+	"m_ClassSkillName" : "SMPBuyItemShop"
+  },
+  {
+	"ID" : 10,
+	"m_skillName" : "14000 Diamonds",
+	"m_descrition1" : "56%",
+	"m_iconId":"rpg_store_diamond_05",
+	"m_type_item" : 2,
+	"m_packName" : "Pack6",
+
+	"m_Gems_Count" : 14000,
+	"m_ClassSkillName" : "SMPBuyItemShop"
+  },
+  {
+	"ID" : 11,
+	"m_skillName" : "Remove Ads",
+	"m_descrition1" : "No Ads",
+	"m_iconId":"rpg_store_noads",
+	"m_type_item" : 3,
+
+	"m_ClassSkillName" : "SMPBuyItemShop"
+  },
+  {
+	"ID" : 12,
+	"m_skillName" : "Golden wallet",
+	"m_descrition1" : "Recieve DOUBLE of Flucky bird Gold cash!!",
+	"m_iconId":"icon_store_free_00",
+	"m_type_item" : 1,
+
+	"m_ClassSkillName" : "SMPBuyItemShop"
+  }
+]
