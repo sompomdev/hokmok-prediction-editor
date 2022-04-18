@@ -1990,6 +1990,17 @@ MonoBehaviour:
     bigTargetPower: 
     duration: 0
     questGameLevelDefineClass: QuestGameLevelUsePerkDefine
+  - questId: 32
+    questName: Obtain 5 power-up and use it!
+    gameLvTarget: 0
+    questType: 1
+    questRatioClass: 
+    priority: 1
+    target: 5
+    target2: 0
+    bigTargetPower: 
+    duration: 0
+    questGameLevelDefineClass: QuestGameLevelObtainNPowerUpAndUseDefine
   prefab: {fileID: 457620820}
   content: {fileID: 481969369}
 --- !u!114 &931926373
