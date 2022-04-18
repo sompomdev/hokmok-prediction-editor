@@ -25,4 +25,6 @@ public static class QuestConstance
 	public const int MAX_ZONE = 102;
 	public const int MAX_LEVEL_ON_STAGE = 10;
 	public const int STAGE_COUNTER_PRE_WORLD_REACH = 2;
+
+	public const float TIME_PER_BIRD_APPEAR = 70; //from [40,100]
 }

@@ -2012,6 +2012,17 @@ MonoBehaviour:
     bigTargetPower: 
     duration: 0
     questGameLevelDefineClass: QuestGameLevelHireNSupportDefine
+  - questId: 34
+    questName: Open chest 50 times
+    gameLvTarget: 0
+    questType: 0
+    questRatioClass: 
+    priority: 1
+    target: 50
+    target2: 0
+    bigTargetPower: 
+    duration: 0
+    questGameLevelDefineClass: QuestGameLevelOpenChestNTimeDefine
   prefab: {fileID: 457620820}
   content: {fileID: 481969369}
 --- !u!114 &931926373
