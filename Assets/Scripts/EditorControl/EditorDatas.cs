@@ -4,6 +4,8 @@ using UnityEngine;
 using SimpleJSON;
 using System.Linq;
 using Sompom.Inventory;
+using Sompom.GamePlay.Enemy;
+using Newtonsoft.Json;
 
 public class EditorDatas : MonoBehaviour
 {
@@ -14,6 +16,7 @@ public class EditorDatas : MonoBehaviour
 	public List<SMPSupportsCharacters> supportsCharactersList;
 	public List<SMPPetsData> petDatas;
 	public List<ShopSkillData> shopSkillDatas;
+	public List<SMPZoneData> zoneDatas;
 
 	private void Awake()
 	{
@@ -23,6 +26,7 @@ public class EditorDatas : MonoBehaviour
 		LoadSupportsControl();
 		LoadPetsData();
 		LoadShopSkillDatas();
+		LoadEnemyDataByZone();
 	}
 
 	public SMPUserSkillData GetSkillData(int id)
@@ -43,6 +47,22 @@ public class EditorDatas : MonoBehaviour
 	public ShopSkillData GetShopSkillData(int id)
 	{
 		return shopSkillDatas.FirstOrDefault(s => s.ID == id);
+	}
+
+	public SMPZoneData GetZoneData(int id)
+	{
+		return zoneDatas.FirstOrDefault(z => z.zone_id == id);
+	}
+
+	public int GetZoneByLevel(int level)
+	{
+		return Mathf.FloorToInt(level / QuestConstance.MAX_LEVEL_ON_STAGE);
+	}
+
+	public int GetGameLevelByZone(int zoneId)
+	{
+		if (zoneId == 1) return 1;
+		return ((zoneId - 1) * QuestConstance.MAX_LEVEL_ON_STAGE);
 	}
 
 	public void LoadPlayerSkill()
@@ -109,6 +129,12 @@ public class EditorDatas : MonoBehaviour
 			}
 			shopSkillDatas = datas.ToList();
 		}
+	}
+
+	public void LoadEnemyDataByZone()
+	{
+		string jsonContent = SMPLocalDataProvider.GetEnemyByZoneData();
+		zoneDatas = JsonConvert.DeserializeObject<List<SMPZoneData>>(jsonContent);
 	}
 }
 
