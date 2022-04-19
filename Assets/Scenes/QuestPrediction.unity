@@ -2133,6 +2133,39 @@ MonoBehaviour:
     bigTargetPower: 
     duration: 0
     questGameLevelDefineClass: QuestGameLevelCollectFirstCrownDefine
+  - questId: 37
+    questName: Use perk Mana Potion 3 times
+    gameLvTarget: 0
+    questType: 1
+    questRatioClass: 
+    priority: 1
+    target: 3
+    target2: 0
+    bigTargetPower: 
+    duration: 0
+    questGameLevelDefineClass: QuestGameLevelUsePerkManaPotionNTimeDefine
+  - questId: 37
+    questName: Use perk Give me cash 3 times
+    gameLvTarget: 0
+    questType: 1
+    questRatioClass: 
+    priority: 1
+    target: 0
+    target2: 3
+    bigTargetPower: 
+    duration: 0
+    questGameLevelDefineClass: QuestGameLevelUsePerkNTimeDefine
+  - questId: 37
+    questName: Use perk Doom 3 times
+    gameLvTarget: 0
+    questType: 1
+    questRatioClass: 
+    priority: 1
+    target: 1
+    target2: 3
+    bigTargetPower: 
+    duration: 0
+    questGameLevelDefineClass: QuestGameLevelUsePerkNTimeDefine
   prefab: {fileID: 457620820}
   content: {fileID: 481969369}
 --- !u!114 &931926373
