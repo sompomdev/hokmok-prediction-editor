@@ -2166,6 +2166,17 @@ MonoBehaviour:
     bigTargetPower: 
     duration: 0
     questGameLevelDefineClass: QuestGameLevelUsePerkNTimeDefine
+  - questId: 37
+    questName: Use Perk Power of Holding 3 times
+    gameLvTarget: 0
+    questType: 1
+    questRatioClass: 
+    priority: 1
+    target: 2
+    target2: 3
+    bigTargetPower: 
+    duration: 0
+    questGameLevelDefineClass: QuestGameLevelUsePerkNTimeDefine
   prefab: {fileID: 457620820}
   content: {fileID: 481969369}
 --- !u!114 &931926373

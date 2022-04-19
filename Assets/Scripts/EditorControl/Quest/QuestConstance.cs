@@ -33,4 +33,5 @@ public static class QuestConstance
 	public const float AVERAGE_SECOND_PER_LUNCH_GAME = 1800;// 30 minutes
 
 	public const float MANA_POTION_DURATION_COOL_DOWN = 12 * 3600; //12 hours in seconds
+	public const float POWER_HOLDING_DURATION_COOL_DOWN = 120;
 }
