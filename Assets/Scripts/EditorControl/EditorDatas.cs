@@ -12,6 +12,7 @@ public class EditorDatas : MonoBehaviour
 	public static EditorDatas instance;
 
 	public List<SMPUserSkillData> userSkillDatas;
+	public List<SMPPassiveSkillData> listPassiveSkills;
 	public List<SMPHeroAndSkillData> listHeroAndSkillData;
 	public List<SMPSupportsCharacters> supportsCharactersList;
 	public List<SMPPetsData> petDatas;
@@ -23,6 +24,7 @@ public class EditorDatas : MonoBehaviour
 		instance = this;
 
 		LoadPlayerSkill();
+		LoadHeroesPassiveSkills();
 		LoadSupportsControl();
 		LoadPetsData();
 		LoadShopSkillDatas();
@@ -32,6 +34,11 @@ public class EditorDatas : MonoBehaviour
 	public SMPUserSkillData GetSkillData(int id)
 	{
 		return userSkillDatas.FirstOrDefault(s => s.m_iID == id);
+	}
+
+	public SMPPassiveSkillData GetPassiveSkillData(int id)
+	{
+		return listPassiveSkills.FirstOrDefault(p => p.m_iID == id);
 	}
 
 	public SMPSupportsCharacters GetSupportData(int id)
@@ -86,6 +93,20 @@ public class EditorDatas : MonoBehaviour
 			foreach (var node in nodeArray)
 			{
 				listHeroAndSkillData.Add(new SMPHeroAndSkillData(node.ToString()));
+			}
+		}
+	}
+
+	public void LoadHeroesPassiveSkills()
+	{
+		listPassiveSkills = new List<SMPPassiveSkillData>();
+		string jsonData = SMPLocalDataProvider.GetUserPassiveSkillData();
+		if (!string.IsNullOrEmpty(jsonData))
+		{
+			var nodeArray = JSON.Parse(jsonData).AsArray;
+			foreach (var node in nodeArray)
+			{
+				listPassiveSkills.Add(new SMPPassiveSkillData(node.ToString()));
 			}
 		}
 	}
