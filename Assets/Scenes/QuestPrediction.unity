@@ -2210,6 +2210,39 @@ MonoBehaviour:
     bigTargetPower: 
     duration: 0
     questGameLevelDefineClass: QuestGameLevelReduceGhostRoundDefine
+  - questId: 37
+    questName: Update a pet!
+    gameLvTarget: 0
+    questType: 1
+    questRatioClass: 
+    priority: 1
+    target: 1
+    target2: 1
+    bigTargetPower: 
+    duration: 0
+    questGameLevelDefineClass: QuestGameLevelUpgradeNPetLevelDefine
+  - questId: 37
+    questName: Update a pet 5 time!
+    gameLvTarget: 0
+    questType: 1
+    questRatioClass: 
+    priority: 1
+    target: 1
+    target2: 5
+    bigTargetPower: 
+    duration: 0
+    questGameLevelDefineClass: QuestGameLevelUpgradeNPetLevelDefine
+  - questId: 37
+    questName: Update 3 pets!
+    gameLvTarget: 0
+    questType: 1
+    questRatioClass: 
+    priority: 1
+    target: 3
+    target2: 1
+    bigTargetPower: 
+    duration: 0
+    questGameLevelDefineClass: QuestGameLevelUpgradeNPetLevelDefine
   prefab: {fileID: 457620820}
   content: {fileID: 481969369}
 --- !u!114 &931926373
