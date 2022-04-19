@@ -1956,7 +1956,7 @@ MonoBehaviour:
     target2: 0
     bigTargetPower: 
     duration: 0
-    questGameLevelDefineClass: QuestGameLevelUsePerkManaPotionDefine
+    questGameLevelDefineClass: QuestGameLevelUsePerkDefine
   - questId: 29
     questName: Use perk Power of Holding once
     gameLvTarget: 0
@@ -2140,10 +2140,10 @@ MonoBehaviour:
     questRatioClass: 
     priority: 1
     target: 3
-    target2: 0
+    target2: 3
     bigTargetPower: 
     duration: 0
-    questGameLevelDefineClass: QuestGameLevelUsePerkManaPotionNTimeDefine
+    questGameLevelDefineClass: QuestGameLevelUsePerkNTimeDefine
   - questId: 37
     questName: Use perk Give me cash 3 times
     gameLvTarget: 0
