@@ -2257,7 +2257,7 @@ MonoBehaviour:
   - questId: 37
     questName: 2 hour total play time
     gameLvTarget: 0
-    questType: 1
+    questType: 4
     questRatioClass: 
     priority: 1
     target: 2
@@ -2265,6 +2265,17 @@ MonoBehaviour:
     bigTargetPower: 
     duration: 0
     questGameLevelDefineClass: QuestGameLevelPlayTotalNHourDefine
+  - questId: 37
+    questName: 1 day total play time
+    gameLvTarget: 0
+    questType: 4
+    questRatioClass: 
+    priority: 1
+    target: 1
+    target2: 0
+    bigTargetPower: 
+    duration: 0
+    questGameLevelDefineClass: QuestGameLevelPlayTotalNDayDefine
   prefab: {fileID: 457620820}
   content: {fileID: 481969369}
 --- !u!114 &931926373
