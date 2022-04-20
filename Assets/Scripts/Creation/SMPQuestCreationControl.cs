@@ -163,8 +163,7 @@ public class SMPQuestCreationControl : MonoBehaviour
             textKpiGameLvReward.text = gameLv.ToString();
             textKpiGameLvShouldAppear.text = quest.kpiGameLevelShouldAppear.ToString();
             
-            var reward = SMPMathGamePlay.GetUnBaseOnLevel(gameLv, SequenceName.DropCoins);
-            reward.SetPower(System.Math.Floor(reward.Power));
+            var reward = SMPMathGamePlay.GetUnBaseOnLevel(gameLv, SequenceName.DropCoins).Round();
             if (reward < 1) reward = SMPNum.FromNum(1);
             textRewardExpected.text = reward.ToReadableAlphabetV2() + " coins";
         }
