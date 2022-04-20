@@ -352,8 +352,10 @@ using UnityEngine;
             //node["heroId"] = heroId;
             //node["zoneId"] = zoneId;
             //node["petId"] = petId;
-            node["target"] = target;
-            //node["target2"] = target2;
+            if (target != 0)
+                node["target"] = target;
+            if (target2 != 0)
+                node["target2"] = target2;
             if (duration > 0)
                 node["duration"] = duration;
             //node["lastLaunchDate"] = lastLaunchDate;
