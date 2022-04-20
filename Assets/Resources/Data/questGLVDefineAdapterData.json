@@ -53,5 +53,35 @@
 		"isDuration": false,
 		"progressType": "count_by_one",
 		"questGameLevelDefineClass": "QuestGameLevelUsePerkManaPortionDefine"
+	},
+	{
+		"eventName": "unlockSupporter",
+		"isDuration": false,
+		"progressType": "check_full_active_support_reach",
+		"questGameLevelDefineClass": "QuestGameLevelFullActiveSupportDefine"
+	},
+	{
+		"eventName": "unlockSupporter",
+		"isDuration": false,
+		"progressType": "check_full_flying_support_reach",
+		"questGameLevelDefineClass": "QuestGameLevelFullFlyingSupportDefine"
+	},
+	{
+		"eventName": "unlockSupporter",
+		"isDuration": false,
+		"progressType": "check_full_support_reach",
+		"questGameLevelDefineClass": "QuestGameLevelFullSupportDefine"
+	},
+	{
+		"eventName": "unlockHero",
+		"isDuration": false,
+		"progressType": "check_full_hero_reach",
+		"questGameLevelDefineClass": "QuestGameLevelHireFullHeroDefine"
+	},
+	{
+		"eventName": "dynamic",
+		"isDuration": false,
+		"progressType": "check_full_team_reach",
+		"questGameLevelDefineClass": "QuestGameLevelFullTeamDefine"
 	}
 ]
