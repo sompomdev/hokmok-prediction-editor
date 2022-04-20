@@ -29,5 +29,11 @@
 		"isDuration": false,
 		"progressType": "check_reach",
 		"questGameLevelDefineClass": "QuestGameLevelObtainFirstPowerUpDefine"
+	},
+	{
+		"eventName": "usePerkMakeItRain",
+		"isDuration": false,
+		"progressType": "count_by_one",
+		"questGameLevelDefineClass": "QuestGameLevelUsePerkMakeItRainDefine"
 	}
 ]
