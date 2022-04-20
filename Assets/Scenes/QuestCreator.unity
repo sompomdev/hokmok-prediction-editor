@@ -594,7 +594,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba7993aa6effc430da7448dc734c14c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  customPath: /Users/apple/WORKSPACE/PROJECT/UNITY/HokMokScripts/Assets/Resources/Data/Quest/quest_data_dev.json
+  customPath: 
   inpId: {fileID: 8305288959788240167}
   inpDynamicAvailable: {fileID: 403137977}
   inpSkipPrice: {fileID: 176889762}
@@ -11714,6 +11714,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2105772648}
   m_CullTransparentMesh: 1
+--- !u!1001 &623729785535772458
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 623729784599266532, guid: 01cf8649b18b05a4aa5602aba58d1941, type: 3}
+      propertyPath: m_Name
+      value: QuestAdapterHelper
+      objectReference: {fileID: 0}
+    - target: {fileID: 623729784599266533, guid: 01cf8649b18b05a4aa5602aba58d1941, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 623729784599266533, guid: 01cf8649b18b05a4aa5602aba58d1941, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 623729784599266533, guid: 01cf8649b18b05a4aa5602aba58d1941, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 623729784599266533, guid: 01cf8649b18b05a4aa5602aba58d1941, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 623729784599266533, guid: 01cf8649b18b05a4aa5602aba58d1941, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 623729784599266533, guid: 01cf8649b18b05a4aa5602aba58d1941, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 623729784599266533, guid: 01cf8649b18b05a4aa5602aba58d1941, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 623729784599266533, guid: 01cf8649b18b05a4aa5602aba58d1941, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 623729784599266533, guid: 01cf8649b18b05a4aa5602aba58d1941, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 623729784599266533, guid: 01cf8649b18b05a4aa5602aba58d1941, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 623729784599266533, guid: 01cf8649b18b05a4aa5602aba58d1941, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 01cf8649b18b05a4aa5602aba58d1941, type: 3}
 --- !u!1001 &1306311046873282508
 PrefabInstance:
   m_ObjectHideFlags: 0

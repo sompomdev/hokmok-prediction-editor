@@ -1,0 +1,27 @@
+[
+
+	{
+		"eventName": "collectGold",
+		"isDuration": true,
+		"progressType": "count_by_one",
+		"questGameLevelDefineClass": "QuestGameLevelCollectNGoldInSecondDefine"
+	},
+	{
+		"eventName": "collectGold",
+		"isDuration": false,
+		"progressType": "count_by_one",
+		"questGameLevelDefineClass": "QuestGameLevelCollectNGoldDefine"
+	},
+	{
+		"eventName": "reachStage",
+		"isDuration": false,
+		"progressType": "check_reach",
+		"questGameLevelDefineClass": "QuestGameLevelReachStageDefine"
+	},
+	{
+		"eventName": "collectZoneBossCrown",
+		"isDuration": false,
+		"progressType": "count_by_one",
+		"questGameLevelDefineClass": "QuestGameLevelCollectCrownDefine"
+	}
+]

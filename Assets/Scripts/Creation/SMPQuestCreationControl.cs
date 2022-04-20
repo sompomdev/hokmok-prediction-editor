@@ -119,7 +119,8 @@ public class SMPQuestCreationControl : MonoBehaviour
         var quest = models[currentIndex];
         if (quest.ordered == null || quest.ordered.Count <= 0) return;
         var progress = quest.ordered[0];
-        
+
+		/*
         QuestGameLevelBaseDefine baseService = null;
         
         if (progress.eventName == QuestEventName.collectGold.ToString() 
@@ -149,9 +150,12 @@ public class SMPQuestCreationControl : MonoBehaviour
             baseService.questData.target = progress.target;
         }
         
-        if (baseService != null)
+        if (baseService != null)*/
+
+		var gameLv = QuestAdapterHelper.instance.GetGameLevelDefine(progress);
+		if(gameLv > 0)
         {
-            var gameLv = baseService.GameLevelDefine();
+            //var gameLv = baseService.GameLevelDefine();
             quest.kpiGameLevelReward = gameLv;
             quest.kpiGameLevelShouldAppear = 1;//gameLv - 3;
             if (quest.kpiGameLevelShouldAppear <= 0) quest.kpiGameLevelShouldAppear = 1;
