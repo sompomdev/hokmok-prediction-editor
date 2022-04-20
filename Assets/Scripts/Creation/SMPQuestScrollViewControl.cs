@@ -25,7 +25,7 @@ public class SMPQuestScrollViewControl : MonoBehaviour
                 if (itemScript.Matching(models[i].id))
                 {
                     itemScript.SetTitle(GetDescription(progress));
-                    itemScript.SetGameLevel( models[i].kpiGameLevelReward > 0 ? models[i].kpiGameLevelReward .ToString() : "?");
+                    itemScript.SetGameLevel( models[i].kpiGameLevelReward > 0 ? "Rewarded at Lv" + models[i].kpiGameLevelReward .ToString() : "?");
                 }
             }
         }
@@ -43,7 +43,7 @@ public class SMPQuestScrollViewControl : MonoBehaviour
             newItem.SetActive(true);
             var script = newItem.GetComponent<SMPQuestItemList>();
             script.SetTitle(GetDescription(progress));
-            script.SetGameLevel( models[i].kpiGameLevelReward  > 0 ? models[i].kpiGameLevelReward .ToString() : "?");
+            script.SetGameLevel( models[i].kpiGameLevelReward  > 0 ? "Rewarded at Lv" + models[i].kpiGameLevelReward .ToString() : "?");
             script.SetQuestId(models[i].id);
         }
         

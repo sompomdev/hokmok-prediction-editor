@@ -20,13 +20,15 @@ public class SMPQuestCreationControl : MonoBehaviour
     [SerializeField] private TMP_InputField inpTitleCode;
     [SerializeField] private TMP_InputField inpEventName;
     [SerializeField] private TMP_InputField inpTarget;
+    [SerializeField] private TMP_InputField inpTarget2;
     [SerializeField] private TMP_InputField inpBigTarget;
     [SerializeField] private TMP_InputField inpDuration;
     [SerializeField] private TMP_InputField inpProgressType;
 
     [SerializeField] private TextMeshProUGUI textIndexing;
     [SerializeField] private TextMeshProUGUI textTitle;
-    [SerializeField] private TextMeshProUGUI textGameLvExpected;
+    [SerializeField] private TextMeshProUGUI textKpiGameLvReward;
+    [SerializeField] private TextMeshProUGUI textKpiGameLvShouldAppear;
     [SerializeField] private TextMeshProUGUI textRewardExpected;
 
     [SerializeField] private SMPQuestScrollViewControl scrollViewControl;
@@ -91,6 +93,7 @@ public class SMPQuestCreationControl : MonoBehaviour
         inpTitleCode.text = progress.progressTitleCode.ToString();
         inpEventName.text = progress.eventName;
         inpTarget.text = progress.target.ToString();
+        inpTarget2.text = progress.target2.ToString();
         inpBigTarget.text = progress.bigTarget;
         inpDuration.text = progress.duration.ToString();
         inpProgressType.text = progress.progressType;
@@ -140,14 +143,22 @@ public class SMPQuestCreationControl : MonoBehaviour
         {
             var gameLv = baseService.GameLevelDefine();
             quest.kpiGameLevelReward = gameLv;
-            quest.kpiGameLevelShouldAppear = gameLv - 3;
+            quest.kpiGameLevelShouldAppear = 1;//gameLv - 3;
             if (quest.kpiGameLevelShouldAppear <= 0) quest.kpiGameLevelShouldAppear = 1;
             
-            textGameLvExpected.text = gameLv.ToString();
+            textKpiGameLvReward.text = gameLv.ToString();
+            textKpiGameLvShouldAppear.text = quest.kpiGameLevelShouldAppear.ToString();
+            
+            var reward = SMPMathGamePlay.GetUnBaseOnLevel(gameLv, SequenceName.DropCoins);
+            reward.SetPower(System.Math.Floor(reward.Power));
+            if (reward < 1) reward = SMPNum.FromNum(1);
+            textRewardExpected.text = reward.ToReadableAlphabetV2() + " coins";
         }
         else
         {
-            textGameLvExpected.text = "?";
+            textKpiGameLvReward.text = "?";
+            textKpiGameLvShouldAppear.text = "?";
+            textRewardExpected.text = "?";
         }
     }
 
@@ -157,20 +168,38 @@ public class SMPQuestCreationControl : MonoBehaviour
         
     }
 
+    int TryGetValue(string text)
+    {
+        int value = 0;
+        if (text.Length > 0)
+        {
+            int.TryParse(text, out value);
+        }
+        
+        return value;
+    }
     public void Save()
     {
         SMPProgressModel progress = new SMPProgressModel();
         progress.progressTitleCode = int.Parse(inpTitleCode.text);
         progress.eventName = inpEventName.text;
-        progress.target = int.Parse(inpTarget.text);
-        if (inpBigTarget.text.Length > 0)
+        if (TryGetValue(inpTarget.text) > 0)
         {
-            progress.bigTarget = inpBigTarget.text;
+            progress.target = TryGetValue(inpTarget.text);    
+        }
+        if (TryGetValue(inpTarget2.text) > 0)
+        {
+            progress.target2 = TryGetValue(inpTarget2.text);    
+        }
+
+        if (TryGetValue(inpBigTarget.text) > 0)
+        {
+            progress.bigTarget = TryGetValue(inpBigTarget.text).ToString();
             progress.bigTarget_GS = SMPNum.FromPower(progress.bigTarget);
         }
-        if (inpDuration.text.Length > 0)
+        if (TryGetValue(inpDuration.text) > 0)
         {
-            progress.duration = int.Parse(inpDuration.text);
+            progress.duration = TryGetValue(inpDuration.text);
         }
         progress.progressType = inpProgressType.text;
 
