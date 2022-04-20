@@ -23,5 +23,11 @@
 		"isDuration": false,
 		"progressType": "count_by_one",
 		"questGameLevelDefineClass": "QuestGameLevelCollectCrownDefine"
+	},
+	{
+		"eventName": "unlockPowerUp",
+		"isDuration": false,
+		"progressType": "check_reach",
+		"questGameLevelDefineClass": "QuestGameLevelObtainFirstPowerUpDefine"
 	}
 ]

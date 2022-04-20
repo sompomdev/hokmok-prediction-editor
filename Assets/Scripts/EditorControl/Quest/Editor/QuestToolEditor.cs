@@ -18,9 +18,10 @@ public class QuestToolEditor : Editor
 	{
 		base.OnInspectorGUI();
 
-		if(GUILayout.Button("Generate gameLv Quest"))
+		if(GUILayout.Button("Save Quest editor data"))
 		{
-			GenerateGameLvQuest();
+			Target.SaveData();
+			Debug.Log("Save complete in document directory");
 		}
 	}
 

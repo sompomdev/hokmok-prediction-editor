@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Newtonsoft.Json;
+using System.IO;
 
 public class QuestGrid : MonoBehaviour
 {
@@ -77,5 +79,11 @@ public class QuestGrid : MonoBehaviour
 		int cell_number = gridLayout.constraintCount;
 		float height = heightPerItem * Mathf.FloorToInt((float)count / (float)cell_number);
 		gridLayout.GetComponent<RectTransform>().sizeDelta = new Vector2(0, height);
+	}
+
+	public void SaveData()
+	{
+		var text = JsonConvert.SerializeObject(questDatas);
+		File.WriteAllText(Application.persistentDataPath+"/questEditorData.json", text);
 	}
 }
