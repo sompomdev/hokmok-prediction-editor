@@ -35,5 +35,23 @@
 		"isDuration": false,
 		"progressType": "count_by_one",
 		"questGameLevelDefineClass": "QuestGameLevelUsePerkMakeItRainDefine"
+	},
+	{
+		"eventName": "usePerkDoom",
+		"isDuration": false,
+		"progressType": "count_by_one",
+		"questGameLevelDefineClass": "QuestGameLevelUsePerkDoomDefine"
+	},
+	{
+		"eventName": "usePerkPowerOfHolding",
+		"isDuration": false,
+		"progressType": "count_by_one",
+		"questGameLevelDefineClass": "QuestGameLevelUsePerkPowerOfHoldingDefine"
+	},
+	{
+		"eventName": "usePerkManaPortion",
+		"isDuration": false,
+		"progressType": "count_by_one",
+		"questGameLevelDefineClass": "QuestGameLevelUsePerkManaPortionDefine"
 	}
 ]

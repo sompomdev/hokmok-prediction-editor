@@ -87,12 +87,14 @@ public class EditorController : MonoBehaviour
 
 	void Start()
     {
-  //       uiController.inpGameLevelNum.text = "1";
-  //       uiController.inpHeroLevelNum.text = "1";
-  //       uiController.inpTapPerSeNum.text = "5";
-		// uiController.inpCurrentGold.text = "50";
-		// uiController.inpGoldPerLv.text = "100";
-    }
+		if (uiController == null) return;
+
+		uiController.inpGameLevelNum.text = "1";
+		uiController.inpHeroLevelNum.text = "1";
+		uiController.inpTapPerSeNum.text = "5";
+		uiController.inpCurrentGold.text = "50";
+		uiController.inpGoldPerLv.text = "100";
+	}
 
     public void OnLevelNumChanged(string value)
     {
