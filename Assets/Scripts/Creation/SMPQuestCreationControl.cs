@@ -9,6 +9,8 @@ using UnityEngine.UI;
 
 public class SMPQuestCreationControl : MonoBehaviour
 {
+    [SerializeField] private string customPath;
+    
     [SerializeField] private TMP_InputField inpId;
     [SerializeField] private TMP_InputField inpDynamicAvailable;
     [SerializeField] private TMP_InputField inpSkipPrice;
@@ -24,7 +26,7 @@ public class SMPQuestCreationControl : MonoBehaviour
     [SerializeField] private TMP_InputField inpBigTarget;
     [SerializeField] private TMP_InputField inpDuration;
     [SerializeField] private TMP_InputField inpProgressType;
-
+    
     [SerializeField] private TextMeshProUGUI textIndexing;
     [SerializeField] private TextMeshProUGUI textTitle;
     [SerializeField] private TextMeshProUGUI textKpiGameLvReward;
@@ -42,8 +44,16 @@ public class SMPQuestCreationControl : MonoBehaviour
     void Start()
     {
         gameLangauge = new SMPGameLanguage();
+
+        if (customPath.Length > 0)
+        {
+            path = customPath;
+        }
+        else
+        {
+            path = Application.persistentDataPath + "/quest_data.json";    
+        }
         
-        path = Application.persistentDataPath + "/quest_data.json";
         
         inpIconName.text = "achm_528";
         tggSkippable.isOn = true;
