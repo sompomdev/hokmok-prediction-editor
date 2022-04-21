@@ -97,6 +97,12 @@
 		"questGameLevelDefineClass": "QuestGameLevelHeroReachRankDefine"
 	},
 	{
+		"eventName": "heroUpdateLevel",
+		"isDuration": false,
+		"progressType": "check_n_hero_level_reach",
+		"questGameLevelDefineClass": "QuestGameLevelNHeroReachRankDefine"
+	},
+	{
 		"eventName": "unlockHero",
 		"isDuration": false,
 		"progressType": "check_reach",
