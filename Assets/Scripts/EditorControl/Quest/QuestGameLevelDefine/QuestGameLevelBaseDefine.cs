@@ -11,7 +11,7 @@ public abstract class QuestGameLevelBaseDefine
 	{
 		var gameLv = 0;
 		var goldEarning = new SMPNum(0);
-		var goldNeed = SMPHeroLevelConfiguration.GetCostOnLevel(5, 0, levelTarget) * heroCount;
+		var goldNeed = SMPHeroLevelConfiguration.GetCostOnLevel(5, 1, levelTarget) * heroCount;
 		do
 		{
 			gameLv++;
