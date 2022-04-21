@@ -4,7 +4,7 @@ public class QuestGameLevelWorldTourDefine : QuestGameLevelBaseDefine
 	public override int GameLevelDefine()
 	{
 		var worldTourCount = questData.target;
-		var gameLvCount = QuestConstance.MAX_ZONE * QuestConstance.MAX_LEVEL_ON_STAGE * worldTourCount;
-		return gameLvCount - QuestConstance.STAGE_COUNTER_PRE_WORLD_REACH;
+		var gameLvCount = SMPQuestTemplateConstance.MAX_ZONE * SMPQuestTemplateConstance.MAX_LEVEL_ON_STAGE * worldTourCount;
+		return gameLvCount - SMPQuestTemplateConstance.STAGE_COUNTER_PRE_WORLD_REACH;
 	}
 }

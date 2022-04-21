@@ -63,13 +63,13 @@ public class EditorDatas : MonoBehaviour
 
 	public int GetZoneByLevel(int level)
 	{
-		return Mathf.FloorToInt(level / QuestConstance.MAX_LEVEL_ON_STAGE);
+		return Mathf.FloorToInt(level / SMPQuestTemplateConstance.MAX_LEVEL_ON_STAGE);
 	}
 
 	public int GetGameLevelByZone(int zoneId)
 	{
 		if (zoneId == 1) return 1;
-		return ((zoneId - 1) * QuestConstance.MAX_LEVEL_ON_STAGE);
+		return ((zoneId - 1) * SMPQuestTemplateConstance.MAX_LEVEL_ON_STAGE);
 	}
 
 	public void LoadPlayerSkill()

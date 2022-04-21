@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public static class QuestConstance
+public static class SMPQuestTemplateConstance
 {
 	public const float KILL_PER_SECOND = 4;
 	public const int GHOST_PER_WAVE = 9;

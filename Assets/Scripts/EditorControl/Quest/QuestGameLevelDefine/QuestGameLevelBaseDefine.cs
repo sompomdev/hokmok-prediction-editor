@@ -15,7 +15,7 @@ public abstract class QuestGameLevelBaseDefine
 		do
 		{
 			gameLv++;
-			goldEarning += GetGoldToDrop(gameLv) * QuestConstance.GHOST_PER_WAVE + 1;//ghost and boss gold drop
+			goldEarning += GetGoldToDrop(gameLv) * SMPQuestTemplateConstance.GHOST_PER_WAVE + 1;//ghost and boss gold drop
 		}
 		while (goldEarning < goldNeed);
 
@@ -33,7 +33,7 @@ public abstract class QuestGameLevelBaseDefine
 			var hp = EditorController.instance.GetBossHp(gameLv);
 			//var hp = EditorController.instance.GetGhostHp(gameLv);
 			var tap = EditorController.instance.TapPerSec;
-			dmgBalance = hp / (QuestConstance.KILL_PER_SECOND * tap);
+			dmgBalance = hp / (SMPQuestTemplateConstance.KILL_PER_SECOND * tap);
 		}
 		while (dmgBalance < dmgTarget);
 
@@ -48,7 +48,7 @@ public abstract class QuestGameLevelBaseDefine
 		do
 		{
 			gameLv++;
-			goldEarning += GetGoldToDrop(gameLv) * QuestConstance.GHOST_PER_WAVE + 1;//ghost and boss gold drop
+			goldEarning += GetGoldToDrop(gameLv) * SMPQuestTemplateConstance.GHOST_PER_WAVE + 1;//ghost and boss gold drop
 		}
 		while (goldEarning < goldNeed);
 
@@ -57,7 +57,7 @@ public abstract class QuestGameLevelBaseDefine
 
 	protected int GetGameLevelCanReachBaseOnTime(double time)
 	{
-		var timeOnOneLevel = (QuestConstance.GHOST_PER_WAVE * QuestConstance.TIME_PER_GHOST) + QuestConstance.TIME_PER_BOSS;
+		var timeOnOneLevel = (SMPQuestTemplateConstance.GHOST_PER_WAVE * SMPQuestTemplateConstance.TIME_PER_GHOST) + SMPQuestTemplateConstance.TIME_PER_BOSS;
 		return (int)(time / timeOnOneLevel);
 	}
 
@@ -68,7 +68,7 @@ public abstract class QuestGameLevelBaseDefine
 		do
 		{
 			gameLv++;
-			goldEarning += GetGoldToDrop(gameLv) * QuestConstance.GHOST_PER_WAVE + 1;//ghost and boss gold drop
+			goldEarning += GetGoldToDrop(gameLv) * SMPQuestTemplateConstance.GHOST_PER_WAVE + 1;//ghost and boss gold drop
 		}
 		while (goldEarning < cost);
 
@@ -111,15 +111,15 @@ public abstract class QuestGameLevelBaseDefine
 
 	protected int GetGameLevelByDiamondBossDrop(int diamond)
 	{
-		if(diamond <= QuestConstance.DIAMOND_GAME_STARTUP)
+		if(diamond <= SMPQuestTemplateConstance.DIAMOND_GAME_STARTUP)
 		{
 			return 1;
 		}
 
-		diamond -= QuestConstance.DIAMOND_GAME_STARTUP;
+		diamond -= SMPQuestTemplateConstance.DIAMOND_GAME_STARTUP;
 
 		//10 game level will drop 1 diamon
-		var gameLevel = diamond * QuestConstance.STAGE_TO_DROP_ONE_DIAMOND;
+		var gameLevel = diamond * SMPQuestTemplateConstance.STAGE_TO_DROP_ONE_DIAMOND;
 		return gameLevel;
 	}
 }

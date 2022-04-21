@@ -5,6 +5,6 @@ public class QuestGameLevelWorldUnlockDefine : QuestGameLevelBaseDefine
 	{
 		var zoneId = questData.target;
 		var gameLevel = EditorDatas.instance.GetGameLevelByZone(zoneId);
-		return gameLevel - QuestConstance.STAGE_COUNTER_PRE_WORLD_REACH;
+		return gameLevel - SMPQuestTemplateConstance.STAGE_COUNTER_PRE_WORLD_REACH;
 	}
 }
