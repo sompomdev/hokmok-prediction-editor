@@ -50,7 +50,7 @@ public class SMPSupportLevelConfiguration {
             }
             else
             {
-                levelconfig.cost = GetCostDependingOnNumOfLevelToAdd(support, lvToAdd);
+                levelconfig.cost = GetCostDependingOnNumOfLevelToAdd(support.m_iCurrentLevel, lvToAdd);
             }
         }
 
@@ -208,7 +208,7 @@ public class SMPSupportLevelConfiguration {
 		return damagePerSecond;//.Round();
 	}
 
-    public static SMPNum GetCostDependingOnNumOfLevelToAdd(SMPSupportsCharacters support, int lvToAdd = 1)
+    public static SMPNum GetCostDependingOnNumOfLevelToAdd(int currentLevel, int lvToAdd = 1)
     {
         //SMPNum cost;
         /*if (lvToAdd == 1)
@@ -233,16 +233,10 @@ public class SMPSupportLevelConfiguration {
         //        cost += support.m_iID * SMPHeroLevelConfiguration.GetCostOnLevel(0, support.m_iCurrentLevel + (i - 1)) / 30;
         //    }
         //}
-
-        var currentLevel = support.m_iCurrentLevel;
+        
         var _targetLevel = currentLevel + lvToAdd;
         var cost = SMPMathGamePlay.SumBaseOnCurrentLvAndTargetLv(currentLevel, _targetLevel, SequenceName.CostSupport);
-
-        if (support.m_evolved)
-        {
-            //cost = cost * (9 + support.m_evoledCounter);//start in 10
-        }
-
+        
         cost.Round();
         return cost;
     }
