@@ -125,5 +125,23 @@
 		"isDuration": false,
 		"progressType": "count_unlock_powerup_and_use_it",
 		"questGameLevelDefineClass": "QuestGameLevelObtainNPowerUpAndUseDefine"
+	},
+	{
+		"eventName": "usePowerUp",
+		"isDuration": false,
+		"progressType": "combine_power_up",
+		"questGameLevelDefineClass": "QuestGameLevelCombinePowerupDefine"
+	},
+	{
+		"eventName": "gameLaunched",
+		"isDuration": false,
+		"progressType": "count_by_one",
+		"questGameLevelDefineClass": "QuestGameLevelPlayNTimeDefine"
+	},
+	{
+		"eventName": "watchTheVideo",
+		"isDuration": false,
+		"progressType": "count_by_one",
+		"questGameLevelDefineClass": "QuestGameLevelVideoAdsDefine"
 	}
 ]
