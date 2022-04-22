@@ -125,5 +125,23 @@
 		"isDuration": false,
 		"progressType": "count_unlock_powerup_and_use_it",
 		"questGameLevelDefineClass": "QuestGameLevelObtainNPowerUpAndUseDefine"
+	},
+	{
+		"eventName": "gameWorldLoop",
+		"isDuration": false,
+		"progressType": "check_reach",
+		"questGameLevelDefineClass": "QuestGameLevelFirstWorldLoopDefine"
+	},
+	{
+		"eventName": "gameWorldLoop",
+		"isDuration": false,
+		"progressType": "count_by_one",
+		"questGameLevelDefineClass": "QuestGameLevelWorldTourDefine"
+	},
+	{
+		"eventName": "unlockSkillSupport",
+		"isDuration": false,
+		"progressType": "count_by_one",
+		"questGameLevelDefineClass": "QuestGameLevelUnlockSupportSkillDefine"
 	}
 ]
