@@ -58,7 +58,7 @@ public class QuestGameLevelUnlockSupportSkillDefine : QuestGameLevelBaseDefine
 		while (totalUnlockSkills < unlockTarget);
 
 		var targetSupportLevelReach = support.m_SupportsAbilityList[totalUnlockSkills - 1].m_iCurrentLevel;
-		SMPNum costSupportLevelReachUnlockSkill = SMPSupportLevelConfiguration.GetCostDependingOnNumOfLevelToAdd(support, targetSupportLevelReach);
+		SMPNum costSupportLevelReachUnlockSkill = SMPSupportLevelConfiguration.GetCostDependingOnNumOfLevelToAdd(support.m_iCurrentLevel, targetSupportLevelReach);
 		
 		SMPNum costNextHero = new SMPNum(0);
 		if(totalUnlockSkills < unlockTarget)

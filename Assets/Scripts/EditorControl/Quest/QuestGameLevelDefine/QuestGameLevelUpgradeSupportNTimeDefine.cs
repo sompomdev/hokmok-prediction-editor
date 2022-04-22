@@ -39,7 +39,7 @@ public class QuestGameLevelUpgradeSupportNTimeDefine : QuestGameLevelBaseDefine
 			costNextHero = GetCostToUnlockSupportAndUpdate(supportId + 1, upgradeLevelCount - targetSupportLevelReach);
 		}
 
-		SMPNum costSupportLevelReachUnlockSkill = SMPSupportLevelConfiguration.GetCostDependingOnNumOfLevelToAdd(support, targetSupportLevelReach);
+		SMPNum costSupportLevelReachUnlockSkill = SMPSupportLevelConfiguration.GetCostDependingOnNumOfLevelToAdd(support.m_iCurrentLevel, targetSupportLevelReach);
 		
 		return costUnlockSupport + costSupportLevelReachUnlockSkill + costNextHero;
 	}

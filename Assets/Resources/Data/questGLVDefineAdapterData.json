@@ -83,5 +83,23 @@
 		"isDuration": false,
 		"progressType": "check_full_team_reach",
 		"questGameLevelDefineClass": "QuestGameLevelFullTeamDefine"
+	},
+	{
+		"eventName": "gameWorldLoop",
+		"isDuration": false,
+		"progressType": "check_reach",
+		"questGameLevelDefineClass": "QuestGameLevelFirstWorldLoopDefine"
+	},
+	{
+		"eventName": "gameWorldLoop",
+		"isDuration": false,
+		"progressType": "count_by_one",
+		"questGameLevelDefineClass": "QuestGameLevelWorldTourDefine"
+	},
+	{
+		"eventName": "unlockSkillSupport",
+		"isDuration": false,
+		"progressType": "count_by_one",
+		"questGameLevelDefineClass": "QuestGameLevelUnlockSupportSkillDefine"
 	}
 ]
