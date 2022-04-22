@@ -26,7 +26,7 @@ public class QuestGameLevelUsePerkNTimeDefine : QuestGameLevelBaseDefine
 		var lvDiamondFarm = GetGameLevelByDiamondBossDrop(diamondNeed);
 
 		//this skill have cooldown before next avaialble use
-		var timeCooldown = QuestConstance.MANA_POTION_DURATION_COOL_DOWN * (perkUse - 1);//-1 refer to the first is not cooldown
+		var timeCooldown = SMPQuestTemplateConstance.MANA_POTION_DURATION_COOL_DOWN * (perkUse - 1);//-1 refer to the first is not cooldown
 		var lvCoolDown = GetGameLevelCanReachBaseOnTime(timeCooldown);
 		lvCoolDown += GetGameLevelByDiamondBossDrop(diamondSkill);//because the first one not include time cooldown
 
@@ -42,7 +42,7 @@ public class QuestGameLevelUsePerkNTimeDefine : QuestGameLevelBaseDefine
 		var lvDiamondFarm = GetGameLevelByDiamondBossDrop(diamondNeed);
 
 		//this skill have cooldown before next avaialble use
-		var timeCooldown = QuestConstance.POWER_HOLDING_DURATION_COOL_DOWN * (perkUse - 1);//-1 refer to the first is not cooldown
+		var timeCooldown = SMPQuestTemplateConstance.POWER_HOLDING_DURATION_COOL_DOWN * (perkUse - 1);//-1 refer to the first is not cooldown
 		var lvCoolDown = GetGameLevelCanReachBaseOnTime(timeCooldown);
 		lvCoolDown += GetGameLevelByDiamondBossDrop(diamondSkill);//because the first one not include time cooldown
 

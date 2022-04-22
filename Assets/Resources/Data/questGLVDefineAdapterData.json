@@ -85,21 +85,45 @@
 		"questGameLevelDefineClass": "QuestGameLevelFullTeamDefine"
 	},
 	{
-		"eventName": "gameWorldLoop",
+		"eventName": "heroUpdateLevel",
+		"isDuration": false,
+		"progressType": "count_by_one",
+		"questGameLevelDefineClass": "QuestGameLevelUpdateHeroLvDefine"
+	},
+	{
+		"eventName": "heroUpdateLevel",
+		"isDuration": false,
+		"progressType": "hero_reach_rank",
+		"questGameLevelDefineClass": "QuestGameLevelHeroReachRankDefine"
+	},
+	{
+		"eventName": "heroUpdateLevel",
+		"isDuration": false,
+		"progressType": "check_n_hero_level_reach",
+		"questGameLevelDefineClass": "QuestGameLevelNHeroReachRankDefine"
+	},
+	{
+		"eventName": "unlockHero",
 		"isDuration": false,
 		"progressType": "check_reach",
-		"questGameLevelDefineClass": "QuestGameLevelFirstWorldLoopDefine"
+		"questGameLevelDefineClass": "QuestGameLevelHireNHeroDefine"
 	},
 	{
-		"eventName": "gameWorldLoop",
+		"eventName": "updatePowerUp",
 		"isDuration": false,
-		"progressType": "count_by_one",
-		"questGameLevelDefineClass": "QuestGameLevelWorldTourDefine"
+		"progressType": "count_update_powerup_each_hero",
+		"questGameLevelDefineClass": "QuestGameLevelTrainNHeroPowerUpDefine"
 	},
 	{
-		"eventName": "unlockSkillSupport",
+		"eventName": "unlockPowerUp",
 		"isDuration": false,
-		"progressType": "count_by_one",
-		"questGameLevelDefineClass": "QuestGameLevelUnlockSupportSkillDefine"
+		"progressType": "count_update_powerup_each_hero",
+		"questGameLevelDefineClass": "QuestGameLevelUnlockNHeroPowerUpDefine"
+	},
+	{
+		"eventName": "unlockPowerUp",
+		"isDuration": false,
+		"progressType": "count_unlock_powerup_and_use_it",
+		"questGameLevelDefineClass": "QuestGameLevelObtainNPowerUpAndUseDefine"
 	}
 ]

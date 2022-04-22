@@ -7,7 +7,7 @@ public class QuestGameLevelFullFlyingSupportDefine : QuestGameLevelBaseDefine
 	{
 		var flySupportSkillData = EditorDatas.instance.GetSkillData(8);
 		var costHeroUnlockFlySupportSkill = SMPHeroLevelConfiguration.GetCostOnLevel(5, 1,flySupportSkillData.Level_Unlock);
-		var flyUnlockCount = QuestConstance.MAX_FLYING_SUPPORT;
+		var flyUnlockCount = SMPQuestTemplateConstance.MAX_FLYING_SUPPORT;
 		var costFlySupportSkillUpdate = SMPActiveSkillLevelConfiguration.GetNextCostConfiguration(flySupportSkillData, flyUnlockCount);
 		var totalCost = costHeroUnlockFlySupportSkill + costFlySupportSkillUpdate;
 		UnityEngine.Debug.Log($"fly=> updateHero {costHeroUnlockFlySupportSkill}+ costFlySkill {costFlySupportSkillUpdate}");

@@ -89,7 +89,7 @@ public class SMPQuestCreationControl : MonoBehaviour
     void UpdateDisplay()
     {
         if (models.Count <= 0 || currentIndex < 0 || currentIndex >= models.Count) return;
-        
+		
         var quest = models[currentIndex];
         inpId.text = quest.id;
         tggSkippable.isOn = quest.skippable;
@@ -119,43 +119,10 @@ public class SMPQuestCreationControl : MonoBehaviour
         var quest = models[currentIndex];
         if (quest.ordered == null || quest.ordered.Count <= 0) return;
         var progress = quest.ordered[0];
-
-		/*
-        QuestGameLevelBaseDefine baseService = null;
-        
-        if (progress.eventName == QuestEventName.collectGold.ToString() 
-            && progress.duration > 0)
-        {
-            baseService = new QuestGameLevelCollectNGoldInSecondDefine();
-            baseService.questData = new QuestData();
-            baseService.questData.bigTargetPower = progress.bigTarget;
-            baseService.questData.duration = progress.duration;
-        }
-        else if (progress.eventName == QuestEventName.collectGold.ToString())
-        {
-            baseService = new QuestGameLevelCollectNGoldDefine();
-            baseService.questData = new QuestData();
-            baseService.questData.bigTargetPower = progress.bigTarget;
-        }
-        else if (progress.eventName == QuestEventName.reachStage.ToString())
-        {
-            baseService = new QuestGameLevelReachStageDefine();
-            baseService.questData = new QuestData();
-            baseService.questData.target = progress.target;
-        }
-        else if (progress.eventName == QuestEventName.collectZoneBossCrown.ToString())
-        {
-            baseService = new QuestGameLevelCollectCrownDefine();
-            baseService.questData = new QuestData();
-            baseService.questData.target = progress.target;
-        }
-        
-        if (baseService != null)*/
-
+		
 		var gameLv = QuestAdapterHelper.instance.GetGameLevelDefine(progress);
 		if(gameLv > 0)
         {
-            //var gameLv = baseService.GameLevelDefine();
             quest.kpiGameLevelReward = gameLv;
             quest.kpiGameLevelShouldAppear = 1;//gameLv - 3;
             if (quest.kpiGameLevelShouldAppear <= 0) quest.kpiGameLevelShouldAppear = 1;
@@ -193,7 +160,16 @@ public class SMPQuestCreationControl : MonoBehaviour
     }
     public void Save()
     {
-        SMPProgressModel progress = new SMPProgressModel();
+        var found = models.FirstOrDefault(t => t.id == inpId.text);
+		SMPProgressModel progress = null;//new SMPProgressModel();
+		if(found.ordered != null && found.ordered.Count>0)
+		{
+			progress = found.ordered[0];
+		}
+		else
+		{
+			progress = new SMPProgressModel();
+		}
         progress.progressTitleCode = int.Parse(inpTitleCode.text);
         progress.eventName = inpEventName.text;
         if (TryGetValue(inpTarget.text) > 0)
@@ -217,7 +193,6 @@ public class SMPQuestCreationControl : MonoBehaviour
         progress.progressType = inpProgressType.text;
 
         
-        var found = models.FirstOrDefault(t => t.id == inpId.text);
         if (found != null)
         {
             found.level = 1;

@@ -6,7 +6,7 @@ public class QuestGameLevelVideoAdsDefine : QuestGameLevelBaseDefine
 	public override int GameLevelDefine()
 	{
 		var videoCount = questData.target;
-		var timePerAds = QuestConstance.TIME_PER_BIRD_APPEAR + QuestConstance.TIME_PER_BIRD_APPEAR * QuestConstance.PERCENT_NOT_VIDEO_BIRD;
+		var timePerAds = SMPQuestTemplateConstance.TIME_PER_BIRD_APPEAR + SMPQuestTemplateConstance.TIME_PER_BIRD_APPEAR * SMPQuestTemplateConstance.PERCENT_NOT_VIDEO_BIRD;
 		var timeAvailableAllChest = videoCount * timePerAds;
 		return GetGameLevelCanReachBaseOnTime(timeAvailableAllChest);
 	}

@@ -7,8 +7,8 @@ public class QuestGameLevelCollectNGoldInSecondDefine : QuestGameLevelBaseDefine
 		if (questData.duration <= 0) return 0;
 
 		var goldTarget = questData.bigTarget_GS;
-		var duration = Math.Min(QuestConstance.KILL_PER_SECOND * QuestConstance.GHOST_FARM_PER_QUEST, questData.duration);
-		var countGhostFarm = (duration / QuestConstance.KILL_PER_SECOND);
+		var duration = Math.Min(SMPQuestTemplateConstance.KILL_PER_SECOND * SMPQuestTemplateConstance.GHOST_FARM_PER_QUEST, questData.duration);
+		var countGhostFarm = (duration / SMPQuestTemplateConstance.KILL_PER_SECOND);
 
 		var gameLv = 0;
 		var goldCollect = new SMPNum(0);
