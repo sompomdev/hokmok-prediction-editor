@@ -3,7 +3,7 @@ public class QuestGameLevelUseSkillNTimeDefine : QuestGameLevelBaseDefine
 {
 	public override int GameLevelDefine()
 	{
-		var skillTargetId = questData.target;
+		var skillTargetId = questData.powerUpType;
 		var skillData = EditorDatas.instance.GetSkillData(skillTargetId);
 		var skillCost = SMPActiveSkillLevelConfiguration.GetNextCostConfiguration(skillData, 1);
 		var gameLevelUnlockSkill = GetGameLevelHeroCanReachLevel(skillData.Level_Unlock, skillCost);

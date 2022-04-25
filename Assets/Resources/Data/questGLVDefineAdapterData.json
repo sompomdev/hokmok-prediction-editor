@@ -90,6 +90,12 @@
 		"questGameLevelDefineClass": "QuestGameLevelHireFullHeroDefine"
 	},
 	{
+		"eventName": "unlockHero",
+		"isDuration": false,
+		"progressType": "check_reach",
+		"questGameLevelDefineClass": "QuestGameLevelHireNHeroDefine"
+	},
+	{
 		"eventName": "dynamic",
 		"isDuration": false,
 		"progressType": "check_full_team_reach",
@@ -120,12 +126,6 @@
 		"questGameLevelDefineClass": "QuestGameLevelUpdateHeroLvDefine"
 	},
 	{
-		"eventName": "unlockHero",
-		"isDuration": false,
-		"progressType": "check_reach",
-		"questGameLevelDefineClass": "QuestGameLevelHireNHeroDefine"
-	},
-	{
 		"eventName": "updatePowerUp",
 		"isDuration": false,
 		"progressType": "count_update_powerup_each_hero",
@@ -154,6 +154,12 @@
 		"isDuration": false,
 		"progressType": "count_by_one",
 		"questGameLevelDefineClass": "QuestGameLevelStartUsingManaDefine"
+	},
+	{
+		"eventName": "usePowerUp",
+		"isDuration": false,
+		"progressType": "count_use_powerup_by_type",
+		"questGameLevelDefineClass": "QuestGameLevelUseSkillNTimeDefine"
 	},
 	{
 		"eventName": "gameLaunched",
@@ -202,5 +208,11 @@
 		"isDuration": false,
 		"progressType": "check_reach",
 		"questGameLevelDefineClass": "QuestGameLevelCollectPetDefine"
+	},
+	{
+		"eventName": "petUpdateLevel",
+		"isDuration": false,
+		"progressType": "check_n_pet_level_reach",
+		"questGameLevelDefineClass": "QuestGameLevelUpgradeNPetLevelDefine"
 	}
 ]

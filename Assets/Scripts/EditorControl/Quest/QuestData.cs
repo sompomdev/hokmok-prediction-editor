@@ -20,6 +20,7 @@ public class QuestData
 	public int priority;
 	public int target;
 	public int target2;
+	public int powerUpType;
 
 	public string bigTargetPower;
 	[JsonIgnore]
