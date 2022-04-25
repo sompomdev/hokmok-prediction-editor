@@ -79,6 +79,12 @@
 		"questGameLevelDefineClass": "QuestGameLevelFullSupportDefine"
 	},
 	{
+		"eventName": "unlockSupporter",
+		"isDuration": false,
+		"progressType": "check_reach",
+		"questGameLevelDefineClass": "QuestGameLevelHireNSupportDefine"
+	},
+	{
 		"eventName": "unlockHero",
 		"isDuration": false,
 		"progressType": "check_full_hero_reach",
@@ -107,6 +113,12 @@
 		"isDuration": false,
 		"progressType": "check_n_hero_level_reach",
 		"questGameLevelDefineClass": "QuestGameLevelNHeroReachRankDefine"
+	},
+	{
+		"eventName": "heroUpdateLevel",
+		"isDuration": false,
+		"progressType": "check_reach",
+		"questGameLevelDefineClass": "QuestGameLevelUpdateHeroLvDefine"
 	},
 	{
 		"eventName": "unlockHero",
