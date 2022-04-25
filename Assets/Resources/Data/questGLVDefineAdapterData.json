@@ -167,5 +167,11 @@
 		"isDuration": false,
 		"progressType": "count_by_one",
 		"questGameLevelDefineClass": "QuestGameLevelUnlockSupportSkillDefine"
+	},
+	{
+		"eventName": "usePowerUp",
+		"isDuration": false,
+		"progressType": "count_by_one",
+		"questGameLevelDefineClass": "QuestGameLevelStartUsingManaDefine"
 	}
 ]
