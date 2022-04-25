@@ -1,5 +1,4 @@
 [
-
 	{
 		"eventName": "tap",
 		"isDuration": false,
@@ -191,5 +190,17 @@
 		"isDuration": false,
 		"progressType": "count_by_one",
 		"questGameLevelDefineClass": "QuestGameLevelCompleteYourNMissionDefine"
+	},
+	{
+		"eventName": "tapOnTheBird",
+		"isDuration": false,
+		"progressType": "count_by_one",
+		"questGameLevelDefineClass": "QuestGameLevelOpenChestNTimeDefine"
+	},
+	{
+		"eventName": "petUnlock",
+		"isDuration": false,
+		"progressType": "check_reach",
+		"questGameLevelDefineClass": "QuestGameLevelCollectPetDefine"
 	}
 ]
