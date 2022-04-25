@@ -14,6 +14,6 @@ public class QuestGameLevelReduceGhostRoundDefine : QuestGameLevelBaseDefine
 
 		var gameLevelMax = Math.Max(gameLevelUnlockLevelTarget, gameLevelGoldFarm);
 
-		return gameLevelMax - SMPQuestTemplateConstance.STAGE_COUNTER_PRE_REACH;
+		return gameLevelMax;
 	}
 }
