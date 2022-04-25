@@ -1,6 +1,12 @@
 [
 
 	{
+		"eventName": "tap",
+		"isDuration": false,
+		"progressType": "count_by_one",
+		"questGameLevelDefineClass": "QuestGameLevelTapDefine"
+	},
+	{
 		"eventName": "collectGold",
 		"isDuration": true,
 		"progressType": "count_by_one",
