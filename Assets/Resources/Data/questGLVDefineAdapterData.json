@@ -90,6 +90,18 @@
 		"questGameLevelDefineClass": "QuestGameLevelUnlockSupportSkillDefine"
 	},
 	{
+		"eventName": "supportUpdateLevel",
+		"isDuration": false,
+		"progressType": "check_reach",
+		"questGameLevelDefineClass": "QuestGameLevelUpgradeSupportNTimeDefine"
+	},
+	{
+		"eventName": "supportUpdateLevel",
+		"isDuration": false,
+		"progressType": "count_by_one",
+		"questGameLevelDefineClass": "QuestGameLevelUpgradeSupportNTimeDefine"
+	},
+	{
 		"eventName": "unlockHero",
 		"isDuration": false,
 		"progressType": "check_full_hero_reach",
