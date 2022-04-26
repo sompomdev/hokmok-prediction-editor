@@ -60,6 +60,12 @@
 		"questGameLevelDefineClass": "QuestGameLevelUsePerkManaPortionDefine"
 	},
 	{
+		"eventName": "usePerk",
+		"isDuration": false,
+		"progressType": "use_n_time_n_perk",
+		"questGameLevelDefineClass": "QuestGameLevelUseNPerkNTimeDefine"
+	},
+	{
 		"eventName": "unlockSupporter",
 		"isDuration": false,
 		"progressType": "check_full_active_support_reach",
