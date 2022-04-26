@@ -222,6 +222,12 @@
 		"questGameLevelDefineClass": "QuestGameLevelOpenChestNTimeDefine"
 	},
 	{
+		"eventName": "tapOnTheBird",
+		"isDuration": false,
+		"progressType": "count_by_one_one_week_limit",
+		"questGameLevelDefineClass": "QuestGameLevelObtainNBirdWeekDefine"
+	},
+	{
 		"eventName": "petUnlock",
 		"isDuration": false,
 		"progressType": "check_reach",
