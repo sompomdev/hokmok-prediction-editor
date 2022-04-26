@@ -147,7 +147,7 @@
 		"eventName": "unlockPowerUp",
 		"isDuration": false,
 		"progressType": "count_by_one",
-		"questGameLevelDefineClass": "QuestGameLevelUpgradePowerupNTimeDefine"
+		"questGameLevelDefineClass": "QuestGameLevelObtainNPowerUpAndUseDefine"
 	},
 	{
 		"eventName": "unlockPowerUp",
