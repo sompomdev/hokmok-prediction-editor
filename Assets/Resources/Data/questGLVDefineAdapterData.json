@@ -156,6 +156,12 @@
 		"questGameLevelDefineClass": "QuestGameLevelObtainNPowerUpAndUseDefine"
 	},
 	{
+		"eventName": "unlockPowerUp",
+		"isDuration": false,
+		"progressType": "count_update_powerup_each_hero",
+		"questGameLevelDefineClass": "QuestGameLevelTrainNHeroPowerUpDefine"
+	},
+	{
 		"eventName": "usePowerUp",
 		"isDuration": false,
 		"progressType": "combine_power_up",
