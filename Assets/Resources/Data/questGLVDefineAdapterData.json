@@ -280,5 +280,11 @@
 		"isDuration": false,
 		"progressType": "count_by_day",
 		"questGameLevelDefineClass": "QuestGameLevelPlayTotalNDayDefine"
+	},
+	{
+		"eventName": "updateGhostRoundReduced",
+		"isDuration": false,
+		"progressType": "check_reach",
+		"questGameLevelDefineClass": "QuestGameLevelReduceGhostRoundDefine"
 	}
 ]
