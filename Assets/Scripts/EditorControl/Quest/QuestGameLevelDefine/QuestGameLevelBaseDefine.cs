@@ -122,4 +122,11 @@ public abstract class QuestGameLevelBaseDefine
 		var gameLevel = diamond * SMPQuestTemplateConstance.STAGE_TO_DROP_ONE_DIAMOND;
 		return gameLevel;
 	}
+
+	protected int GetGameLevelByDiamondFarmFromBossOnly(int diamond)
+	{
+		//10 game level will drop 1 diamon
+		var gameLevel = diamond * SMPQuestTemplateConstance.STAGE_TO_DROP_ONE_DIAMOND;
+		return gameLevel;
+	}
 }
