@@ -232,5 +232,23 @@
 		"isDuration": false,
 		"progressType": "check_n_pet_level_reach",
 		"questGameLevelDefineClass": "QuestGameLevelUpgradeNPetLevelDefine"
+	},
+	{
+		"eventName": "playingTime",
+		"isDuration": false,
+		"progressType": "count_by_minute",
+		"questGameLevelDefineClass": "QuestGameLevelPlayTotalNMinuteDefine"
+	},
+	{
+		"eventName": "playingTime",
+		"isDuration": false,
+		"progressType": "count_by_hour",
+		"questGameLevelDefineClass": "QuestGameLevelPlayTotalNHourDefine"
+	},
+	{
+		"eventName": "playingTime",
+		"isDuration": false,
+		"progressType": "count_by_day",
+		"questGameLevelDefineClass": "QuestGameLevelPlayTotalNDayDefine"
 	}
 ]
