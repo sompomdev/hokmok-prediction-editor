@@ -1,8 +1,6 @@
 
 public class QuestGameLevelCollectPetDefine : QuestGameLevelBaseDefine
 {
-	private int maxPet = 39;
-
 	public override int GameLevelDefine()
 	{
 		var petUnlockTarget = questData.target;

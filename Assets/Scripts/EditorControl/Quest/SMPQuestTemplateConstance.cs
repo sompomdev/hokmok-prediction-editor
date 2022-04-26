@@ -15,6 +15,7 @@ public static class SMPQuestTemplateConstance
 	public const int MAX_SUPPORT = 20;
 	public const int MAX_ACTIVE_SUPPORT = 4;
 	public const int MAX_FLYING_SUPPORT = 4;
+	public const int MAX_PET = 39;
 
 	public const float TIME_PER_BOSS = 4;
 	public const float TIME_PER_GHOST = 1;

@@ -8,8 +8,12 @@ public class QuestGameLevelUpgradeNPetLevelDefine : QuestGameLevelBaseDefine
 		var petCountTarget = questData.target;
 		var petLevelTarget = questData.target2;
 
-		var petUnlockTarget = questData.target;
-		var gameLvDropEgg = GetGameLevelPetUnlock(petUnlockTarget);
+		if (petCountTarget == -1)
+		{
+			petCountTarget = SMPQuestTemplateConstance.MAX_PET;
+		}
+		
+		var gameLvDropEgg = GetGameLevelPetUnlock(petCountTarget);
 
 		var petData = new SMPPetsData();
 		petData.petCurrentLevel = 1;
