@@ -240,6 +240,12 @@
 		"questGameLevelDefineClass": "QuestGameLevelCompleteYourNMissionDefine"
 	},
 	{
+		"eventName": "passBossFight",
+		"isDuration": false,
+		"progressType": "count_pass_boss_fight_consecutive",
+		"questGameLevelDefineClass": "QuestGameLevelPassNBossFightDefine"
+	},
+	{
 		"eventName": "tapOnTheBird",
 		"isDuration": false,
 		"progressType": "count_by_one",
