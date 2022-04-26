@@ -286,5 +286,11 @@
 		"isDuration": false,
 		"progressType": "check_reach",
 		"questGameLevelDefineClass": "QuestGameLevelReduceGhostRoundDefine"
+	},
+	{
+		"eventName": "killGhost",
+		"isDuration": false,
+		"progressType": "count_by_one",
+		"questGameLevelDefineClass": "QuestGameLevelKillNGhostDefine"
 	}
 ]
