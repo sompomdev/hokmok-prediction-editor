@@ -292,5 +292,11 @@
 		"isDuration": false,
 		"progressType": "count_by_one",
 		"questGameLevelDefineClass": "QuestGameLevelKillNGhostDefine"
+	},
+	{
+		"eventName": "watchTheVideo",
+		"isDuration": false,
+		"progressType": "count_by_one",
+		"questGameLevelDefineClass": "QuestGameLevelVideoAdsDefine"
 	}
 ]
