@@ -198,6 +198,12 @@
 		"questGameLevelDefineClass": "QuestGameLevelUseSkillNTimeDefine"
 	},
 	{
+		"eventName": "usePowerUp",
+		"isDuration": false,
+		"progressType": "use_n_time_n_powerup",
+		"questGameLevelDefineClass": "QuestGameLevelUseNSkillNTimeDefine"
+	},
+	{
 		"eventName": "gameLaunched",
 		"isDuration": false,
 		"progressType": "count_by_one",
