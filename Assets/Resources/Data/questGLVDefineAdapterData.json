@@ -252,6 +252,12 @@
 		"questGameLevelDefineClass": "QuestGameLevelObtainNBirdWeekDefine"
 	},
 	{
+		"eventName": "collectDiamondFromBird",
+		"isDuration": false,
+		"progressType": "count_by_one",
+		"questGameLevelDefineClass": "QuestGameLevelCollectNDiamondBirdDefine"
+	},
+	{
 		"eventName": "petUnlock",
 		"isDuration": false,
 		"progressType": "check_reach",
