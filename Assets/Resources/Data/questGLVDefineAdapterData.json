@@ -84,6 +84,12 @@
 		"questGameLevelDefineClass": "QuestGameLevelHireNSupportDefine"
 	},
 	{
+		"eventName": "unlockSkillSupport",
+		"isDuration": false,
+		"progressType": "count_by_one",
+		"questGameLevelDefineClass": "QuestGameLevelUnlockSupportSkillDefine"
+	},
+	{
 		"eventName": "unlockHero",
 		"isDuration": false,
 		"progressType": "check_full_hero_reach",
@@ -132,10 +138,16 @@
 		"questGameLevelDefineClass": "QuestGameLevelTrainNHeroPowerUpDefine"
 	},
 	{
-		"eventName": "unlockPowerUp",
+		"eventName": "updatePowerUp",
 		"isDuration": false,
 		"progressType": "count_update_powerup_each_hero",
-		"questGameLevelDefineClass": "QuestGameLevelUnlockNHeroPowerUpDefine"
+		"questGameLevelDefineClass": "QuestGameLevelTrainNHeroPowerUpDefine"
+	},
+	{
+		"eventName": "unlockPowerUp",
+		"isDuration": false,
+		"progressType": "count_by_one",
+		"questGameLevelDefineClass": "QuestGameLevelUpgradePowerupNTimeDefine"
 	},
 	{
 		"eventName": "unlockPowerUp",
