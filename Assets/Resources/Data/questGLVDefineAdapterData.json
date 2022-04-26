@@ -30,6 +30,12 @@
 		"questGameLevelDefineClass": "QuestGameLevelReachStageDefine"
 	},
 	{
+		"eventName": "completeStage",
+		"isDuration": false,
+		"progressType": "count_by_one",
+		"questGameLevelDefineClass": "QuestGameLevelReachStageDefine"
+	},
+	{
 		"eventName": "collectZoneBossCrown",
 		"isDuration": false,
 		"progressType": "count_by_one",
