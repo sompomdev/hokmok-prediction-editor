@@ -60,7 +60,7 @@ public class SMPSupportLevelConfiguration {
 		return levelconfig;
 	}
 
-    private static double CostUnlockSupport (int supportIndex)
+    public static double CostUnlockSupport (int supportIndex)
     {
         double costUnlockSupport = 0;
         if (supportIndex < 5)

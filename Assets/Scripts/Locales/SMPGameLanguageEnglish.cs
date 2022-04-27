@@ -717,7 +717,7 @@ public partial class SMPGameLanguage
 		progress_des[37] = "Make [n] world tour of hokmok!";
 		progress_des[38] = "Obtain your first powerup!";
 		progress_des[39] = "Complete your first mission!";
-		progress_des[40] = "Complete your 10 mission!";
+		progress_des[40] = "Complete your [n] mission!";
 		progress_des[41] = "Collect [n] diamonds!";
 		progress_des[42] = "Complete [n]th Stage";
 		progress_des[43] = "Beat [n] levels";

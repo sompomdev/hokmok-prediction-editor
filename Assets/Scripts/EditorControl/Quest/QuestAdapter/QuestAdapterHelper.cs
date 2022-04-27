@@ -19,18 +19,38 @@ public class QuestAdapterHelper : MonoBehaviour
 
 	public int GetGameLevelDefine(SMPProgressModel progressModel)
 	{
+		var strategy = _getStrategy(progressModel);
+		if (strategy != null)
+		{
+			return strategy.GameLevelDefine();
+		}
+		return 0;
+	}
+	public int GetAppearLevelDefine(SMPProgressModel progressModel)
+	{
+		var strategy = _getStrategy(progressModel);
+		if (strategy != null)
+		{
+			return strategy.AppearLevelDefine();
+		}
+		
+		return 1;
+	}
+
+	private QuestGameLevelBaseDefine _getStrategy(SMPProgressModel progressModel)
+	{
 		QuestGLVDefineAdapterData data = null;
 		if(progressModel.duration > 0)
 		{
 			data = glvDefineDatas.FirstOrDefault(g => g.eventName == progressModel.eventName
-										&& g.progressType == progressModel.progressType
-										&& g.isDuration);
+			                                          && g.progressType == progressModel.progressType
+			                                          && g.isDuration);
 		}
 		else
 		{
 			data = glvDefineDatas.FirstOrDefault(g => g.eventName == progressModel.eventName
-										&& g.progressType == progressModel.progressType
-										&& !g.isDuration);
+			                                          && g.progressType == progressModel.progressType
+			                                          && !g.isDuration);
 		}
 
 		if(data != null)
@@ -45,11 +65,10 @@ public class QuestAdapterHelper : MonoBehaviour
 			Type t = Type.GetType(questData.questGameLevelDefineClass);
 			QuestGameLevelBaseDefine qDefine = (QuestGameLevelBaseDefine)Activator.CreateInstance(t);
 			qDefine.questData = questData;
-			return qDefine.GameLevelDefine();
+			return qDefine;
 		}
-
 		Debug.LogError("Can't define game level " + progressModel.eventName);
-		return 0;
+		return null;
 	}
 
 	private void LoadGamelevelDefineAdapterData()
