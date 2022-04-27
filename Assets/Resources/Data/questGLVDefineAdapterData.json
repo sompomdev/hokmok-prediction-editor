@@ -240,6 +240,12 @@
 		"questGameLevelDefineClass": "QuestGameLevelWorldTourDefine"
 	},
 	{
+		"eventName": "onUnlockNewZone",
+		"isDuration": false,
+		"progressType": "check_match",
+		"questGameLevelDefineClass": "QuestGameLevelWorldNameDefine"
+	},
+	{
 		"eventName": "unlockSkillSupport",
 		"isDuration": false,
 		"progressType": "count_by_one",
