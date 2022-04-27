@@ -111,7 +111,7 @@
 		"eventName": "supportUpdateLevel",
 		"isDuration": false,
 		"progressType": "check_reach",
-		"questGameLevelDefineClass": "QuestGameLevelUpgradeSupportNTimeDefine"
+		"questGameLevelDefineClass": "QuestGameLevelUpgradeSupportNReachDefine"
 	},
 	{
 		"eventName": "supportUpdateLevel",

@@ -1,12 +1,12 @@
 using System;
 using Sompom.Inventory;
 
-public class QuestGameLevelUpgradeSupportNTimeDefine : QuestGameLevelBaseDefine
+public class QuestGameLevelUpgradeSupportNReachDefine : QuestGameLevelBaseDefine
 {
 	public override int GameLevelDefine()
 	{
 		var upgradeLevelCount = questData.target;
-		var costUnlockSupportAndSkill = GetCostToUnlockSupportAndUpdate(1, upgradeLevelCount + 1);//1 is unlock
+		var costUnlockSupportAndSkill = GetCostToUnlockSupportAndUpdate(1, upgradeLevelCount);
 		return GetGameLevelCanFarmForCost(costUnlockSupportAndSkill);
 	}
 

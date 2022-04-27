@@ -81,6 +81,7 @@ public abstract class QuestGameLevelBaseDefine
 		for (int i = 1; i <= supportNeedUnlock; i++)
 		{
 			var supportData = EditorDatas.instance.GetSupportData(i);
+			supportData.m_bHired = false;
 			cost += SMPSupportLevelConfiguration.GetLevelConfiguration(supportData, 1).cost;
 		}
 		return cost;
