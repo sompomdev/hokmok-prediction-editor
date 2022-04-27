@@ -347,7 +347,7 @@ using UnityEngine;
             node["progressType"] = progressType;
 		//node["fruitType"] = fruitType_GS.ToString();
 		node["powerUpType"] = powerUpType_GS.ToString();
-		//node["supportId"] = supportId;
+		node["supportId"] = supportId;
 		//node["bossType"] = bossType;
 		node["heroId"] = heroId;
 		//node["zoneId"] = zoneId;
