@@ -270,6 +270,12 @@
 		"questGameLevelDefineClass": "QuestGameLevelDefeatNBossRevengeDefine"
 	},
 	{
+		"eventName": "defeatBigBoss",
+		"isDuration": false,
+		"progressType": "count_by_one",
+		"questGameLevelDefineClass": "QuestGameLevelDefeatNBigBossDefine"
+	},
+	{
 		"eventName": "tapOnTheBird",
 		"isDuration": false,
 		"progressType": "count_by_one",
