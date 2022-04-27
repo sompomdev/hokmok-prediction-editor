@@ -1,5 +1,6 @@
 using UnityEngine;
 using System;
+using Sompom.Inventory;
 
 public abstract class QuestGameLevelBaseDefine
 {
@@ -129,5 +130,23 @@ public abstract class QuestGameLevelBaseDefine
 		//10 game level will drop 1 diamon
 		var gameLevel = diamond * SMPQuestTemplateConstance.STAGE_TO_DROP_ONE_DIAMOND;
 		return gameLevel;
+	}
+
+	protected int GetGameLevelByDiamondForPetUpdate(int petCount, int updateTime)
+	{
+		var gameLvDropEgg = GetGameLevelPetUnlock(petCount);
+
+		var petData = new SMPPetsData();
+		petData.petCurrentLevel = 0;//start update level from 0
+		int cost = 0;
+		do
+		{
+			petData.petCurrentLevel++;
+			cost += SMPPetLevelConfiguration.GetCostDependingOnNumOfLevelToAdd(petData) * petCount;
+		}
+		while (petData.petCurrentLevel < updateTime);
+
+		var gameLvToGetDiamond = GetGameLevelByDiamondBossDrop(cost);
+		return Math.Max(gameLvDropEgg, gameLvToGetDiamond);
 	}
 }
