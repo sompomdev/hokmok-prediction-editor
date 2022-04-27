@@ -63,6 +63,7 @@ public class QuestAdapterHelper : MonoBehaviour
 			questData.questGameLevelDefineClass = data.questGameLevelDefineClass;
 			questData.powerUpType = (int)progressModel.powerUpType_GS;
 			questData.petId = progressModel.petId;
+			questData.heroId = progressModel.heroId;
 
 			Type t = Type.GetType(questData.questGameLevelDefineClass);
 			QuestGameLevelBaseDefine qDefine = (QuestGameLevelBaseDefine)Activator.CreateInstance(t);
