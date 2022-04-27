@@ -346,12 +346,12 @@ using UnityEngine;
             node["eventName"] = eventName;
             node["progressType"] = progressType;
 		//node["fruitType"] = fruitType_GS.ToString();
-		//node["powerUpType"] = powerUpType_GS.ToString();
+		node["powerUpType"] = powerUpType_GS.ToString();
 		//node["supportId"] = supportId;
 		//node["bossType"] = bossType;
 		node["heroId"] = heroId;
 		//node["zoneId"] = zoneId;
-		//node["petId"] = petId;
+		node["petId"] = petId;
 		if (target != 0)
                 node["target"] = target;
             if (target2 != 0)

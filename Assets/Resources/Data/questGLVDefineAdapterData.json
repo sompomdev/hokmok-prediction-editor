@@ -111,7 +111,7 @@
 		"eventName": "supportUpdateLevel",
 		"isDuration": false,
 		"progressType": "check_reach",
-		"questGameLevelDefineClass": "QuestGameLevelUpgradeSupportNTimeDefine"
+		"questGameLevelDefineClass": "QuestGameLevelUpgradeSupportNReachDefine"
 	},
 	{
 		"eventName": "supportUpdateLevel",
@@ -159,7 +159,7 @@
 		"eventName": "heroUpdateLevel",
 		"isDuration": false,
 		"progressType": "check_reach",
-		"questGameLevelDefineClass": "QuestGameLevelUpdateHeroLvDefine"
+		"questGameLevelDefineClass": "QuestGameLevelUpdateHeroLvReachDefine"
 	},
 	{
 		"eventName": "updatePowerUp",
@@ -258,6 +258,18 @@
 		"questGameLevelDefineClass": "QuestGameLevelPassNBossFightDefine"
 	},
 	{
+		"eventName": "defeatBossBattle",
+		"isDuration": false,
+		"progressType": "count_by_one",
+		"questGameLevelDefineClass": "QuestGameLevelDefeatNBossBattleDefine"
+	},
+	{
+		"eventName": "defeatBossRevenge",
+		"isDuration": false,
+		"progressType": "count_by_one",
+		"questGameLevelDefineClass": "QuestGameLevelDefeatNBossRevengeDefine"
+	},
+	{
 		"eventName": "tapOnTheBird",
 		"isDuration": false,
 		"progressType": "count_by_one",
@@ -291,6 +303,24 @@
 		"eventName": "petUpdateLevel",
 		"isDuration": false,
 		"progressType": "check_n_pet_level_reach",
+		"questGameLevelDefineClass": "QuestGameLevelUpgradeNPetLvReachDefine"
+	},
+	{
+		"eventName": "petUpdateLevel",
+		"isDuration": false,
+		"progressType": "count_by_one",
+		"questGameLevelDefineClass": "QuestGameLevelUpdatePetLevelNTimeDefine"
+	},
+	{
+		"eventName": "petUpdateLevel",
+		"isDuration": false,
+		"progressType": "count_upgrade_a_pet_n_time",
+		"questGameLevelDefineClass": "QuestGameLevelUpdatePetLevelNTimeDefine"
+	},
+	{
+		"eventName": "petUpdateLevel",
+		"isDuration": false,
+		"progressType": "count_upgrade_n_pet",
 		"questGameLevelDefineClass": "QuestGameLevelUpgradeNPetLevelDefine"
 	},
 	{

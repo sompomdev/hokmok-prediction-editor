@@ -1,20 +1,21 @@
 using Sompom.Inventory;
 using System;
 
-public class QuestGameLevelUpgradeNPetLevelDefine : QuestGameLevelBaseDefine
+public class QuestGameLevelUpgradeNPetLvNTimeDefine : QuestGameLevelBaseDefine
 {
-	//"Update [n] pets!"
+	//"Update a pet [n] times!"
 
 	public override int GameLevelDefine()
 	{
 		var updateNPet = questData.target;
+		var updateTime = questData.target2;
 
 		if(updateNPet == -1)
 		{
 			updateNPet = SMPQuestTemplateConstance.MAX_PET;
 		}
 
-		var gameLevel = GetGameLevelByDiamondForPetUpdate(updateNPet, 1);
+		var gameLevel = GetGameLevelByDiamondForPetUpdate(updateNPet, updateTime);
 		return gameLevel;
 	}
 }

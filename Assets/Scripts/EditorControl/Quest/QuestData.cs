@@ -21,6 +21,7 @@ public class QuestData
 	public int target;
 	public int target2;
 	public int powerUpType;
+	public int petId;
 
 	public string bigTargetPower;
 	[JsonIgnore]

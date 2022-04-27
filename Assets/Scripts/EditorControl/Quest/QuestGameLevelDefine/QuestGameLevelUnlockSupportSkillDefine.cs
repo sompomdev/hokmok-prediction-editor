@@ -27,8 +27,9 @@ public class QuestGameLevelUnlockSupportSkillDefine : QuestGameLevelBaseDefine
 			return new SMPNum(0);
 		}
 
+		support.m_bHired = false;
 		var costUnlockSupport = SMPSupportLevelConfiguration.GetLevelConfiguration(support, 1).cost;
-		
+		support.m_bHired = true;
 		var costSkillSupport = new SMPNum(0);
 		int totalUnlockSkills = 0;
 		do
