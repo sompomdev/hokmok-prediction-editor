@@ -121,10 +121,11 @@ public class SMPQuestCreationControl : MonoBehaviour
 		var progress = quest.ordered[0];
 
 		var gameLv = QuestAdapterHelper.instance.GetGameLevelDefine(progress);
+		var appearLv = QuestAdapterHelper.instance.GetAppearLevelDefine(progress);
 		if (gameLv > 0)
 		{
 			quest.kpiGameLevelReward = gameLv;
-			quest.kpiGameLevelShouldAppear = 1;//gameLv - 3;
+			quest.kpiGameLevelShouldAppear = appearLv;
 			if (quest.kpiGameLevelShouldAppear <= 0) quest.kpiGameLevelShouldAppear = 1;
 
 			textKpiGameLvReward.text = gameLv.ToString();

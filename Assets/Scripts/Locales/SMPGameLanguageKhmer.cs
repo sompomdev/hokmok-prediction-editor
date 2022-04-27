@@ -593,7 +593,7 @@ public partial class SMPGameLanguage
 		progress_titles[37] = "World tour!";
 		progress_titles[38] = "First powerup!";
 		progress_titles[39] = "First mission!";
-		progress_titles[40] = "Your 10 mission!";
+		progress_titles[40] = "Your [n] mission!";
 		progress_titles[41] = "Collect diamonds!";
 		progress_titles[42] = "Complete Stage";
 		progress_titles[43] = "Beat levels";

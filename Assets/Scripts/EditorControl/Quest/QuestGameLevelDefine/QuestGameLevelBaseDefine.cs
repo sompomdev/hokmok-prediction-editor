@@ -8,6 +8,11 @@ public abstract class QuestGameLevelBaseDefine
 
 	public abstract int GameLevelDefine();
 
+	public virtual int AppearLevelDefine()
+	{
+		return 1;
+	}
+
 	protected int GetGameLevelFromGoldEarningBallance(int heroCount, int levelTarget)
 	{
 		var gameLv = 0;
