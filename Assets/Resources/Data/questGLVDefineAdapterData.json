@@ -159,7 +159,7 @@
 		"eventName": "heroUpdateLevel",
 		"isDuration": false,
 		"progressType": "check_reach",
-		"questGameLevelDefineClass": "QuestGameLevelUpdateHeroLvDefine"
+		"questGameLevelDefineClass": "QuestGameLevelUpdateHeroLvReachDefine"
 	},
 	{
 		"eventName": "updatePowerUp",
