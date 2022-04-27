@@ -162,6 +162,12 @@
 		"questGameLevelDefineClass": "QuestGameLevelUpdateHeroLvReachDefine"
 	},
 	{
+		"eventName": "heroUpdateLevel",
+		"isDuration": false,
+		"progressType": "count_all_heroes_reach_rank",
+		"questGameLevelDefineClass": "QuestGameLevelUpgradeAllHeroReachRankDefine"
+	},
+	{
 		"eventName": "updatePowerUp",
 		"isDuration": false,
 		"progressType": "count_update_powerup_each_hero",
