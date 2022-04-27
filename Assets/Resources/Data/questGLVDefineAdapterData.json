@@ -291,7 +291,7 @@
 		"eventName": "petUpdateLevel",
 		"isDuration": false,
 		"progressType": "check_n_pet_level_reach",
-		"questGameLevelDefineClass": "QuestGameLevelUpgradeNPetLevelDefine"
+		"questGameLevelDefineClass": "QuestGameLevelUpgradeNPetLvReachDefine"
 	},
 	{
 		"eventName": "petUpdateLevel",

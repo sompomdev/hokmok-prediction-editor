@@ -10,6 +10,11 @@ public class QuestGameLevelUpgradeNPetLvNTimeDefine : QuestGameLevelBaseDefine
 		var updateNPet = questData.target;
 		var updateTime = questData.target2;
 
+		if(updateNPet == -1)
+		{
+			updateNPet = SMPQuestTemplateConstance.MAX_PET;
+		}
+
 		var gameLevel = GetGameLevelByDiamondForPetUpdate(updateNPet, updateTime);
 		return gameLevel;
 	}
