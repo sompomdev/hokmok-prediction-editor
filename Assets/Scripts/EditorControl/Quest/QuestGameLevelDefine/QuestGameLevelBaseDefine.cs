@@ -154,4 +154,91 @@ public abstract class QuestGameLevelBaseDefine
 		var gameLvToGetDiamond = GetGameLevelByDiamondBossDrop(cost);
 		return Math.Max(gameLvDropEgg, gameLvToGetDiamond);
 	}
+
+	protected int GetGameLevelOnSupportUpgrateLevel(int supportId, int levelTarget)
+	{
+		if (supportId == 0)
+		{
+			supportId = 1;
+		}
+		var costUnlockSupportAndSkill = GetCostToUnlockSupportAndUpdateIncludeEvolve(supportId, levelTarget, 0, 0);
+
+		if (supportId >= 17)//fly support
+		{
+			var flySupportSkillData = EditorDatas.instance.GetSkillData(8);
+			var costHeroUnlockFlySupportSkill = SMPHeroLevelConfiguration.GetCostOnLevel(5, 1,flySupportSkillData.Level_Unlock);
+			var flyUnlockCount = supportId - 16;
+			var costFlySupportSkillUpdate = SMPActiveSkillLevelConfiguration.GetNextCostConfiguration(flySupportSkillData, flyUnlockCount);
+			var totalCost = costHeroUnlockFlySupportSkill + costFlySupportSkillUpdate;
+			costUnlockSupportAndSkill += totalCost;
+		}
+		
+		return GetGameLevelCanFarmForCost(costUnlockSupportAndSkill);
+	}
+	
+	protected SMPNum GetCostToUnlockSupportAndUpdateIncludeEvolve(int supportId, int upgradeLevelCount, int levelStart, int evolveCounter)
+	{
+		var support = EditorDatas.instance.GetSupportData(supportId);
+		if (support == null)
+		{
+			UnityEngine.Debug.Log("Out of support on id " + supportId);
+			return new SMPNum(0);
+		}
+
+		support.m_iCurrentLevel = levelStart;
+		var costUnlockSupport = new SMPNum(0);
+		if (levelStart == 0)
+		{
+			support.m_bHired = false;
+			support.m_SupportState = SupportStates.Hired;
+			costUnlockSupport = SMPSupportLevelConfiguration.GetLevelConfiguration(support, 1).cost;
+			support.m_iCurrentLevel = 1;
+		}
+		support.m_bHired = true;
+		support.m_evoledCounter = evolveCounter;
+		support.m_evolved = evolveCounter > 0;
+		SMPNum extraCost = new SMPNum(0);
+		
+		Debug.Log($"LvStart {levelStart} upLvCount {upgradeLevelCount} evolve {evolveCounter}");
+		
+		var targetSupportLevelReach = SMPQuestTemplateConstance.PER_LEVEL_SUPPORT_EVOLVE - 1;
+		bool isEvolve = false;
+		if (upgradeLevelCount < targetSupportLevelReach)
+		{
+			targetSupportLevelReach = upgradeLevelCount;
+		}
+		else
+		{
+			isEvolve = true;
+		}
+
+		support.m_SupportState = SupportStates.LevelUp;
+		SMPNum costSupportLevelReachUnlockSkill = SMPSupportLevelConfiguration.GetCostDependingOnNumOfLevelToAdd(levelStart,
+			targetSupportLevelReach);
+
+		if (isEvolve)
+		{
+			support.m_SupportState = SupportStates.UnlockedSkill;
+			for (int i = 0; i < support.m_SupportsAbilityList.Count; i++)
+			{
+				if (support.m_SupportsAbilityList[i].m_skillType != SupportSkillType.EVOLVE)
+				{
+					//cost on unlock skill
+					extraCost += SMPSupportLevelConfiguration.GetLevelConfiguration(support, 1).cost;
+					support.m_SupportsAbilityList[i].m_bUnlocked = true;
+				}
+			}
+
+			support.m_iCurrentLevel = (SMPQuestTemplateConstance.PER_LEVEL_SUPPORT_EVOLVE *(evolveCounter+1)) - 1;
+			//cost on unlock evolve
+			extraCost += SMPSupportLevelConfiguration.GetLevelConfiguration(support, 1).cost;
+			var upgradeNextCount = upgradeLevelCount -  SMPQuestTemplateConstance.PER_LEVEL_SUPPORT_EVOLVE;
+			if (upgradeNextCount > 0)
+			{
+				extraCost += GetCostToUnlockSupportAndUpdateIncludeEvolve(supportId, upgradeNextCount, support.m_iCurrentLevel+1, support.m_evoledCounter+1);
+			}
+		}
+
+		return costUnlockSupport + costSupportLevelReachUnlockSkill + extraCost;
+	}
 }
