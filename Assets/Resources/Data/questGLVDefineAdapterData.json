@@ -394,5 +394,11 @@
 		"isDuration": false,
 		"progressType": "count_by_one",
 		"questGameLevelDefineClass": "QuestGameLevelVideoAdsDefine"
+	},
+	{
+		"eventName": "playMasterMind",
+		"isDuration": false,
+		"progressType": "count_by_one",
+		"questGameLevelDefineClass": "QuestGameLevelPlayMastermindNTimeDefine"
 	}
 ]
