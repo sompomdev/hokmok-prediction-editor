@@ -189,7 +189,7 @@
 		"eventName": "updatePowerUp",
 		"isDuration": false,
 		"progressType": "count_update_powerup_each_hero",
-		"questGameLevelDefineClass": "QuestGameLevelTrainPowerUpOfNHeroDefine"
+		"questGameLevelDefineClass": "QuestGameLevelTrainNHeroPowerUpDefine"
 	},
 	{
 		"eventName": "updatePowerUp",
@@ -213,7 +213,7 @@
 		"eventName": "unlockPowerUp",
 		"isDuration": false,
 		"progressType": "count_update_powerup_each_hero",
-		"questGameLevelDefineClass": "QuestGameLevelTrainPowerUpOfNHeroDefine"
+		"questGameLevelDefineClass": "QuestGameLevelTrainNHeroPowerUpDefine"
 	},
 	{
 		"eventName": "usePowerUp",
@@ -406,5 +406,11 @@
 		"isDuration": false,
 		"progressType": "check_reach",
 		"questGameLevelDefineClass": "QuestGameLevelReachNMastermindColorDefine"
+	},
+	{
+		"eventName": "onWinMasterMind",
+		"isDuration": false,
+		"progressType": "count_by_one",
+		"questGameLevelDefineClass": "QuestGameLevelWinMastermindNTimeDefine"
 	}
 ]
