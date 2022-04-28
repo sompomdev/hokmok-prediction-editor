@@ -39,4 +39,6 @@ public static class SMPQuestTemplateConstance
 	public const float POWER_HOLDING_DURATION_COOL_DOWN = 120;
 
 	public const int PER_LEVEL_SUPPORT_EVOLVE = 1000;
+
+	public const int PASS_COLOR_PER_MASTERMINE = 3;
 }

@@ -249,4 +249,15 @@ public abstract class QuestGameLevelBaseDefine
 
 		return costUnlockSupport + costSupportLevelReachUnlockSkill + extraCost;
 	}
+
+	protected int GetGameLevelOnFirstPlayMastermind()
+	{
+		var costUnlock = GetCostAllSupportUnlock(4);
+		var gameLevel = GetGameLevelCanFarmForCost(costUnlock);
+		
+		//for first boss after support unlock will have tutorial so mastermind not appear
+		gameLevel += 1;
+		
+		return gameLevel;
+	}
 }

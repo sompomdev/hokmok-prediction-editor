@@ -400,5 +400,11 @@
 		"isDuration": false,
 		"progressType": "count_by_one",
 		"questGameLevelDefineClass": "QuestGameLevelPlayMastermindNTimeDefine"
+	},
+	{
+		"eventName": "onMasterMindInArow",
+		"isDuration": false,
+		"progressType": "check_reach",
+		"questGameLevelDefineClass": "QuestGameLevelReachNMastermindColorDefine"
 	}
 ]
