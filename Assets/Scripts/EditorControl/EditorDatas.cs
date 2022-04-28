@@ -43,7 +43,14 @@ public class EditorDatas : MonoBehaviour
 
 	public SMPSupportsCharacters GetSupportData(int id)
 	{
-		return supportsCharactersList.FirstOrDefault(s => s.m_iID == id);
+		var supportData = supportsCharactersList.FirstOrDefault(s => s.m_iID == id);
+		supportData.m_evolved = false;
+		supportData.m_evoledCounter = 0;
+		supportData.m_bHired = false;
+		supportData.m_SupportsAbilityList.ForEach(s => s.m_bUnlocked = false);
+		supportData.m_iCurrentLevel = 0;
+		supportData.m_SupportState = SupportStates.LevelUp;
+		return supportData;
 	}
 
 	public SMPPetsData GetPetData(int id)

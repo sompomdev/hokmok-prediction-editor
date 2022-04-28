@@ -123,8 +123,8 @@ public class SMPQuestScrollViewControl : MonoBehaviour
 
 		if (description.Contains("[world_name]"))
 		{
-			// var zoneData = GameData.Instance().gameDataHelper.GetZoneDataById(model.target);
-			// description = description.Replace("[world_name]", zoneData.zone_name);
+			var zoneData = EditorDatas.instance.GetZoneData(model.target);
+			description = description.Replace("[world_name]", zoneData.zone_name);
 		}
 
 		return description;

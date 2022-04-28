@@ -120,6 +120,12 @@
 		"questGameLevelDefineClass": "QuestGameLevelUpgradeSupportNTimeDefine"
 	},
 	{
+		"eventName": "supportUpdateLevel",
+		"isDuration": false,
+		"progressType": "support_reach_rank",
+		"questGameLevelDefineClass": "QuestGameLevelUpgradeSupportNRankDefine"
+	},
+	{
 		"eventName": "unlockHero",
 		"isDuration": false,
 		"progressType": "check_full_hero_reach",
@@ -160,6 +166,12 @@
 		"isDuration": false,
 		"progressType": "check_reach",
 		"questGameLevelDefineClass": "QuestGameLevelUpdateHeroLvReachDefine"
+	},
+	{
+		"eventName": "heroUpdateLevel",
+		"isDuration": false,
+		"progressType": "count_all_heroes_reach_rank",
+		"questGameLevelDefineClass": "QuestGameLevelUpgradeAllHeroReachRankDefine"
 	},
 	{
 		"eventName": "updatePowerUp",
@@ -240,6 +252,12 @@
 		"questGameLevelDefineClass": "QuestGameLevelWorldTourDefine"
 	},
 	{
+		"eventName": "onUnlockNewZone",
+		"isDuration": false,
+		"progressType": "check_match",
+		"questGameLevelDefineClass": "QuestGameLevelWorldNameDefine"
+	},
+	{
 		"eventName": "unlockSkillSupport",
 		"isDuration": false,
 		"progressType": "count_by_one",
@@ -268,6 +286,12 @@
 		"isDuration": false,
 		"progressType": "count_by_one",
 		"questGameLevelDefineClass": "QuestGameLevelDefeatNBossRevengeDefine"
+	},
+	{
+		"eventName": "defeatBigBoss",
+		"isDuration": false,
+		"progressType": "count_by_one",
+		"questGameLevelDefineClass": "QuestGameLevelDefeatNBigBossDefine"
 	},
 	{
 		"eventName": "tapOnTheBird",
