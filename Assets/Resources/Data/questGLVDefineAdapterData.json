@@ -108,6 +108,18 @@
 		"questGameLevelDefineClass": "QuestGameLevelUnlockSupportSkillDefine"
 	},
 	{
+		"eventName": "unlockSkillSupport",
+		"isDuration": false,
+		"progressType": "count_support_evolve",
+		"questGameLevelDefineClass": "QuestGameLevelUnlockSupportNEvolveDefine"
+	},
+	{
+		"eventName": "unlockSkillSupport",
+		"isDuration": false,
+		"progressType": "count_all_supports_reach_evolve",
+		"questGameLevelDefineClass": "QuestGameLevelUnlockAllSupportNEvolveDefine"
+	},
+	{
 		"eventName": "supportUpdateLevel",
 		"isDuration": false,
 		"progressType": "check_reach",
@@ -382,5 +394,11 @@
 		"isDuration": false,
 		"progressType": "count_by_one",
 		"questGameLevelDefineClass": "QuestGameLevelVideoAdsDefine"
+	},
+	{
+		"eventName": "playMasterMind",
+		"isDuration": false,
+		"progressType": "count_by_one",
+		"questGameLevelDefineClass": "QuestGameLevelPlayMastermindNTimeDefine"
 	}
 ]

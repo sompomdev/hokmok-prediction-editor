@@ -37,4 +37,6 @@ public static class SMPQuestTemplateConstance
 
 	public const float MANA_POTION_DURATION_COOL_DOWN = 12 * 3600; //12 hours in seconds
 	public const float POWER_HOLDING_DURATION_COOL_DOWN = 120;
+
+	public const int PER_LEVEL_SUPPORT_EVOLVE = 1000;
 }
