@@ -16,7 +16,8 @@ using SimpleJSON;
 
 public enum ActiveSkillType
 {
-    THUNDER_ATTACK,//HeavenlyStrike_Skill
+	UNKOWN = -1,
+    THUNDER_ATTACK = 0,//HeavenlyStrike_Skill
 	TWIN_SHADOW,//ShadowClone_Skill
 	LAST_HAND,//CriticalStrike_Skill
 	FAST_AND_FURIOUS, //SMPSkillWarCry

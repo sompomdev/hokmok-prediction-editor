@@ -289,7 +289,7 @@ using UnityEngine;
 					fruitType_GS = eFT;
 				}
 
-				var eATST = ActiveSkillType.ANGER_OF_GOD;
+				var eATST = ActiveSkillType.UNKOWN;
                 if (node["powerUpType"] != null && !Enum.TryParse<ActiveSkillType>(node["powerUpType"].Value, out eATST))
                 {
                     throw new InvalidCastException("There is a problem with powerUp(ActiveSkillType) Type string in quest JSON!");
@@ -345,15 +345,17 @@ using UnityEngine;
             node["progressTitleCode"] = progressTitleCode;
             node["eventName"] = eventName;
             node["progressType"] = progressType;
-		//node["fruitType"] = fruitType_GS.ToString();
-		node["powerUpType"] = powerUpType_GS.ToString();
-		//node["supportId"] = supportId;
-		//node["bossType"] = bossType;
-		node["heroId"] = heroId;
-		//node["zoneId"] = zoneId;
-		node["petId"] = petId;
-		if (target != 0)
-                node["target"] = target;
+		    //node["fruitType"] = fruitType_GS.ToString();
+             if (powerUpType_GS != ActiveSkillType.UNKOWN)
+                node["powerUpType"] = powerUpType_GS.ToString();
+		    //node["supportId"] = supportId;
+		    //node["bossType"] = bossType;
+            if (heroId != 0)
+                node["heroId"] = heroId;
+		    if (petId != 0)
+		        node["petId"] = petId;
+		    if (target != 0)
+                    node["target"] = target;
             if (target2 != 0)
                 node["target2"] = target2;
             if (duration > 0)
