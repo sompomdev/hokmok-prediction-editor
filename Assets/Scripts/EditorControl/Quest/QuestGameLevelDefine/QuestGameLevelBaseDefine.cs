@@ -61,6 +61,14 @@ public abstract class QuestGameLevelBaseDefine
 		return gameLv;
 	}
 
+	protected int GetGameLevelOnUnlockHero(int heroId)
+	{
+		var heroCount = heroId;
+		heroCount = Math.Min(heroCount-1, SMPQuestTemplateConstance.MAX_HERO-1);//-1 is one hero unlock ready
+		var gameLevelUnlockHero = (heroCount) * SMPQuestTemplateConstance.UNLOCK_HERO_STAGE_COUNT;
+		return gameLevelUnlockHero;
+	}
+	
 	protected int GetGameLevelCanReachBaseOnTime(double time)
 	{
 		var timeOnOneLevel = (SMPQuestTemplateConstance.GHOST_PER_WAVE * SMPQuestTemplateConstance.TIME_PER_GHOST) + SMPQuestTemplateConstance.TIME_PER_BOSS;
