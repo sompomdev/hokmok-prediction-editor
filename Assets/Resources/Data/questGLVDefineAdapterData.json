@@ -177,7 +177,7 @@
 		"eventName": "updatePowerUp",
 		"isDuration": false,
 		"progressType": "count_update_powerup_each_hero",
-		"questGameLevelDefineClass": "QuestGameLevelTrainNHeroPowerUpDefine"
+		"questGameLevelDefineClass": "QuestGameLevelTrainPowerUpOfNHeroDefine"
 	},
 	{
 		"eventName": "updatePowerUp",
@@ -201,7 +201,7 @@
 		"eventName": "unlockPowerUp",
 		"isDuration": false,
 		"progressType": "count_update_powerup_each_hero",
-		"questGameLevelDefineClass": "QuestGameLevelTrainNHeroPowerUpDefine"
+		"questGameLevelDefineClass": "QuestGameLevelTrainPowerUpOfNHeroDefine"
 	},
 	{
 		"eventName": "usePowerUp",
