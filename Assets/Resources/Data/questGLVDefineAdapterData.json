@@ -114,6 +114,12 @@
 		"questGameLevelDefineClass": "QuestGameLevelUnlockSupportNEvolveDefine"
 	},
 	{
+		"eventName": "unlockSkillSupport",
+		"isDuration": false,
+		"progressType": "count_all_supports_reach_evolve",
+		"questGameLevelDefineClass": "QuestGameLevelUnlockAllSupportNEvolveDefine"
+	},
+	{
 		"eventName": "supportUpdateLevel",
 		"isDuration": false,
 		"progressType": "check_reach",
