@@ -738,7 +738,7 @@ public partial class SMPGameLanguage
 		progress_des[59] = "Use perk Doom once!";
 		progress_des[60] = "Use Perk Power of Holding once";
 		progress_des[61] = "Use perk Mana Potion once";
-		progress_des[62] = "Train [n] hero power-up!";
+		progress_des[62] = "Train power-up of [n] heroes";
 		progress_des[63] = "Unlock [n] heroe power-up!";
 		progress_des[64] = "Obtain [n] power-up and use it!";
 		progress_des[65] = "Promote your hero to the bronze!";
