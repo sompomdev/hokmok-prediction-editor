@@ -10,7 +10,6 @@ public class QuestGameLevelUnlockSupportNEvolveDefine : QuestGameLevelBaseDefine
 	{
 		var evolveCounter = questData.target;
 		var levelTarget = evolveCounter * SMPQuestTemplateConstance.PER_LEVEL_SUPPORT_EVOLVE;
-		Debug.Log("LevelTarget "+levelTarget);
 		var supportId = questData.supportId;
 		return GetGameLevelOnSupportUpgrateLevel(supportId, levelTarget);
 	}
