@@ -165,6 +165,7 @@ public abstract class QuestGameLevelBaseDefine
 
 	protected int GetGameLevelOnSupportUpgrateLevel(int supportId, int levelTarget)
 	{
+		Debug.Log("SupportId "+supportId);
 		if (supportId == 0)
 		{
 			supportId = 1;
