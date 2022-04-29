@@ -9,4 +9,11 @@ public class QuestGameLevelHeroReachRankDefine : QuestGameLevelBaseDefine
 		// var heroId = questData.heroId;
 		return GetGameLevelFromGoldEarningBallance(1, heroLvTarget);
 	}
+
+	public override int AppearLevelDefine()
+	{
+		var lv = GameLevelDefine() - 50;
+		if (lv <= 0) lv = 1;
+		return lv;
+	}
 }
