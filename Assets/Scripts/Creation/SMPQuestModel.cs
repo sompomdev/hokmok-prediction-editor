@@ -514,7 +514,6 @@ public class MyProgressModel
 
         public int kpiBossLevel;
         public int kpiBossKilled;
-        public int kpiGameLevelReward;
         public int kpiGameLevelShouldAppear;
 
         public string id;
@@ -611,7 +610,6 @@ public class MyProgressModel
 
                 kpiBossKilled = root["kpiBossKilled"].AsInt;
                 kpiBossLevel = root["kpiBossLevel"].AsInt;
-                kpiGameLevelReward = root["kpiGameLevelReward"].AsInt;
                 kpiGameLevelShouldAppear = root["kpiGameLevelShouldAppear"].AsInt;
                 
 
@@ -642,8 +640,7 @@ public class MyProgressModel
             node["level"] = level;
             node["iconName"] = iconName;
 			node["dynamicAvailable"] = dynamicAvailable;
-            // node["kpiBossLevel"] = kpiBossLevel;
-            node["kpiGameLevelReward"] = kpiGameLevelReward;
+            node["kpiBossLevel"] = kpiBossLevel;
             node["kpiGameLevelShouldAppear"] = kpiGameLevelShouldAppear;
             
 

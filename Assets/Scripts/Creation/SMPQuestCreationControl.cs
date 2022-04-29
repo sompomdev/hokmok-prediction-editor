@@ -83,7 +83,7 @@ public class SMPQuestCreationControl : MonoBehaviour
 
 	void Sort()
 	{
-		models = models.OrderBy(q => q.kpiGameLevelReward).ToList();
+		models = models.OrderBy(q => q.kpiBossLevel).ToList();
 	}
 
 	void UpdateDisplay()
@@ -124,7 +124,7 @@ public class SMPQuestCreationControl : MonoBehaviour
 		var appearLv = QuestAdapterHelper.instance.GetAppearLevelDefine(progress);
 		if (gameLv > 0)
 		{
-			quest.kpiGameLevelReward = gameLv;
+			quest.kpiBossLevel = gameLv;
 			quest.kpiGameLevelShouldAppear = appearLv;
 			if (quest.kpiGameLevelShouldAppear <= 0) quest.kpiGameLevelShouldAppear = 1;
 
