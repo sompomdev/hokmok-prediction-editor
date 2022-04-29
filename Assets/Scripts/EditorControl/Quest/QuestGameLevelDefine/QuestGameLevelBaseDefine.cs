@@ -208,8 +208,6 @@ public abstract class QuestGameLevelBaseDefine
 		support.m_evolved = evolveCounter > 0;
 		SMPNum extraCost = new SMPNum(0);
 		
-		Debug.Log($"LvStart {levelStart} upLvCount {upgradeLevelCount} evolve {evolveCounter}");
-		
 		var targetSupportLevelReach = SMPQuestTemplateConstance.PER_LEVEL_SUPPORT_EVOLVE - 1;
 		bool isEvolve = false;
 		if (upgradeLevelCount < targetSupportLevelReach)
