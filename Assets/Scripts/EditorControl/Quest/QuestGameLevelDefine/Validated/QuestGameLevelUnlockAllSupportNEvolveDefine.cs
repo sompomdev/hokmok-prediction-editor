@@ -29,4 +29,36 @@ public class QuestGameLevelUnlockAllSupportNEvolveDefine : QuestGameLevelBaseDef
 
 		return GetGameLevelCanFarmForCost(totalCost);
 	}
+
+	public override int AppearLevelDefine()
+	{
+		var evolveCounter = questData.target;
+		if (evolveCounter == 1)
+		{
+			return 550;
+		}
+		
+		var levelTarget = evolveCounter * SMPQuestTemplateConstance.PER_LEVEL_SUPPORT_EVOLVE;
+		
+		//Appear before level of support reach to target 100 level
+		levelTarget -= 100;
+		
+		var supportId = 1;
+		var totalCost = new SMPNum(0);
+		for (int i = 0; i < SMPQuestTemplateConstance.MAX_SUPPORT; i++)
+		{
+			totalCost += GetCostToUnlockSupportAndUpdateIncludeEvolve(supportId, levelTarget, 0, 0);
+			supportId++;
+		}
+		
+		//cost to unlock all fly support
+		var flySupportSkillData = EditorDatas.instance.GetSkillData(8);
+		var costHeroUnlockFlySupportSkill =
+			SMPHeroLevelConfiguration.GetCostOnLevel(5, 1, flySupportSkillData.Level_Unlock);
+		var flyUnlockCount = 4;
+		var costFlySupportSkillUpdate = SMPActiveSkillLevelConfiguration.GetNextCostConfiguration(flySupportSkillData, flyUnlockCount);
+		totalCost += costHeroUnlockFlySupportSkill + costFlySupportSkillUpdate;
+
+		return GetGameLevelCanFarmForCost(totalCost);
+	}
 }
