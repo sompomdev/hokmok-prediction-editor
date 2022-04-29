@@ -33,7 +33,7 @@
 		"eventName": "completeStage",
 		"isDuration": false,
 		"progressType": "count_by_one",
-		"questGameLevelDefineClass": "QuestGameLevelReachStageDefine"
+		"questGameLevelDefineClass": "QuestGameLevelBeatNStageDefine"
 	},
 	{
 		"eventName": "collectZoneBossCrown",
