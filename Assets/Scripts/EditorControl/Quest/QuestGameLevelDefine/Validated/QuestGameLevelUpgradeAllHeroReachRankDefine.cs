@@ -12,8 +12,13 @@ public class QuestGameLevelUpgradeAllHeroReachRankDefine : QuestGameLevelBaseDef
 	
 	public override int AppearLevelDefine()
 	{
-		var lv = GameLevelDefine() - 200;
-		if (lv <= 0) lv = 1;
-		return lv;
+		var heroCount = SMPQuestTemplateConstance.MAX_HERO;
+		RankType rankType = (RankType)questData.target;
+		var heroLvTarget = Helper.GetHeroMinLevelMatchingRankType(rankType);
+
+		//appear before hero can reach target 100
+		heroLvTarget -= 100;
+		
+		return GetGameLevelFromGoldEarningBallance(heroCount, heroLvTarget);
 	}
 }
