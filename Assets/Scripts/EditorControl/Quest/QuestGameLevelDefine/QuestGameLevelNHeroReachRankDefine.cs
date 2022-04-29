@@ -13,4 +13,11 @@ public class QuestGameLevelNHeroReachRankDefine : QuestGameLevelBaseDefine
 		var heroLvTarget = Helper.GetHeroMinLevelMatchingRankType(rankType);
 		return GetGameLevelFromGoldEarningBallance(heroCount, heroLvTarget);
 	}
+
+	public override int AppearLevelDefine()
+	{
+		var lv = GameLevelDefine() - 200;
+		if (lv <= 0) lv = 1;
+		return lv;
+	}
 }
