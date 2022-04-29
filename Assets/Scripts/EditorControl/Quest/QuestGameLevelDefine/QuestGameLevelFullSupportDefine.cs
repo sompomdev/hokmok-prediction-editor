@@ -15,4 +15,11 @@ public class QuestGameLevelFullSupportDefine : QuestGameLevelBaseDefine
 		var totalCost = costUnlockSupport + costHeroUnlockFlySupportSkill + costFlySupportSkill;
 		return GetGameLevelCanFarmForCost(totalCost);
 	}
+
+	public override int AppearLevelDefine()
+	{
+		var lv = GameLevelDefine() - 100;
+		if (lv <= 0) lv = 1;
+		return lv;
+	}
 }

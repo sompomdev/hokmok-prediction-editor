@@ -10,4 +10,8 @@ public class QuestGameLevelFullTeamDefine : QuestGameLevelBaseDefine
 		var gameLevelOnFullSupport = GetGameLevelCanFarmForCost(costUnlockSupport);
 		return Math.Max(gameLevelOnFullSupport, gameLevelUnlockPet);
 	}
+	public override int AppearLevelDefine()
+	{
+		return 10;
+	}
 }

@@ -8,4 +8,8 @@ public class QuestGameLevelFullActiveSupportDefine : QuestGameLevelBaseDefine
 		var costUnlockSupport = GetCostAllSupportUnlock(SMPQuestTemplateConstance.MAX_ACTIVE_SUPPORT);
 		return GetGameLevelCanFarmForCost(costUnlockSupport);
 	}
+	public override int AppearLevelDefine()
+	{
+		return 10;
+	}
 }
