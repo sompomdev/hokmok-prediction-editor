@@ -13,4 +13,10 @@ public class QuestGameLevelFullFlyingSupportDefine : QuestGameLevelBaseDefine
 		UnityEngine.Debug.Log($"fly=> updateHero {costHeroUnlockFlySupportSkill}+ costFlySkill {costFlySupportSkillUpdate}");
 		return GetGameLevelCanFarmForCost(totalCost);
 	}
+	public override int AppearLevelDefine()
+	{
+		var lv = GameLevelDefine() - 100;
+		if (lv <= 0) lv = 1;
+		return lv;
+	}
 }
