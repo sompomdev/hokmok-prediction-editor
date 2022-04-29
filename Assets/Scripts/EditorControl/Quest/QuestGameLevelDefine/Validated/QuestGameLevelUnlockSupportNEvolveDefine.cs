@@ -13,4 +13,17 @@ public class QuestGameLevelUnlockSupportNEvolveDefine : QuestGameLevelBaseDefine
 		var supportId = questData.supportId;
 		return GetGameLevelOnSupportUpgrateLevel(supportId, levelTarget);
 	}
+
+	public override int AppearLevelDefine()
+	{
+		/* Formula to get appear gameLevel*/
+		var evolveCounter = 1;
+		var levelTarget = evolveCounter * SMPQuestTemplateConstance.PER_LEVEL_SUPPORT_EVOLVE;
+		
+		//Appear before level of support reach to target 100 level
+		levelTarget -= 100;
+		
+		var supportId = questData.supportId;
+		return GetGameLevelOnSupportUpgrateLevel(supportId, levelTarget);
+	}
 }
