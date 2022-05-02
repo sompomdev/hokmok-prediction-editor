@@ -9,4 +9,9 @@ public class QuestGameLevelHireNHeroDefine : QuestGameLevelBaseDefine
 		var gameLevelUnlockHero = (heroCount) * SMPQuestTemplateConstance.UNLOCK_HERO_STAGE_COUNT;
 		return gameLevelUnlockHero;
 	}
+
+	public override int AppearLevelDefine()
+	{
+		return GameLevelDefine();
+	}
 }

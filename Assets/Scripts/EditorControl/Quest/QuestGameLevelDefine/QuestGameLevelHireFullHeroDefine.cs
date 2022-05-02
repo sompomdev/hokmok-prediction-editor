@@ -9,6 +9,6 @@ public class QuestGameLevelHireFullHeroDefine : QuestGameLevelBaseDefine
 	}
 	public override int AppearLevelDefine()
 	{
-		return 10;
+		return 60;
 	}
 }

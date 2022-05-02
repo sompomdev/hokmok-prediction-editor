@@ -16,4 +16,11 @@ public class QuestGameLevelCombinePowerupDefine : QuestGameLevelBaseDefine
 		
 		return GetGameLevelHeroCanReachLevel(heroLvTarget, costSkill);
 	}
+
+	public override int AppearLevelDefine()
+	{
+		var lv = GameLevelDefine() - 20;
+		if (lv <= 0) lv = 1;
+		return lv;
+	}
 }
