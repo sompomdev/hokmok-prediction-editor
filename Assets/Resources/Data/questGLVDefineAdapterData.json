@@ -418,5 +418,11 @@
 		"isDuration": false,
 		"progressType": "check_reach",
 		"questGameLevelDefineClass": "QuestGameLevelReachNDPSDefine"
+	},
+	{
+		"eventName": "criticriticalTap",
+		"isDuration": false,
+		"progressType": "count_by_one",
+		"questGameLevelDefineClass": "QuestGameLevelCriticalHitNTimeDefine"
 	}
 ]
