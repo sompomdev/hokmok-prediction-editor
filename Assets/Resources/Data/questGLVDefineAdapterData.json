@@ -252,6 +252,12 @@
 		"questGameLevelDefineClass": "QuestGameLevelPlayNTimeDefine"
 	},
 	{
+		"eventName": "gameLaunched",
+		"isDuration": false,
+		"progressType": "count_come_back_to_game_consecutive",
+		"questGameLevelDefineClass": "QuestGameLevelComebackNDayDefine"
+	},
+	{
 		"eventName": "watchTheVideo",
 		"isDuration": false,
 		"progressType": "count_by_one",

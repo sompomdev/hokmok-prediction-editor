@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Newtonsoft.Json;
+using UnityEngine.Serialization;
 
 [System.Serializable]
 public class QuestData
@@ -17,7 +18,6 @@ public class QuestData
 
 	public QuestTypeForPriority questType;
 	public string questRatioClass;
-	public int priority;
 	public int target;
 	public int target2;
 	public int powerUpType;

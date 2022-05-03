@@ -532,6 +532,7 @@ public class MyProgressModel
         public List<SMPProgressModel> concurrent;
 		public int dynamicAvailable;
 		public float questRatio;
+        public int forcePriority;
 
 		public void UpdateNecessaryInfo (SMPQuestModel model)
         {
@@ -568,6 +569,7 @@ public class MyProgressModel
             copy.iconName = iconName;
             copy.kpiBossKilled = kpiBossKilled;
             copy.kpiBossLevel = kpiBossLevel;
+            copy.forcePriority = forcePriority;
             ordered.ForEach(p => {
                 copy.ordered.Add(p.Copy());
             });
@@ -611,6 +613,8 @@ public class MyProgressModel
                 kpiBossKilled = root["kpiBossKilled"].AsInt;
                 kpiBossLevel = root["kpiBossLevel"].AsInt;
                 kpiGameLevelShouldAppear = root["kpiGameLevelShouldAppear"].AsInt;
+
+                forcePriority = root["forcePriority"].AsInt;
                 
 
                 var orderedArrayNode = root["ordered"].AsArray;
@@ -642,7 +646,11 @@ public class MyProgressModel
 			node["dynamicAvailable"] = dynamicAvailable;
             node["kpiBossLevel"] = kpiBossLevel;
             node["kpiGameLevelShouldAppear"] = kpiGameLevelShouldAppear;
-            
+
+            if (forcePriority > 0)
+            {
+                node["forcePriority"] = forcePriority;
+            }
 
             JSONNode nodeOrderedArray = new JSONArray();
             for (int i = 0; i < ordered.Count; i++)
