@@ -318,6 +318,12 @@
 		"questGameLevelDefineClass": "QuestGameLevelDefeatNBigBossDefine"
 	},
 	{
+		"eventName": "failedBossFight",
+		"isDuration": false,
+		"progressType": "count_by_one",
+		"questGameLevelDefineClass": "QuestGameLevelFailNTimeDefine"
+	},
+	{
 		"eventName": "tapOnTheBird",
 		"isDuration": false,
 		"progressType": "count_by_one",
