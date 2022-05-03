@@ -80,6 +80,12 @@
 	{
 		"eventName": "unlockSupporter",
 		"isDuration": false,
+		"progressType": "count_by_one",
+		"questGameLevelDefineClass": "QuestGameLevelHireNSupportCounterDefine"
+	},
+	{
+		"eventName": "unlockSupporter",
+		"isDuration": false,
 		"progressType": "check_full_active_support_reach",
 		"questGameLevelDefineClass": "QuestGameLevelFullActiveSupportDefine"
 	},

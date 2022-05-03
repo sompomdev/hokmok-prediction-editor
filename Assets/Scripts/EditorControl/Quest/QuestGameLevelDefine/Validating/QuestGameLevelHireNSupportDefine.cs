@@ -9,4 +9,14 @@ public class QuestGameLevelHireNSupportDefine : QuestGameLevelBaseDefine
 		var costUnlockSupport = GetCostAllSupportUnlock(supportNeedUnlock);
 		return GetGameLevelCanFarmForCost(costUnlockSupport);
 	}
+
+	public override int AppearLevelDefine()
+	{
+		var gameLevel = GameLevelDefine();
+		
+		//add 1 level before appear
+		gameLevel -= 1;
+
+		return gameLevel;
+	}
 }
