@@ -42,4 +42,9 @@ public class SMPHeroLevelConfiguration
 		var cost = SMPMathGamePlay.SumBaseOnCurrentLvAndTargetLv(currentLevel, _targetLevel, SequenceName.CostHero);
 		return cost;
 	}
+	
+	public static int GetReviveCost(int level)
+	{
+		return 20;
+	}
 }
