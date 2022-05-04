@@ -8,7 +8,7 @@
 	{
 		"eventName": "collectGold",
 		"isDuration": true,
-		"progressType": "count_by_one",
+		"progressType": "count_in_duration",
 		"questGameLevelDefineClass": "QuestGameLevelCollectNGoldInSecondDefine"
 	},
 	{
