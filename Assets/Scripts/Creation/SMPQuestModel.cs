@@ -511,7 +511,8 @@ public class MyProgressModel
     {
         private static int instanceCounter;
         private int instanceId;
-
+        
+        public int jumpingLevel;
         public int kpiBossLevel;
         public int kpiBossKilled;
         public int kpiGameLevelShouldAppear;
@@ -569,6 +570,7 @@ public class MyProgressModel
             copy.iconName = iconName;
             copy.kpiBossKilled = kpiBossKilled;
             copy.kpiBossLevel = kpiBossLevel;
+            copy.jumpingLevel = jumpingLevel;
             copy.forcePriority = forcePriority;
             ordered.ForEach(p => {
                 copy.ordered.Add(p.Copy());
@@ -612,6 +614,7 @@ public class MyProgressModel
 
                 kpiBossKilled = root["kpiBossKilled"].AsInt;
                 kpiBossLevel = root["kpiBossLevel"].AsInt;
+                jumpingLevel = root["jumpingLevel"].AsInt;
                 kpiGameLevelShouldAppear = root["kpiGameLevelShouldAppear"].AsInt;
 
                 forcePriority = root["forcePriority"].AsInt;
@@ -645,6 +648,7 @@ public class MyProgressModel
             node["iconName"] = iconName;
 			node["dynamicAvailable"] = dynamicAvailable;
             node["kpiBossLevel"] = kpiBossLevel;
+            node["jumpingLevel"] = jumpingLevel;
             node["kpiGameLevelShouldAppear"] = kpiGameLevelShouldAppear;
 
             if (forcePriority > 0)
