@@ -15,6 +15,7 @@ public class QuestGameLevelMakeNComboHitBossTypeDefine : QuestGameLevelBaseDefin
 		{
 			var levelZoneBoss = SMPQuestTemplateConstance.MAX_LEVEL_ON_STAGE;
 			gameLevel = gameLevel + (levelZoneBoss - (gameLevel % levelZoneBoss));//for level Boss Revenge only not Boss Battle
+			gameLevel -= 1;//for appear on big boss
 		}
 		else if (bossType == 1)
 		{
@@ -39,7 +40,7 @@ public class QuestGameLevelMakeNComboHitBossTypeDefine : QuestGameLevelBaseDefin
 		
 		if (bossType == 2)
 		{
-			kpiAppear = 10;//start gameLevel
+			kpiAppear = 9;//start gameLevel
 		}
 		else if (bossType == 1)
 		{
