@@ -3,12 +3,14 @@ public class QuestGameLevelCompleteYourNMissionDefine : QuestGameLevelBaseDefine
 {
 	//Complete your first mission!
 	//Complete your 10 mission!
-	//Clear [n] boss monsters
-	
+
 	public override int GameLevelDefine()
 	{
-		var missionCount = questData.target;
-		var gameLevel = missionCount;//one level for one mission or one Boss
-		return gameLevel;
+		return questData.target * SMPQuestTemplateConstance.MAX_LEVEL_ON_STAGE;
+	}
+
+	public override int AppearLevelDefine()
+	{
+		return GameLevelDefine() - 9;
 	}
 }

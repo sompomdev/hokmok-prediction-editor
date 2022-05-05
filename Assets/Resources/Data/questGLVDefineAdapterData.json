@@ -454,5 +454,11 @@
 		"isDuration": false,
 		"progressType": "count_by_one",
 		"questGameLevelDefineClass": "QuestGameLevelCriticalHitNTimeDefine"
+	},
+	{
+		"eventName": "onUnlockNewZone",
+		"isDuration": false,
+		"progressType": "count_by_one",
+		"questGameLevelDefineClass": "QuestGameLevelCompleteYourNMissionDefine"
 	}
 ]
