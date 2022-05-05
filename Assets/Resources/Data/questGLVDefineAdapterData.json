@@ -291,7 +291,7 @@
 		"eventName": "passBossFight",
 		"isDuration": false,
 		"progressType": "count_by_one",
-		"questGameLevelDefineClass": "QuestGameLevelCompleteYourNMissionDefine"
+		"questGameLevelDefineClass": "QuestGameLevelClearNBoss"
 	},
 	{
 		"eventName": "passBossFight",
