@@ -13,4 +13,11 @@ public class QuestGameLevelPlayMastermindNTimeDefine : QuestGameLevelBaseDefine
 
 		return gameLevel;
 	}
+
+	public override int AppearLevelDefine()
+	{
+		var gameLevel = GameLevelDefine();
+		var playNTarget = questData.target;
+		return gameLevel - playNTarget + 1;
+	}
 }
