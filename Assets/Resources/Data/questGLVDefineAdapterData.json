@@ -8,7 +8,7 @@
 	{
 		"eventName": "collectGold",
 		"isDuration": true,
-		"progressType": "count_by_one",
+		"progressType": "count_in_duration",
 		"questGameLevelDefineClass": "QuestGameLevelCollectNGoldInSecondDefine"
 	},
 	{
@@ -291,7 +291,7 @@
 		"eventName": "passBossFight",
 		"isDuration": false,
 		"progressType": "count_by_one",
-		"questGameLevelDefineClass": "QuestGameLevelCompleteYourNMissionDefine"
+		"questGameLevelDefineClass": "QuestGameLevelClearNBoss"
 	},
 	{
 		"eventName": "passBossFight",
@@ -460,5 +460,11 @@
 		"isDuration": false,
 		"progressType": "count_by_one",
 		"questGameLevelDefineClass": "QuestGameLevelCriticalHitNTimeDefine"
+	},
+	{
+		"eventName": "onUnlockNewZone",
+		"isDuration": false,
+		"progressType": "count_by_one",
+		"questGameLevelDefineClass": "QuestGameLevelCompleteYourNMissionDefine"
 	}
 ]
