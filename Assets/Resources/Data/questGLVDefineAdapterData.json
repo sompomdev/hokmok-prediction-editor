@@ -444,6 +444,12 @@
 		"questGameLevelDefineClass": "QuestGameLevelMakeNComboHitDefine"
 	},
 	{
+		"eventName": "matchCombo",
+		"isDuration": false,
+		"progressType": "count_match_combo_by_boss_type",
+		"questGameLevelDefineClass": "QuestGameLevelMakeNComboHitBossTypeDefine"
+	},
+	{
 		"eventName": "refreshCurrentDps",
 		"isDuration": false,
 		"progressType": "check_reach",

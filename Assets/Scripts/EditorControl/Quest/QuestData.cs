@@ -24,6 +24,7 @@ public class QuestData
 	public int petId;
 	public int heroId;
 	public int supportId;
+	public int bossType;
 
 	public string bigTargetPower;
 	[JsonIgnore]
