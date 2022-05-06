@@ -426,6 +426,12 @@
 		"questGameLevelDefineClass": "QuestGameLevelPlayMastermindNTimeDefine"
 	},
 	{
+		"eventName": "playMasterMind",
+		"isDuration": false,
+		"progressType": "count_by_one_one_day_limit",
+		"questGameLevelDefineClass": "QuestGameLevelPlayMastermindNTimeDuringDayDefine"
+	},
+	{
 		"eventName": "onMasterMindInArow",
 		"isDuration": false,
 		"progressType": "check_reach",
