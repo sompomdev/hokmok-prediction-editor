@@ -258,6 +258,12 @@
 		"questGameLevelDefineClass": "QuestGameLevelComebackNDayDefine"
 	},
 	{
+		"eventName": "gameLaunched",
+		"isDuration": false,
+		"progressType": "play_game_on_the_weekend",
+		"questGameLevelDefineClass": "QuestGameLevelPlayOnWeekendDefine"
+	},
+	{
 		"eventName": "watchTheVideo",
 		"isDuration": false,
 		"progressType": "count_by_one",
