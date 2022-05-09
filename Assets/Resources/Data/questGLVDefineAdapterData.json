@@ -336,6 +336,12 @@
 		"questGameLevelDefineClass": "QuestGameLevelMakeNHeroReviveDefine"
 	},
 	{
+		"eventName": "makeHeroResurrection",
+		"isDuration": false,
+		"progressType": "count_revive_a_character",
+		"questGameLevelDefineClass": "QuestGameLevelMakeReviveHeroNTimeDefine"
+	},
+	{
 		"eventName": "tapOnTheBird",
 		"isDuration": false,
 		"progressType": "count_by_one",
