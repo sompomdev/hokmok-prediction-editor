@@ -414,6 +414,12 @@
 		"questGameLevelDefineClass": "QuestGameLevelShareToFacebookDefine"
 	},
 	{
+		"eventName": "shareToTwitter",
+		"isDuration": false,
+		"progressType": "count_by_one",
+		"questGameLevelDefineClass": "QuestGameLevelShareToTwitterDefine"
+	},
+	{
 		"eventName": "updateGhostRoundReduced",
 		"isDuration": false,
 		"progressType": "check_reach",
