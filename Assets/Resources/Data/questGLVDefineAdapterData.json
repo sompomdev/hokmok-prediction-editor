@@ -348,6 +348,12 @@
 		"questGameLevelDefineClass": "QuestGameLevelMakeReviveSupportNTimeDefine"
 	},
 	{
+		"eventName": "makeResurrection",
+		"isDuration": false,
+		"progressType": "count_by_one",
+		"questGameLevelDefineClass": "QuestGameLevelMakeReviveAllNTimeDefine"
+	},
+	{
 		"eventName": "tapOnTheBird",
 		"isDuration": false,
 		"progressType": "count_by_one",
