@@ -16,4 +16,14 @@ public class QuestGameLevelReduceGhostRoundDefine : QuestGameLevelBaseDefine
 
 		return gameLevelMax;
 	}
+
+	public override int AppearLevelDefine()
+	{
+		var gameLevel = GameLevelDefine();
+		
+		//add 5 game level before appear
+		gameLevel -= 5;
+
+		return gameLevel;
+	}
 }
