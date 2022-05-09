@@ -408,6 +408,12 @@
 		"questGameLevelDefineClass": "QuestGameLevelPlayTotalNDayDefine"
 	},
 	{
+		"eventName": "shareToFacebook",
+		"isDuration": false,
+		"progressType": "count_by_one",
+		"questGameLevelDefineClass": "QuestGameLevelShareToFacebookDefine"
+	},
+	{
 		"eventName": "updateGhostRoundReduced",
 		"isDuration": false,
 		"progressType": "check_reach",
