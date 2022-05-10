@@ -6,6 +6,12 @@
 		"questGameLevelDefineClass": "QuestGameLevelTapDefine"
 	},
 	{
+		"eventName": "tap",
+		"isDuration": true,
+		"progressType": "count_in_duration",
+		"questGameLevelDefineClass": "QuestGameLevelTapNTimeInSecondDefine"
+	},
+	{
 		"eventName": "collectGold",
 		"isDuration": true,
 		"progressType": "count_in_duration",
