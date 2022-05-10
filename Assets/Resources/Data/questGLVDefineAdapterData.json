@@ -405,7 +405,7 @@
 		"eventName": "petUpdateLevel",
 		"isDuration": false,
 		"progressType": "count_upgrade_a_pet_n_time",
-		"questGameLevelDefineClass": "QuestGameLevelUpdatePetLevelNTimeDefine"
+		"questGameLevelDefineClass": "QuestGameLevelUpdateAPetLevelNTimeDefine"
 	},
 	{
 		"eventName": "petUpdateLevel",
