@@ -16,4 +16,9 @@ public class QuestGameLevelUpgradeNPetLvReachDefine : QuestGameLevelBaseDefine
 		var gameLevel = GetGameLevelByDiamondForPetUpdate(petCountTarget, petLevelTarget - 1);// -1 is the level reach ready
 		return gameLevel;
 	}
+
+	public override int AppearLevelDefine()
+	{
+		return GameLevelDefine();
+	}
 }
