@@ -15,4 +15,17 @@ public class QuestGameLevelUpgradeNHeroToLvDefine : QuestGameLevelBaseDefine
 
 		return Math.Max(gameLevelUnlockHero, gameLevelCanUpdateHeroLevel);
 	}
+
+	public override int AppearLevelDefine()
+	{
+		var heroTargetCount = questData.target;
+		if (heroTargetCount == -1)
+		{
+			heroTargetCount = SMPQuestTemplateConstance.MAX_HERO;
+		}
+		
+		var gameLevelUnlockHero = (heroTargetCount - 1) * SMPQuestTemplateConstance.UNLOCK_HERO_STAGE_COUNT;//-1 is one hero unlock ready
+		
+		return gameLevelUnlockHero;
+	}
 }
