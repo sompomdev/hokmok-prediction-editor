@@ -17,4 +17,9 @@ public class QuestGameLevelUpgradeNPetLevelDefine : QuestGameLevelBaseDefine
 		var gameLevel = GetGameLevelByDiamondForPetUpdate(updateNPet, 1);
 		return gameLevel;
 	}
+
+	public override int AppearLevelDefine()
+	{
+		return GameLevelDefine();
+	}
 }
