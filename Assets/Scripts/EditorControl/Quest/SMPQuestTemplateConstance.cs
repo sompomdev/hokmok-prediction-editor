@@ -41,4 +41,6 @@ public static class SMPQuestTemplateConstance
 	public const int PER_LEVEL_SUPPORT_EVOLVE = 1000;
 
 	public const int PASS_COLOR_PER_MASTERMINE = 3;
+	
+	public const int TAP_AVG_PER_GAMELEVEL = 40;
 }

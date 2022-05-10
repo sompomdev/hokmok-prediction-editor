@@ -6,13 +6,14 @@ public class QuestGameLevelTapDefine : QuestGameLevelBaseDefine
 	public override int GameLevelDefine()
 	{
 		var tapCount = questData.target;
-		if(tapCount <= 4)
+		var avgTapPerLevel = SMPQuestTemplateConstance.TAP_AVG_PER_GAMELEVEL;
+		
+		if(tapCount <= avgTapPerLevel)
 		{
 			//first tap
 			return 1;
 		}
 
-		var avgTapPerLevel = 4;
 		var gameLevel = tapCount / avgTapPerLevel;
 		return gameLevel;
 	}
