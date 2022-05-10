@@ -7,4 +7,9 @@ public class QuestGameLevelWorldNameDefine : QuestGameLevelBaseDefine
 		var gameLvCount = SMPQuestTemplateConstance.MAX_LEVEL_ON_STAGE * (worldId - 1);
 		return gameLvCount;
 	}
+
+	public override int AppearLevelDefine()
+	{
+		return GameLevelDefine() - 3;
+	}
 }
