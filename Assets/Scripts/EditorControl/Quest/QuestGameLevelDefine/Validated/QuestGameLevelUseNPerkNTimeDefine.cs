@@ -2,6 +2,7 @@ using System;
 
 public class QuestGameLevelUseNPerkNTimeDefine : QuestGameLevelBaseDefine
 {
+	private int gameLevelAppear = 100;
 	public override int GameLevelDefine()
 	{
 		var nPerk = Math.Min(questData.target, 4);//Perk we have only 4
@@ -23,16 +24,26 @@ public class QuestGameLevelUseNPerkNTimeDefine : QuestGameLevelBaseDefine
 			}
 		}
 
-		var maxTimeCooldown = Math.Max(timeCoolDownPowerHolding, timeCoolDownManaPotion);
-		var gameLevelCooldown = GetGameLevelCanReachBaseOnTime(maxTimeCooldown);
-
+		var maxTimeCooldown = 0;
+		var gameLevelCooldown = 0;
+		if (nTime > 1)
+		{
+			Math.Max(timeCoolDownPowerHolding, timeCoolDownManaPotion);
+			gameLevelCooldown = GetGameLevelCanReachBaseOnTime(maxTimeCooldown);
+		}
+		
 		var gameLevelFarmDiamond = GetGameLevelByDiamondBossDrop(diamondNeed);
-
+		
 		UnityEngine.Debug.Log($"MaxCoolTime {maxTimeCooldown} DaimondNeed {diamondNeed}");
 
 		return gameLevelFarmDiamond + gameLevelCooldown;
 	}
-	
+
+	public override int AppearLevelDefine()
+	{
+		return gameLevelAppear;
+	}
+
 	public int GameLevelManaPotionNTimeDefine()
 	{
 		var perkUse = questData.target2;
