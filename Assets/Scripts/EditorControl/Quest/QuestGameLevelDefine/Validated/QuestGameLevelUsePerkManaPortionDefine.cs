@@ -2,6 +2,7 @@ using System;
 
 public class QuestGameLevelUsePerkManaPortionDefine : QuestGameLevelBaseDefine
 {
+	private int appearLevel = 101;
 	public override int GameLevelDefine()
 	{
 		var perkCount = questData.target;
@@ -20,6 +21,12 @@ public class QuestGameLevelUsePerkManaPortionDefine : QuestGameLevelBaseDefine
 	
 	public override int AppearLevelDefine()
 	{
-		return GameLevelDefine();
+		var perkCount = questData.target;
+		var gameLevel = GameLevelDefine();
+		if (perkCount > 1)
+		{
+			gameLevel -= appearLevel * perkCount;
+		}
+		return gameLevel;
 	}
 }
