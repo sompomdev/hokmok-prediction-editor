@@ -17,4 +17,9 @@ public class QuestGameLevelUsePerkManaPortionDefine : QuestGameLevelBaseDefine
 
 		return Math.Max(lvDiamondFarm, gameLevelHeroCanReachLevel);
 	}
+	
+	public override int AppearLevelDefine()
+	{
+		return GameLevelDefine();
+	}
 }
