@@ -14,6 +14,12 @@ public class QuestGameLevelUsePerkMakeItRainDefine : QuestGameLevelBaseDefine
 
 	public override int AppearLevelDefine()
 	{
-		return GameLevelDefine();
+		var perkCount = questData.target;
+		var gameLevel = GameLevelDefine();
+		if (perkCount > 1)
+		{
+			gameLevel -= appearLevel;
+		}
+		return gameLevel;
 	}
 }
