@@ -30,4 +30,9 @@ public class QuestGameLevelUseNSkillNTimeDefine : QuestGameLevelBaseDefine
 
 		return Math.Max(gameLevelUnlockSkill, gameLevelOnFarmingMana);
 	}
+
+	public override int AppearLevelDefine()
+	{
+		return GameLevelDefine();
+	}
 }
