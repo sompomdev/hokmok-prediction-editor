@@ -25,6 +25,7 @@ public class QuestData
 	public int heroId;
 	public int supportId;
 	public int bossType;
+	public int fruitType;
 
 	public string bigTargetPower;
 	[JsonIgnore]

@@ -66,6 +66,7 @@ public class QuestAdapterHelper : MonoBehaviour
 			questData.heroId = progressModel.heroId;
 			questData.supportId = progressModel.supportId;
 			questData.bossType = progressModel.bossType;
+			questData.fruitType = (int)progressModel.fruitType_GS;
 
 			Type t = Type.GetType(questData.questGameLevelDefineClass);
 			QuestGameLevelBaseDefine qDefine = (QuestGameLevelBaseDefine)Activator.CreateInstance(t);

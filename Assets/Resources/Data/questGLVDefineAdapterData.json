@@ -486,6 +486,12 @@
 		"questGameLevelDefineClass": "QuestGameLevelWinMastermindNTimeDefine"
 	},
 	{
+		"eventName": "onFruitMatch",
+		"isDuration": false,
+		"progressType": "count_fruit_match_by_color",
+		"questGameLevelDefineClass": "QuestGameLevelCountNFruitMatchByColorDefine"
+	},
+	{
 		"eventName": "matchCombo",
 		"isDuration": false,
 		"progressType": "count_by_one",
