@@ -13,4 +13,10 @@ public class QuestGameLevelWinMastermindNTimeDefine : QuestGameLevelBaseDefine
 
 		return gameLevel;
 	}
+
+	public override int AppearLevelDefine()
+	{
+		var gameLevel = GetGameLevelOnFirstPlayMastermind() + 1;
+		return gameLevel;
+	}
 }
