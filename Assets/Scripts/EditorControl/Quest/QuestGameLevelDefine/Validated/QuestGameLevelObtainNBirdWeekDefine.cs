@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class QuestGameLevelObtainNBirdWeekDefine : QuestGameLevelBaseDefine
 {
+	private int gameLevelStart = 30;
 	public override int GameLevelDefine()
 	{
 		var nBird = questData.target;
@@ -19,6 +20,11 @@ public class QuestGameLevelObtainNBirdWeekDefine : QuestGameLevelBaseDefine
 			Debug.LogError($"Not possible to appear bird {nBird} in 1 week of target time");
 		}
 
-		return gameLvBirdAppear;
+		return gameLevelStart + gameLvBirdAppear;
+	}
+
+	public override int AppearLevelDefine()
+	{
+		return gameLevelStart;
 	}
 }
