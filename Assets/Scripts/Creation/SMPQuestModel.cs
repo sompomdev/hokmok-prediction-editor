@@ -345,11 +345,9 @@ using UnityEngine;
             node["progressTitleCode"] = progressTitleCode;
             node["eventName"] = eventName;
             node["progressType"] = progressType;
-            if (fruitType != "")
-            {
+            if (eventName == "onFruitMatch")
                 node["fruitType"] = (int)fruitType_GS;
-            }
-             if (powerUpType_GS != ActiveSkillType.UNKOWN)
+            if (powerUpType_GS != ActiveSkillType.UNKOWN)
                 node["powerUpType"] = powerUpType_GS.ToString();
              if (supportId != 0)
                  node["supportId"] = supportId;
