@@ -3,6 +3,7 @@ using System;
 
 public class QuestGameLevelUpdatePetLevelNTimeDefine : QuestGameLevelBaseDefine
 {
+	private int gameLevelAppear = 10;
 	public override int GameLevelDefine()
 	{
 		var updateTime = questData.target;
@@ -37,6 +38,6 @@ public class QuestGameLevelUpdatePetLevelNTimeDefine : QuestGameLevelBaseDefine
 		//appear level that can collect diamond for update pet n time
 		gameLevel -= diamondGameLevel;
 
-		return gameLevel;
+		return Math.Max(gameLevel, gameLevelAppear);
 	}
 }
