@@ -432,6 +432,12 @@
 		"questGameLevelDefineClass": "QuestGameLevelPlayTotalNDayDefine"
 	},
 	{
+		"eventName": "onCompletedQuest",
+		"isDuration": false,
+		"progressType": "count_by_one",
+		"questGameLevelDefineClass": "QuestGameLevelCompleteNQuestDefine"
+	},
+	{
 		"eventName": "shareToFacebook",
 		"isDuration": false,
 		"progressType": "count_by_one",

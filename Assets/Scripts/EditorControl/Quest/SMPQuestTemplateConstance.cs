@@ -44,4 +44,6 @@ public static class SMPQuestTemplateConstance
 	public const int PASS_N_MATCH_PER_BOSS = 5;
 	
 	public const int TAP_AVG_PER_GAMELEVEL = 40;
+
+	public const int N_GAMELEVEL_PER_QUEST_COMPLETE = 2;
 }
