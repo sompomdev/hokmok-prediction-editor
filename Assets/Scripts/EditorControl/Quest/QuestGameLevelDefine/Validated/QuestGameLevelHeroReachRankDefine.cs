@@ -1,4 +1,6 @@
 
+using System;
+
 public class QuestGameLevelHeroReachRankDefine : QuestGameLevelBaseDefine
 {
 	public override int GameLevelDefine()
@@ -12,8 +14,8 @@ public class QuestGameLevelHeroReachRankDefine : QuestGameLevelBaseDefine
 
 	public override int AppearLevelDefine()
 	{
-		var lv = GameLevelDefine() - 50;
-		if (lv <= 0) lv = 1;
+		var lv = GameLevelDefine() - 25;
+		lv = Math.Max(lv, 1);
 		return lv;
 	}
 }
