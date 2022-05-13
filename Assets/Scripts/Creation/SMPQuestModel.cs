@@ -642,15 +642,24 @@ public class MyProgressModel
         {
             JSONNode node = new JSONObject();
             node["id"] = id;
-            node["skippable"] = skippable;
-            node["isDynamic"] = isDynamic;
-            node["skipPrice"] = skipPrice;
+           
+            if (isDaily)
+            {
+                node["isDaily"] = isDaily;
+            }
+            else
+            {
+                node["skippable"] = skippable;
+                node["isDynamic"] = isDynamic;
+                node["skipPrice"] = skipPrice;
+                node["dynamicAvailable"] = dynamicAvailable;
+                node["kpiGameLevelShouldAppear"] = kpiGameLevelShouldAppear;
+            }
+            
             node["level"] = level;
             node["iconName"] = iconName;
-			node["dynamicAvailable"] = dynamicAvailable;
             node["kpiBossLevel"] = kpiBossLevel;
             node["jumpingLevel"] = jumpingLevel;
-            node["kpiGameLevelShouldAppear"] = kpiGameLevelShouldAppear;
 
             if (forcePriority > 0)
             {
