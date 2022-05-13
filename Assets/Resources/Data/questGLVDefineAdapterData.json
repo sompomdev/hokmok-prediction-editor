@@ -194,6 +194,12 @@
 	{
 		"eventName": "heroUpdateLevel",
 		"isDuration": false,
+		"progressType": "check_n_hero_reach_rank",
+		"questGameLevelDefineClass": "QuestGameLevelUpgradeNHeroReachRankDefine"
+	},
+	{
+		"eventName": "heroUpdateLevel",
+		"isDuration": false,
 		"progressType": "count_all_heroes_reach_rank",
 		"questGameLevelDefineClass": "QuestGameLevelUpgradeAllHeroReachRankDefine"
 	},
