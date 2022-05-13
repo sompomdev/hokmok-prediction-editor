@@ -354,6 +354,12 @@
 		"questGameLevelDefineClass": "QuestGameLevelMakeReviveSupportNTimeDefine"
 	},
 	{
+		"eventName": "makeSupportResurrection",
+		"isDuration": false,
+		"progressType": "count_by_one",
+		"questGameLevelDefineClass": "QuestGameLevelMakeReviveNSupportDefine"
+	},
+	{
 		"eventName": "makeResurrection",
 		"isDuration": false,
 		"progressType": "count_by_one",
