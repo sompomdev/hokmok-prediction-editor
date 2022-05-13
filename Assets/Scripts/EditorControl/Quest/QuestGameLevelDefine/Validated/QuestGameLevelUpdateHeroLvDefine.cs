@@ -2,6 +2,7 @@ using System;
 
 public class QuestGameLevelUpdateHeroLvDefine : QuestGameLevelBaseDefine
 {
+	private int gameLevelStart = 1;
 	public override int GameLevelDefine()
 	{
 		var updateTime = questData.target;
@@ -13,6 +14,12 @@ public class QuestGameLevelUpdateHeroLvDefine : QuestGameLevelBaseDefine
 		}
 		
 		var gameLevelUpdateLevel = GetGameLevelFromGoldEarningBallance(1, updateTime+1);//coz +1 is have ready
+
 		return Math.Max(gameLevelUpdateLevel, gameLvUnlockHero);
+	}
+
+	public override int AppearLevelDefine()
+	{
+		return gameLevelStart;
 	}
 }
