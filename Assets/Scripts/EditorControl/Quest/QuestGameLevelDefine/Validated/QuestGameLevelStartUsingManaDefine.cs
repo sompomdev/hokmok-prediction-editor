@@ -15,4 +15,9 @@ public class QuestGameLevelStartUsingManaDefine : QuestGameLevelBaseDefine
 
 		return gameLevelHeroCanReachLevel + gameLevelOnFarmingMana;
 	}
+
+	public override int AppearLevelDefine()
+	{
+		return GameLevelDefine() - 5;
+	}
 }

@@ -34,7 +34,7 @@ public class EditorDatas : MonoBehaviour
 	public SMPUserSkillData GetSkillData(int id)
 	{
 		var skillData = userSkillDatas.FirstOrDefault(s => s.m_iID == id);
-		skillData.m_iLv = 1;
+		skillData.m_iLv = 0;
 		skillData.is_unlocked = false;
 		return skillData;
 	}
