@@ -552,6 +552,12 @@
 		"questGameLevelDefineClass": "QuestGameLevelCriticalHitNTimeDefine"
 	},
 	{
+		"eventName": "criticriticalTap",
+		"isDuration": true,
+		"progressType": "count_in_duration",
+		"questGameLevelDefineClass": "QuestGameLevelCriticalHitInNSecondDefine"
+	},
+	{
 		"eventName": "onUnlockNewZone",
 		"isDuration": false,
 		"progressType": "count_by_one",
