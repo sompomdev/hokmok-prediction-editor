@@ -522,6 +522,12 @@
 		"questGameLevelDefineClass": "QuestGameLevelMakeNComboHitBossTypeDefine"
 	},
 	{
+		"eventName": "matchInRow",
+		"isDuration": false,
+		"progressType": "count_in_staying_boss",
+		"questGameLevelDefineClass": "QuestGameLevelSwipeNRuneHorizontalNTimeDefine"
+	},
+	{
 		"eventName": "refreshCurrentDps",
 		"isDuration": false,
 		"progressType": "check_reach",
