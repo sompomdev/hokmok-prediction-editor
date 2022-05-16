@@ -534,6 +534,12 @@
 		"questGameLevelDefineClass": "QuestGameLevelSwipeNRuneVerticalNTimeDefine"
 	},
 	{
+		"eventName": "matchInAll",
+		"isDuration": false,
+		"progressType": "count_in_staying_boss",
+		"questGameLevelDefineClass": "QuestGameLevelSwipeNRuneOneRowNTimeDefine"
+	},
+	{
 		"eventName": "refreshCurrentDps",
 		"isDuration": false,
 		"progressType": "check_reach",
