@@ -1,4 +1,5 @@
 using System;
+using Unity.VisualScripting.Dependencies.NCalc;
 
 public class QuestGameLevelUpdateHeroLvReachDefine : QuestGameLevelBaseDefine
 {
@@ -14,5 +15,10 @@ public class QuestGameLevelUpdateHeroLvReachDefine : QuestGameLevelBaseDefine
 		
 		var gameLevelUpdateLevel = GetGameLevelFromGoldEarningBallance(1, levelTarget);
 		return Math.Max(gameLevelUpdateLevel, gameLvUnlockHero);
+	}
+
+	public override int AppearLevelDefine()
+	{
+		return GameLevelDefine() - 2;
 	}
 }
