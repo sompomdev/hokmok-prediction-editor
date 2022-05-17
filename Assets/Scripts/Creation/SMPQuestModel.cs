@@ -642,7 +642,9 @@ public class MyProgressModel
         {
             JSONNode node = new JSONObject();
             node["id"] = id;
-           
+            node["isDynamic"] = isDynamic;
+            node["dynamicAvailable"] = dynamicAvailable;
+
             if (isDaily)
             {
                 node["isDaily"] = isDaily;
@@ -650,12 +652,10 @@ public class MyProgressModel
             else
             {
                 node["skippable"] = skippable;
-                node["isDynamic"] = isDynamic;
                 node["skipPrice"] = skipPrice;
-                node["dynamicAvailable"] = dynamicAvailable;
                 node["kpiGameLevelShouldAppear"] = kpiGameLevelShouldAppear;
             }
-            
+
             node["level"] = level;
             node["iconName"] = iconName;
             node["kpiBossLevel"] = kpiBossLevel;
@@ -676,7 +676,8 @@ public class MyProgressModel
             for (int i = 0; i < concurrent.Count; i++)
                 nodeConcurrentdArray.Add(concurrent[i].SaveToJSON());
 
-            node["concurrent"] = nodeConcurrentdArray;;
+            node["concurrent"] = nodeConcurrentdArray;
+            ;
             return node;
         }
 
