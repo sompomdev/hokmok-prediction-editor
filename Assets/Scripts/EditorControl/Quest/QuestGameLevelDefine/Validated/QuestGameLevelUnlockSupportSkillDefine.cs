@@ -9,6 +9,35 @@ public class QuestGameLevelUnlockSupportSkillDefine : QuestGameLevelBaseDefine
 		var costUnlockSupportAndSkill = GetCostToUnlockSupportAndSkill(1, targetUnlock);
 		return GetGameLevelCanFarmForCost(costUnlockSupportAndSkill);
 	}
+	
+	public override int AppearLevelDefine()
+	{
+		return GameLevelDefine() - 5;
+	}
+	
+	
+	protected int GetLevelSupportUnlock(int supportId, int unlockTarget)
+	{
+		var support = EditorDatas.instance.GetSupportData(supportId);
+		if (support == null)
+		{
+			UnityEngine.Debug.Log("Out of support on id " + supportId);
+			return 0;
+		}
+
+		support.m_bHired = false;
+		support.m_bHired = true;
+		int totalUnlockSkills = 0;
+		do
+		{
+			if(totalUnlockSkills>=support.m_SupportsAbilityList.Count) break;
+			totalUnlockSkills++;
+		}
+		while (totalUnlockSkills < unlockTarget);
+
+		var targetSupportLevelReach = support.m_SupportsAbilityList[totalUnlockSkills].m_iCurrentLevel;
+		return targetSupportLevelReach;
+	}
 
 	/// <summary>
 	/// start support id 1
@@ -34,32 +63,27 @@ public class QuestGameLevelUnlockSupportSkillDefine : QuestGameLevelBaseDefine
 		int totalUnlockSkills = 0;
 		do
 		{
-			SMPNum cost = new SMPNum(0);
-			if (support.m_SupportsAbilityList[totalUnlockSkills].m_skillType == SupportSkillType.EVOLVE)// && !support.m_evolved)
+			if (totalUnlockSkills >= support.m_SupportsAbilityList.Count)
 			{
-				//cost = new SMPNum((support.m_sCostBase * Math.Round(Math.Pow(1.075, support.m_iCurrentLevel - 1))) * 10.75);
+				totalUnlockSkills--;
 				break;
 			}
-			else
-			{
-				SMPNum costOnLevel = SMPSupportLevelConfiguration.GetCostUnlockSkill(support.m_sCostBase, support.m_SupportsAbilityList[totalUnlockSkills].m_iCurrentLevel);
-				if (support.m_evolved)
-				{
-					//cost after evolved
-					cost = costOnLevel * (9 + support.m_evoledCounter);//start in 10
-				}
-				else
-				{
-					cost = costOnLevel * 5;
-				}
-			}
+			
+			SMPNum cost = new SMPNum(0);
+			support.m_SupportState = SupportStates.UnlockedSkill;
+			//cost on unlock skill
+			cost += SMPSupportLevelConfiguration.GetLevelConfiguration(support, 1).cost;
+			support.m_SupportsAbilityList[totalUnlockSkills].m_bUnlocked = true;
+			
 			costSkillSupport += cost;
 			totalUnlockSkills++;
 		}
 		while (totalUnlockSkills < unlockTarget);
 
-		var targetSupportLevelReach = support.m_SupportsAbilityList[totalUnlockSkills - 1].m_iCurrentLevel;
-		SMPNum costSupportLevelReachUnlockSkill = SMPSupportLevelConfiguration.GetCostDependingOnNumOfLevelToAdd(support.m_iCurrentLevel, targetSupportLevelReach);
+		var targetSupportLevelReach = support.m_SupportsAbilityList[totalUnlockSkills].m_iCurrentLevel;
+		support.m_SupportState = SupportStates.LevelUp;
+		support.m_iCurrentLevel = 1;
+		SMPNum costSupportLevelReachUnlockSkill = SMPSupportLevelConfiguration.GetCostDependingOnNumOfLevelToAdd(1, targetSupportLevelReach);
 		
 		SMPNum costNextHero = new SMPNum(0);
 		if(totalUnlockSkills < unlockTarget)
