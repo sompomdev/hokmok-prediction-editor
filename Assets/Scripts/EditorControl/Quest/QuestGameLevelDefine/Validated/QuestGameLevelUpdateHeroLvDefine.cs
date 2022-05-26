@@ -20,6 +20,12 @@ public class QuestGameLevelUpdateHeroLvDefine : QuestGameLevelBaseDefine
 
 	public override int AppearLevelDefine()
 	{
-		return gameLevelStart;
+        var heroId = questData.heroId;
+        var levelAppear = gameLevelStart;
+        if (heroId != 0)
+        {
+            levelAppear = GetGameLevelOnUnlockHero(heroId);
+        }
+		return levelAppear;
 	}
 }
